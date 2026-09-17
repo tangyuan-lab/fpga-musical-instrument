@@ -1,0 +1,38 @@
+# Windows and editors
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python or scripting caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Simulation output
+sim/work/
+sim/waves/
+*.wlf
+*.vcd
+transcript
+
+# Gowin generated implementation output
+impl/
+*.fs
+*.bin
+*.log
+*.jou
+*.tmp
+*.bak
+*.rpt
+
+# Local-only files
+.env
+.env.*
+*.local
+
+# Keep reviewed evidence as Markdown summaries or selected images under docs/.
+# Put bitstreams and long videos in GitHub Releases instead of Git history.
