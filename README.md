@@ -70,6 +70,7 @@ DDS 振荡器 → ADSR 包络 → 多声部混音 → 饱和处理 → I2S 发�
 
 ## 文档导航
 
+- [仓库负责人首次上线指南](docs/GITHUB_SETUP.md)
 - [协作规范](CONTRIBUTING.md)
 - [开发进度](docs/progress/README.md)
 - [资源与性能扩展表](docs/metrics/resource-scaling.md)
@@ -89,4 +90,3 @@ DDS 振荡器 → ADSR 包络 → 多声部混音 → 饱和处理 → I2S 发�
 - PR 至少由另一名成员审核，由负责人使用 Merge Commit 合并。
 - 提交必须包含真实修改和验证证据，禁止空提交和截止前一次性上传。
 - 自动生成缓存、临时日志、许可证、个人绝对路径和大视频不得进入 Git 历史。
-
