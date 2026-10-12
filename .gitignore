@@ -1,0 +1,15 @@
+# ModelSim / Questa generated files
+sim/**/work/
+sim/**/transcript
+sim/**/*.wlf
+sim/**/*.bak
+sim/**/*.log
+
+# Editor and OS files
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# Gowin generated implementation files
+constr/impl/
