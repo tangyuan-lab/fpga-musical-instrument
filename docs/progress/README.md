@@ -16,7 +16,8 @@
 | --- | --- | --- | --- | --- |
 | 2026-09-17 | 初始化 GitHub 协作文档包 | 准备提交 | `CONTRIBUTING.md` 与 Issue/PR 模板 | 创建仓库后补充真实链接 |
 | 2026-10-08 | PT8211 音频出口与串行协议验证 | 待审核 | [波形与结论](2026-10-08_pt8211-audio-link/README.md)；[资源与时序](resource-scaling.md) | 见 PR #3（Closes #1） |
-| 2026-10-09 | 单音 DDS 音源（按键 + ADSR） | 待审核 | [波形与结论](2026-10-09_single-dds-voice/README.md)；[资源与时序](resource-scaling.md) | 见本 PR |
+| 2026-10-09 | 单音 DDS 音源（按键 + ADSR） | 待审核 | [波形与结论](2026-10-09_single-dds-voice/README.md)；[资源与时序](resource-scaling.md) | 见 PR #6 |
+| 2026-10-12 | 双声部、MCP3208 压力输入与四声部路径 | 待审核 | [阶段记录](2026-10-12_multivoice-pressure-path/README.md)；[资源与时序](resource-scaling.md) | 见本 PR |
 
 ## 每日更新格式
 

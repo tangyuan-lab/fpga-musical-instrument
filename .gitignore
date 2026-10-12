@@ -14,10 +14,13 @@ __pycache__/
 
 # Simulation output
 sim/work/
+sim/**/work/
 sim/waves/
 *.wlf
 *.vcd
 transcript
+sim/**/transcript
+modelsim.ini
 
 # Gowin generated implementation output
 impl/
