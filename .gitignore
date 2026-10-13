@@ -1,0 +1,36 @@
+# ModelSim / Questa generated files
+sim/**/work/
+sim/**/transcript
+sim/**/*.wlf
+sim/**/*.bak
+sim/**/*.log
+
+# Editor and OS files
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# Gowin generated implementation files
+constr/impl/
+
+# Day04 snapshot simulator output
+day04/**/work/
+day04/**/transcript
+day04/**/*.wlf
+day04/**/modelsim.ini
+
+# Repository-wide generated files
+impl/
+*.fs
+*.bin
+*.jou
+*.tmp
+*.rpt
+*.vcd
+*.py[cod]
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+*.local
