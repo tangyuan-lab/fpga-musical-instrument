@@ -14,11 +14,11 @@ Thumbs.db
 # Gowin generated implementation files
 constr/impl/
 
-# Day04 snapshot simulator output
-day04/**/work/
-day04/**/transcript
-day04/**/*.wlf
-day04/**/modelsim.ini
+# 2026-10-13 snapshot simulator output
+2026-10-13/**/work/
+2026-10-13/**/transcript
+2026-10-13/**/*.wlf
+2026-10-13/**/modelsim.ini
 
 # Repository-wide generated files
 impl/
@@ -34,3 +34,13 @@ __pycache__/
 .env
 .env.*
 *.local
+
+# 2026-10-16 simulator outputs
+2026-10-16/**/work/
+2026-10-16/**/transcript
+2026-10-16/**/*.wlf
+2026-10-16/**/modelsim.ini
+2026-10-16/**/sim/*.txt
+
+# Regenerated serial PCM dumps
+2026-10-13/**/sim/*.txt

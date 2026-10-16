@@ -1,0 +1,4 @@
+# vlog -sv pt8211_tx.v key_debounce.v sampled_piano_a4.v tang_mega_60k_top.v tb_piano_long_tail.sv
+# Errors: 0, Warnings: 0
+# PASS: identical accepted attack, quiet 4 s tail, smooth join, release and retrigger
+# Errors: 0, Warnings: 0
