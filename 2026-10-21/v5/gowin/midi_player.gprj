@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="../rtl/common/reset_sync.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/common/u64_divider.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/uart_tx.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/uart_rx.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/uart_frame_protocol.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/uart_frame_tx.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/midi_file_store.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/midi_file_ram_sdp.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/timbre_file_store.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/midi/midi_type0_parser.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/midi/midi_player_scheduler.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/audio_startup.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/pt8211_tx.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/midi_voice_allocator_4.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/midi_poly_synth_4voice.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/custom_wavetable_reader.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/board/midi_player_top.sv" type="file.verilog" enable="1"/>
+        <File path="midi_player.cst" type="file.cst" enable="1"/>
+        <File path="midi_player.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
