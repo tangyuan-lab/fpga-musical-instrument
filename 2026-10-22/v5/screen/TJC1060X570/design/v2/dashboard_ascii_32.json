@@ -1,0 +1,40 @@
+{
+  "output": ".\\screen\\TJC1060X570\\design\\v2\\dashboard_ascii_32.zi",
+  "sha256": "513d06ee5d5ac8ffa651ccc6fe0b0185767f4ff2833c2fd48c2098b3aa3df4f4",
+  "format": "ZI v6 using original official successful font header",
+  "codepage": "GB2312 with ASCII-only95glyphs",
+  "codepage_id": 2,
+  "ascii_codepoints": {
+    "start": 32,
+    "end": 126,
+    "count": 95,
+    "ordered": true
+  },
+  "font_family": "Consolas",
+  "source_font": "C:\\Windows\\Fonts\\consola.ttf",
+  "source_font_sha256": "c6e6ce8119fdd47ec6a5449a08e2d2ad7f41ea03143aae193068ed9fa58eaebc",
+  "rasterizer": "Pillow FreeType",
+  "font_size_px": 29,
+  "cell_width_px": 16,
+  "cell_height_px": 32,
+  "offset_xy": [
+    0,
+    2
+  ],
+  "antialias_bit_depth": 3,
+  "glyph_mask_roundtrip_equal": true,
+  "measure_4095_px": [
+    64,
+    32
+  ],
+  "size_bytes": 11102,
+  "real_glyph_preview": ".\\screen\\TJC1060X570\\design\\v2\\dashboard_ascii_32_preview.png",
+  "native_encoder_reference": "external/nextion-font-editor/NextionFontEditor/ZiLib/FileVersion/V5/ZiFontV5.cs +CompressedByte.cs",
+  "official_editor_import_status": "pending",
+  "hardware_status": "pending",
+  "header_reference": "screen/TJC1060X570/design/instrument_ascii_32.zi",
+  "header_reference_sha256": "2d106eeefb8d922bd928ab060f7ea5a5203488cb55e3c7493de8d68712e9259f",
+  "header_reference_bytes44": "04ff000a02000020a1f7a1fe5f000000061900006b1e00002c000000ff000101130000005f00000000000000",
+  "header_compatibility_patch": "Preserveoriginalofficialversion/codepage/subsetfields; updateonlydescriptor/data lengths; identicalConsolasglyphs",
+  "original_v5_backup": ".\\screen\\TJC1060X570\\design\\v2\\dashboard_ascii_32_v5.zi"
+}

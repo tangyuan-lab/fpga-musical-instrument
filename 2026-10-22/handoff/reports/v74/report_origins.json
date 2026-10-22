@@ -1,0 +1,47 @@
+{
+  "note": "Only machine paths and CRLF/LF presentation normalized. Numeric results unchanged. Original raw files preserved in external archive.",
+  "files": [
+    {
+      "file": "board_validation.json",
+      "original_sha256": "5f9c090202ac2c5a4172c4b61301ee2e7619c71bd2d9730ff51c7b19fc59f264",
+      "published_sha256": "243e4a4a9d0466443b50ef1a578ab0c265f98e37d10e1ce6d31529bb701ca7da",
+      "absolute_path_redacted": true
+    },
+    {
+      "file": "fir_control_cones.json",
+      "original_sha256": "0050f9c085bcb02410aae3d0fa3579193d4621438e411dade4d9dcc61233b380",
+      "published_sha256": "06b453c862c8b8fd2207c1d4f14ca2592e6def10e14435a9cf9fcd1ce0c22ce6",
+      "absolute_path_redacted": false
+    },
+    {
+      "file": "physical_result.json",
+      "original_sha256": "48719660bf8802bf836a64e187ee0085f88d6890416f2e852944dd37b9f8c3a4",
+      "published_sha256": "e74507958cad51ec387d923101b45537d34b6eace7fcf9f6eb21466870020f6e",
+      "absolute_path_redacted": false
+    },
+    {
+      "file": "pnr.rpt.txt",
+      "original_sha256": "ed0bf2eb3233460286686de3e28562d216025577daba27d25e694d77aaa30a38",
+      "published_sha256": "331e3b3027de72d54682b210b74c52513e759d2b8d2fedd08ddc34ef17a16cd5",
+      "absolute_path_redacted": true
+    },
+    {
+      "file": "previous_v68_postroute_audit.json",
+      "original_sha256": "5d514652ad873bbedaeb095b695d49fb139f572512b8cccaab3f8f551239ddaf",
+      "published_sha256": "de1bf7fe18ce23deb94714c2b6e095918de1deda7c04195bcd9f838191e7d5c3",
+      "absolute_path_redacted": false
+    },
+    {
+      "file": "prior_rtl_real_keys_result.json",
+      "original_sha256": "f54f486708cdc114331d96ddf401e8f8844a9b8df8984132566d415ac9efffc6",
+      "published_sha256": "5c0bf765741f167ce737889f45c0898dada003047735c24e68f275b431fb1c34",
+      "absolute_path_redacted": false
+    },
+    {
+      "file": "rtl_fir_sign_128.json",
+      "original_sha256": "f515d33e734c591ffc6f9f238ad338dbfd711adbd8427da2d3da7e47cd1d7359",
+      "published_sha256": "a171ae045f0a382ff07131d91708092542c443416124c369eb1102d787475ee8",
+      "absolute_path_redacted": false
+    }
+  ]
+}

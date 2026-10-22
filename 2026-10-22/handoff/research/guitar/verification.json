@@ -1,0 +1,163 @@
+{
+  "status": "PASS",
+  "protected_files_verified": 148,
+  "integer_reference": "Independent NumPy arithmetic agrees sample-for-sample with C# renderer",
+  "integer_prefix_total_samples": 131072,
+  "all_16_tuning_within_5_cents": true,
+  "all_16_complete_tail_states_zero": true,
+  "stable_tuning_window": "1.1 to 2.0 seconds; Hann FFT log-parabolic peak, initial pluck excluded",
+  "early_pitch_diagnostics_also_reported": true,
+  "diagnostic_history": "Superseded first run exposed G3 weak late-fundamental loss and pre-contact onset. Current run refits all notes from corrected onsets, permits a third fundamental mode, and reports both early and stable measurements.",
+  "all_16_exact_silent_tail_samples": 16384,
+  "rom_words_verified": 2048,
+  "notes": [
+    {
+      "note": "C3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 130.81288159236829,
+      "fixed_tuning_cents": 0.0013094424753257018,
+      "early_window_fundamental_peak_cents": 0.2409475986112713,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "bcf10e28cbae32e8754bf373d242365ec233ff2267a3afaa309b6e3d3f62bff1"
+    },
+    {
+      "note": "Cs3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 138.59124333002882,
+      "fixed_tuning_cents": -0.0009013777203919327,
+      "early_window_fundamental_peak_cents": 0.2829534714414342,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "2703463c1a97bbe441219cf71be3805d1c22432d2acddcbfdc25fa4044920482"
+    },
+    {
+      "note": "D3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 146.83235889435747,
+      "fixed_tuning_cents": -0.0002955223657282684,
+      "early_window_fundamental_peak_cents": 0.17655806536031213,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "a45b53560d1c8d479df82ebc2f20b9c1e1f69103f14fb03c409a044d7855e925"
+    },
+    {
+      "note": "Ds3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 155.56342371714683,
+      "fixed_tuning_cents": -0.0007583595181752307,
+      "early_window_fundamental_peak_cents": -0.00446149996362009,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "8bdabde56e6d7d16c340e929b1831d7b6698c32d180afb2112bf56ec2f545cae"
+    },
+    {
+      "note": "E3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 164.8137485676443,
+      "fixed_tuning_cents": -0.0003139573478064579,
+      "early_window_fundamental_peak_cents": 0.0006190170702228675,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "9d6ff7988196f01cf777f6238479b38f87d7e5100f06d599103e10d898a4e3d5"
+    },
+    {
+      "note": "F3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 174.61405345273556,
+      "fixed_tuning_cents": -0.0006173222087095212,
+      "early_window_fundamental_peak_cents": -0.14791340429903663,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "d4fbcfeea9681dfff2bab5167f1d515446768ec4c5d0304b3b30387deffb271b"
+    },
+    {
+      "note": "Fs3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 184.99728836891921,
+      "fixed_tuning_cents": 0.0007207010077361914,
+      "early_window_fundamental_peak_cents": -4.530157896167053,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "0e78d99abdd42b2c5e5ca4ed3ba0ada94710734233846f27007ec325724dd0fb"
+    },
+    {
+      "note": "G3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 195.99785653606006,
+      "fixed_tuning_cents": 0.0012237594397447274,
+      "early_window_fundamental_peak_cents": 0.9134598784624011,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "57542b61014c441cd5d19ae1c4b650a249d058d0eeb7464ecc30ac9b3e8888c7"
+    },
+    {
+      "note": "Gs3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 207.6523131605815,
+      "fixed_tuning_cents": -0.00029704850720671,
+      "early_window_fundamental_peak_cents": -4.2382476210900806e-05,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "e70265a3a35d1e5305c68720f650034089ecb29b3fcb917326247b6594981110"
+    },
+    {
+      "note": "A3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 220.0001931633149,
+      "fixed_tuning_cents": 0.0015200489135909312,
+      "early_window_fundamental_peak_cents": 4.521184356344475,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "e3518b8f31330a854cdb863b5a795901fe2c41998b22c2941271086298eb2e2f"
+    },
+    {
+      "note": "As3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 233.07914179126664,
+      "fixed_tuning_cents": -0.02034401868806618,
+      "early_window_fundamental_peak_cents": 12.150294687345278,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "4cadc3d3d4a58248165897f2c34bb1867702d62c69515c7324cc562d7001eabc"
+    },
+    {
+      "note": "B3",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 246.94154403190905,
+      "fixed_tuning_cents": -0.0007473139057483511,
+      "early_window_fundamental_peak_cents": -0.0016841583584444745,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "0f5e738df25ac4585ce07063f0203403592ce335cfdaf3ae15724632a1976800"
+    },
+    {
+      "note": "C4",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 261.6266351849353,
+      "fixed_tuning_cents": 0.007079646069260161,
+      "early_window_fundamental_peak_cents": 0.33444971704394155,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "506224350316123aa38dd9a314d1e010865be65c6a504d6f313f3d06c1ff5a40"
+    },
+    {
+      "note": "Cs4",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 277.18315429430135,
+      "fixed_tuning_cents": 0.003268545700561356,
+      "early_window_fundamental_peak_cents": 0.305290711300796,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "0ec3ba1d26f03569a49642728692be077f413b50ffd535eadc69bb91e60b5202"
+    },
+    {
+      "note": "D4",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 293.6651967441027,
+      "fixed_tuning_cents": 0.0025280486962713494,
+      "early_window_fundamental_peak_cents": 0.5315958590042258,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "8191735e8a59d2fbfd150f8e4a78097a0aa3276dce7947522fa7c30db7e20a14"
+    },
+    {
+      "note": "Ds4",
+      "integer_prefix_exact_samples": 8192,
+      "measured_fixed_f0_hz": 311.12701392434457,
+      "fixed_tuning_cents": 0.00016805737644743672,
+      "early_window_fundamental_peak_cents": 0.26636441411763256,
+      "zero_tail_samples_checked": 1024,
+      "source_sha256": "6603ee39a3f1a67d9c58a81d02b1c03149d7e5d306586dc80ddf757aa051d2dc"
+    }
+  ],
+  "recording_archive_sha256_verified": true,
+  "rtl_audio_verified": false,
+  "board_programmed": false,
+  "computer_tone_acceptance": "pending"
+}

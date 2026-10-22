@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "tested_at": "2026-10-15T11:39:15.910055+08:00",
+  "simulator": ".tools/iverilog/app/bin/iverilog.exe + vvp.exe",
+  "controller_scenarios": [
+    "17 piano notes and wrap",
+    "8 drums and wrap",
+    "16 guitar notes and wrap",
+    "silent selection",
+    "hold no repeat",
+    "off owner retained across timbre change",
+    "simultaneous selection and trigger",
+    "FIFO backpressure",
+    "explicit overflow indication"
+  ],
+  "key_map_combinations": 128,
+  "source_sha256": {
+    "src/key_debounce.v": "ddf23ba8bd0384ae35fc4fbaf88c7a260c2c0c5a35da975491079b3eda41d6fd",
+    "src/guitar_audition/guitar_audition_controller.v": "3d37b3775eab478bc3c2411a62655a49454ac3bd8ed6aecdff4ad7f08109d435",
+    "integration/guitar_16/key16_instrument_map.v": "d3f382878ae6c5bdc36cc9895616b7ed974b2a72377990a6c71e07d7df1a0d36",
+    "integration/guitar_16/tb_guitar_controls.sv": "60e668e1f0e5910bcd639f45bc385efd22b88a7b38dd25d4f9edc533dc9bae9a",
+    "integration/guitar_16/tb_key16_instrument_map.sv": "208bb0e5edf6e615513674cb28b3a84dfc8339eab23844068a67f015941b76e2"
+  },
+  "audio_engine_integrated": false,
+  "reused_from": "diagnostics/guitar_20261015/control_verification.json"
+}

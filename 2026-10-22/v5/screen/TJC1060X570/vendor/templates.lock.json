@@ -1,0 +1,12 @@
+{
+  "minimal": {
+    "name": "uart_minimal_manual.HMI",
+    "sha256": "bbf3f8c37d08ba848898bccad568ea8bc209c9475fe016f47774afa30c292a2b",
+    "destination": "screen/TJC1060X570/uart_minimal_manual.HMI"
+  },
+  "factory": {
+    "name": "TJC1060X570_factory.HMI",
+    "sha256": "9341cadcc3ee657bae0d318e38782f2ab7eb46b46a401b63e1f725372735d880",
+    "destination": "screen/TJC1060X570/vendor/TJC1060X570_factory.HMI"
+  }
+}

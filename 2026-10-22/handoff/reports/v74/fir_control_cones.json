@@ -1,0 +1,330 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "module": "shared_fir_mac",
+      "modified_cell": "a_26_s1",
+      "fanin": {
+        "F": "a[26]",
+        "I0": "a_22_7",
+        "I1": "a_26_8",
+        "I2": "f0_6",
+        "I3": "n6900_6"
+      },
+      "immediate_fanout": [
+        {
+          "cell": "\\lanes[0].mac",
+          "primitive": "MULTALU27X18",
+          "pin": "A",
+          "expression": "{a[26],a[26],a[26],a[23:0]}",
+          "occurrences": 3
+        },
+        {
+          "cell": "\\lanes[1].mac",
+          "primitive": "MULTALU27X18",
+          "pin": "A",
+          "expression": "{a[26],a[26],a[26],a[23:0]}",
+          "occurrences": 3
+        }
+      ],
+      "direct_control_fanout": false,
+      "local_DSP_controls": [
+        {
+          "cell": "\\lanes[0].mac",
+          "controls": {
+            "ACCSEL": "n67_6",
+            "PSEL": "GND",
+            "ASEL": "GND",
+            "ADDSUB": "{GND,GND}",
+            "PADDSUB": "GND",
+            "CLK": "{GND,sys_clk_d}",
+            "CSEL": "GND",
+            "CASISEL": "GND",
+            "CE": "{v1,VCC}",
+            "RESET": "{GND,n320_6}"
+          },
+          "equal_to_v61": true
+        },
+        {
+          "cell": "\\lanes[1].mac",
+          "controls": {
+            "ACCSEL": "n67_6",
+            "PSEL": "GND",
+            "ASEL": "GND",
+            "ADDSUB": "{GND,GND}",
+            "PADDSUB": "GND",
+            "CLK": "{GND,sys_clk_d}",
+            "CSEL": "fold_pending",
+            "CASISEL": "GND",
+            "CE": "{n193_3,VCC}",
+            "RESET": "{GND,n320_6}"
+          },
+          "equal_to_v61": true
+        }
+      ],
+      "local_control_cone_equal_to_v61": true,
+      "local_control_cone_cells": 15,
+      "local_control_leaves": [
+        "n10467_8",
+        "n10554_10",
+        "n17216_8",
+        "n6898_5",
+        "n6900_3",
+        "n6900_4",
+        "n6900_6",
+        "n6905_3",
+        "n6905_4",
+        "post_ready_Z_8",
+        "sys_clk_d",
+        "voice_reset_d[0]"
+      ],
+      "local_control_cone_sha256": "4ccdc0cc2660c6782dffb159c6faad6b498ba2f95f67bfcba4a569533dfe6808",
+      "all_other_local_cells_and_parameters_equal": true
+    },
+    {
+      "module": "shared_fir_mac_0",
+      "modified_cell": "a_26_s1",
+      "fanin": {
+        "F": "a[26]",
+        "I0": "a_23_7",
+        "I1": "a_26_8",
+        "I2": "f0_6",
+        "I3": "n6900_6"
+      },
+      "immediate_fanout": [
+        {
+          "cell": "\\lanes[0].mac",
+          "primitive": "MULTALU27X18",
+          "pin": "A",
+          "expression": "{a[26],a[26],a[26],a[23:0]}",
+          "occurrences": 3
+        },
+        {
+          "cell": "\\lanes[1].mac",
+          "primitive": "MULTALU27X18",
+          "pin": "A",
+          "expression": "{a[26],a[26],a[26],a[23:0]}",
+          "occurrences": 3
+        }
+      ],
+      "direct_control_fanout": false,
+      "local_DSP_controls": [
+        {
+          "cell": "\\lanes[0].mac",
+          "controls": {
+            "ACCSEL": "n67_6",
+            "PSEL": "GND",
+            "ASEL": "GND",
+            "ADDSUB": "{GND,GND}",
+            "PADDSUB": "GND",
+            "CLK": "{GND,sys_clk_d}",
+            "CSEL": "GND",
+            "CASISEL": "GND",
+            "CE": "{v1,VCC}",
+            "RESET": "{GND,n320_6}"
+          },
+          "equal_to_v61": true
+        },
+        {
+          "cell": "\\lanes[1].mac",
+          "controls": {
+            "ACCSEL": "n67_6",
+            "PSEL": "GND",
+            "ASEL": "GND",
+            "ADDSUB": "{GND,GND}",
+            "PADDSUB": "GND",
+            "CLK": "{GND,sys_clk_d}",
+            "CSEL": "fold_pending",
+            "CASISEL": "GND",
+            "CE": "{n193_3,VCC}",
+            "RESET": "{GND,n320_6}"
+          },
+          "equal_to_v61": true
+        }
+      ],
+      "local_control_cone_equal_to_v61": true,
+      "local_control_cone_cells": 15,
+      "local_control_leaves": [
+        "n10467_8",
+        "n10554_8",
+        "n17216_10",
+        "n6898_5",
+        "n6900_3",
+        "n6900_4",
+        "n6900_6",
+        "n6905_3",
+        "n6905_4",
+        "post_ready_Z_12",
+        "sys_clk_d",
+        "voice_reset_d[1]"
+      ],
+      "local_control_cone_sha256": "96f4f29bde34703d2f77930c4a28b813381d2dbcb11536e0e7f309a773ad3d69",
+      "all_other_local_cells_and_parameters_equal": true
+    },
+    {
+      "module": "shared_fir_mac_1",
+      "modified_cell": "a_26_s1",
+      "fanin": {
+        "F": "a[26]",
+        "I0": "a_23_7",
+        "I1": "a_26_8",
+        "I2": "f0_6",
+        "I3": "n6900_6"
+      },
+      "immediate_fanout": [
+        {
+          "cell": "\\lanes[0].mac",
+          "primitive": "MULTALU27X18",
+          "pin": "A",
+          "expression": "{a[26],a[26],a[26],a[23:0]}",
+          "occurrences": 3
+        },
+        {
+          "cell": "\\lanes[1].mac",
+          "primitive": "MULTALU27X18",
+          "pin": "A",
+          "expression": "{a[26],a[26],a[26],a[23:0]}",
+          "occurrences": 3
+        }
+      ],
+      "direct_control_fanout": false,
+      "local_DSP_controls": [
+        {
+          "cell": "\\lanes[0].mac",
+          "controls": {
+            "ACCSEL": "n67_6",
+            "PSEL": "GND",
+            "ASEL": "GND",
+            "ADDSUB": "{GND,GND}",
+            "PADDSUB": "GND",
+            "CLK": "{GND,sys_clk_d}",
+            "CSEL": "GND",
+            "CASISEL": "GND",
+            "CE": "{v1,VCC}",
+            "RESET": "{GND,n320_6}"
+          },
+          "equal_to_v61": true
+        },
+        {
+          "cell": "\\lanes[1].mac",
+          "controls": {
+            "ACCSEL": "n67_6",
+            "PSEL": "GND",
+            "ASEL": "GND",
+            "ADDSUB": "{GND,GND}",
+            "PADDSUB": "GND",
+            "CLK": "{GND,sys_clk_d}",
+            "CSEL": "fold_pending",
+            "CASISEL": "GND",
+            "CE": "{n193_3,VCC}",
+            "RESET": "{GND,n320_6}"
+          },
+          "equal_to_v61": true
+        }
+      ],
+      "local_control_cone_equal_to_v61": true,
+      "local_control_cone_cells": 15,
+      "local_control_leaves": [
+        "n10467_8",
+        "n10554_10",
+        "n17216_7",
+        "n6898_5",
+        "n6900_3",
+        "n6900_5",
+        "n6900_6",
+        "n6905_3",
+        "n6905_4",
+        "post_ready_Z_6",
+        "sys_clk_d",
+        "voice_reset_d[2]"
+      ],
+      "local_control_cone_sha256": "766354f93bb69bf622946bd89d078dce75309724a272cf8fd9b252758146b2ef",
+      "all_other_local_cells_and_parameters_equal": true
+    },
+    {
+      "module": "shared_fir_mac_2",
+      "modified_cell": "a_26_s1",
+      "fanin": {
+        "F": "a[26]",
+        "I0": "a_23_7",
+        "I1": "a_26_8",
+        "I2": "f0_6",
+        "I3": "n6900_6"
+      },
+      "immediate_fanout": [
+        {
+          "cell": "\\lanes[0].mac",
+          "primitive": "MULTALU27X18",
+          "pin": "A",
+          "expression": "{a[26],a[26],a[26],a[23:0]}",
+          "occurrences": 3
+        },
+        {
+          "cell": "\\lanes[1].mac",
+          "primitive": "MULTALU27X18",
+          "pin": "A",
+          "expression": "{a[26],a[26],a[26],a[23:0]}",
+          "occurrences": 3
+        }
+      ],
+      "direct_control_fanout": false,
+      "local_DSP_controls": [
+        {
+          "cell": "\\lanes[0].mac",
+          "controls": {
+            "ACCSEL": "n67_6",
+            "PSEL": "GND",
+            "ASEL": "GND",
+            "ADDSUB": "{GND,GND}",
+            "PADDSUB": "GND",
+            "CLK": "{GND,sys_clk_d}",
+            "CSEL": "GND",
+            "CASISEL": "GND",
+            "CE": "{v1,VCC}",
+            "RESET": "{GND,n320_6}"
+          },
+          "equal_to_v61": true
+        },
+        {
+          "cell": "\\lanes[1].mac",
+          "controls": {
+            "ACCSEL": "n67_6",
+            "PSEL": "GND",
+            "ASEL": "GND",
+            "ADDSUB": "{GND,GND}",
+            "PADDSUB": "GND",
+            "CLK": "{GND,sys_clk_d}",
+            "CSEL": "fold_pending",
+            "CASISEL": "GND",
+            "CE": "{n193_3,VCC}",
+            "RESET": "{GND,n320_6}"
+          },
+          "equal_to_v61": true
+        }
+      ],
+      "local_control_cone_equal_to_v61": true,
+      "local_control_cone_cells": 15,
+      "local_control_leaves": [
+        "n10467_8",
+        "n10554_8",
+        "n17216_10",
+        "n6898_5",
+        "n6900_3",
+        "n6900_4",
+        "n6900_6",
+        "n6905_3",
+        "n6905_4",
+        "post_ready_Z_6",
+        "sys_clk_d",
+        "voice_reset_d[3]"
+      ],
+      "local_control_cone_sha256": "c788a836597c04ad4659d107fd39e4eb9f78e47359ca7c37e211166ec158dbd5",
+      "all_other_local_cells_and_parameters_equal": true
+    }
+  ],
+  "protected_original_files_unchanged": 166,
+  "modified_LUT_drives_only_DSP_A_sign_bits": true,
+  "handshake_rewiring_hypothesis_supported": false,
+  "scope": "All four mapped FIR modules: direct consumers, every FIR register and DSP control pin, plus their local sequential/combinational driver cones. Existing separate change-scope audit proves all other 74 modules unchanged. This is not an equivalence proof of the final physical implementation or whole-machine behavior.",
+  "root_cause_established": false
+}

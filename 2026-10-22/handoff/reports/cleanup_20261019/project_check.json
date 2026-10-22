@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "project_inputs": 26,
+  "parameters_checked": 29,
+  "changed_source_files": [],
+  "strict_source": true,
+  "firmware_checked": [
+    "checkpoints/piano_drums_poly4_shared_v68_full_runtime50_control_v74_20261019.fs",
+    "checkpoints/piano_drums_rimshot_single_20261014.fs",
+    "checkpoints/accepted_17_notes_20261005.fs"
+  ],
+  "board_accessed": false
+}

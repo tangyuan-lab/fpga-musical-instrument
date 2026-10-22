@@ -1,0 +1,92 @@
+{
+  "programmed_candidate": {
+    "path": "checkpoints/piano_drums_poly4_shared_fir_only_v68_20261019.fs",
+    "sha256": "964e931d54f670eda859e131a9c22f6f59df5919159b4646489fa5556fe7abb6",
+    "payload_sha256": "b272811534c1d6ed36d300c8b7d1043598a1455c44101efc1f773d98940b3d29",
+    "without_timestamp_sha256": "2053c654246fba64dbd12a368371ffd619b0b9efefda51fb7804e1e87438c98e"
+  },
+  "exported_candidate": {
+    "path": "diagnostics/poly4_shared_20261015/build_v68_v61_fir_only/forensic_postroute_export/routed/impl/pnr/shared.fs",
+    "sha256": "327b57e33eaa2877fce660b73ba27b22a83798314b8c9dd306e2df61aba48981",
+    "payload_sha256": "b272811534c1d6ed36d300c8b7d1043598a1455c44101efc1f773d98940b3d29",
+    "without_timestamp_sha256": "2053c654246fba64dbd12a368371ffd619b0b9efefda51fb7804e1e87438c98e"
+  },
+  "bitstream_identical_except_timestamp": true,
+  "configuration_payload_identical": true,
+  "physical_model_sha256": "1e19b8f471c0fcc6d2591b30e416af3720a3fc0d8ef3fa21a085ce0362ab03d3",
+  "sdf_sha256": "ff2eafcb03b8384e3b6e8266f81347319028b01df0dcd618c65b93cd4e2a5f6f",
+  "four_physical_LUTs": [
+    {
+      "slot": 0,
+      "cell": "engine/slots[0].slot/C_voice/core/fir_dot/a_26_s1",
+      "primitive": "LUT4",
+      "INIT": "0x50c",
+      "ports": {
+        "I0": "engine/slots[0].slot/C_voice/core/fir_dot/a_22_7",
+        "I1": "engine/slots[0].slot/C_voice/core/fir_dot/a_26_8",
+        "I2": "engine/slots[0].slot/C_voice/core/fir_dot/f0_6",
+        "I3": "engine/slots[0].slot/C_voice/core/n6900_6",
+        "F": "engine/slots[0].slot/C_voice/core/fir_dot/a[26]"
+      },
+      "bit23_INIT": "0x503",
+      "shared_sign_select_disable_pins_equal": true,
+      "active_FIR_sign_errors": [],
+      "passed": true
+    },
+    {
+      "slot": 1,
+      "cell": "engine/slots[1].slot/C_voice/core/fir_dot/a_26_s1",
+      "primitive": "LUT4",
+      "INIT": "0x50c",
+      "ports": {
+        "I0": "engine/slots[1].slot/C_voice/core/fir_dot/a_23_7",
+        "I1": "engine/slots[1].slot/C_voice/core/fir_dot/a_26_8",
+        "I2": "engine/slots[1].slot/C_voice/core/fir_dot/f0_6",
+        "I3": "engine/slots[1].slot/C_voice/core/n6900_6",
+        "F": "engine/slots[1].slot/C_voice/core/fir_dot/a[26]"
+      },
+      "bit23_INIT": "0x503",
+      "shared_sign_select_disable_pins_equal": true,
+      "active_FIR_sign_errors": [],
+      "passed": true
+    },
+    {
+      "slot": 2,
+      "cell": "engine/slots[2].slot/C_voice/core/fir_dot/a_26_s1",
+      "primitive": "LUT4",
+      "INIT": "0x50c",
+      "ports": {
+        "I0": "engine/slots[2].slot/C_voice/core/fir_dot/a_23_7",
+        "I1": "engine/slots[2].slot/C_voice/core/fir_dot/a_26_8",
+        "I2": "engine/slots[2].slot/C_voice/core/fir_dot/f0_6",
+        "I3": "engine/slots[2].slot/C_voice/core/n6900_6",
+        "F": "engine/slots[2].slot/C_voice/core/fir_dot/a[26]"
+      },
+      "bit23_INIT": "0x503",
+      "shared_sign_select_disable_pins_equal": true,
+      "active_FIR_sign_errors": [],
+      "passed": true
+    },
+    {
+      "slot": 3,
+      "cell": "engine/slots[3].slot/C_voice/core/fir_dot/a_26_s1",
+      "primitive": "LUT4",
+      "INIT": "0x50c",
+      "ports": {
+        "I0": "engine/slots[3].slot/C_voice/core/fir_dot/a_23_7",
+        "I1": "engine/slots[3].slot/C_voice/core/fir_dot/a_26_8",
+        "I2": "engine/slots[3].slot/C_voice/core/fir_dot/f0_6",
+        "I3": "engine/slots[3].slot/C_voice/core/n6900_6",
+        "F": "engine/slots[3].slot/C_voice/core/fir_dot/a[26]"
+      },
+      "bit23_INIT": "0x503",
+      "shared_sign_select_disable_pins_equal": true,
+      "active_FIR_sign_errors": [],
+      "passed": true
+    }
+  ],
+  "audit_passed": true,
+  "board_audio_passed": false,
+  "board_silence_root_cause_established": false,
+  "scope": "Artifact identity and exported physical LUT INIT/pin audit only. No SDF simulation or real-board waveform capture. Matching configuration payload establishes which build the model describes; it does not verify that the hardware datapath runs correctly after programming."
+}

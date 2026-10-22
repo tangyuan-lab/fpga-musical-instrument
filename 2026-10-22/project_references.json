@@ -1,0 +1,97 @@
+[
+  {
+    "project": "handoff/piano_drums_poly4_shared.gprj",
+    "references": 26,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/adc_screen_diag.gprj",
+    "references": 10,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/audio_smoke.gprj",
+    "references": 7,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/hdmi_colorbar_800x600.gprj",
+    "references": 7,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/instrument_full.gprj",
+    "references": 36,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/instrument_touch.gprj",
+    "references": 36,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/instrument_touch16.gprj",
+    "references": 37,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/instrument_workstation.gprj",
+    "references": 44,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/instrument_workstation_v2.gprj",
+    "references": 37,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/lcd_ctp_test.gprj",
+    "references": 8,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/mcp3208_13key_hdmi.gprj",
+    "references": 20,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/midi_player.gprj",
+    "references": 19,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/midi_upload_probe.gprj",
+    "references": 9,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/polyphony_demo.gprj",
+    "references": 9,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/polyphony_timbre_demo.gprj",
+    "references": 10,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/pressure_audio.gprj",
+    "references": 11,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/pressure_audio_hdmi.gprj",
+    "references": 18,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/uart_ping_echo.gprj",
+    "references": 8,
+    "missing": []
+  },
+  {
+    "project": "v5/gowin/uart_tx_diag.gprj",
+    "references": 5,
+    "missing": []
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "version": "0.5.0-dev",
+  "date": "2026-10-19",
+  "clean_export": true,
+  "checks": [
+    {
+      "name": "python_compile",
+      "command": "python -m compileall -q host_app scripts",
+      "exit_code": 0,
+      "seconds": 0.87
+    },
+    {
+      "name": "startup",
+      "command": "cmd /c start_workstation_v2.bat --check",
+      "exit_code": 0,
+      "seconds": 2.76
+    },
+    {
+      "name": "host_tests",
+      "command": "python -m unittest discover -s tests -q",
+      "exit_code": 0,
+      "seconds": 17.78
+    },
+    {
+      "name": "v2_rtl_suite",
+      "command": "python scripts/test_workstation_v2.py",
+      "exit_code": 0,
+      "seconds": 43.72
+    },
+    {
+      "name": "track_parser",
+      "command": "python scripts/test_midi_tracks.py",
+      "exit_code": 0,
+      "seconds": 7.67
+    },
+    {
+      "name": "track_audio",
+      "command": "python scripts/test_track_audio.py",
+      "exit_code": 0,
+      "seconds": 5.93
+    },
+    {
+      "name": "screen_source",
+      "command": "python scripts/verify_workstation_v2.py",
+      "exit_code": 0,
+      "seconds": 1.87
+    },
+    {
+      "name": "layout",
+      "command": "python scripts/verify_v5_layout.py",
+      "exit_code": 0,
+      "seconds": 16.95
+    }
+  ],
+  "host_tests": {
+    "total": 114,
+    "passed": 113,
+    "skipped": 1,
+    "skip_reason": "Optional FluidSynth reference instrument resources are not bundled"
+  },
+  "powershell_parse": "passed",
+  "rtl_matches_source_logic": true,
+  "fpga_publish_status": "Latest source has not completed full PnR release validation; no old bitstream is represented as current",
+  "physical_tests_run_for_this_export": false,
+  "official_hmi_compilation": "pending",
+  "optional_model_weights": "not bundled; install separately",
+  "external_screen_templates": "not bundled; editable current HMI projects are included"
+}

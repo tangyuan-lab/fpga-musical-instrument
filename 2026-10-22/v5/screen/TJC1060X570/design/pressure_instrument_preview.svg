@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="600" viewBox="0 0 1024 600" role="img" aria-labelledby="title description">
+<title id="title">Pressure instrument serial screen layout preview</title>
+<desc id="description">Layout source preview only. All sixteen FPGA fields show placeholders before UART data arrives.</desc>
+<rect width="1024" height="600" fill="#081429"/>
+<rect x="32" y="94" width="302" height="110" fill="#19283a"/>
+<rect x="350" y="94" width="302" height="110" fill="#19283a"/>
+<rect x="668" y="94" width="302" height="110" fill="#19283a"/>
+<rect x="32" y="270" width="68" height="234" fill="#19283a"/>
+<rect x="106" y="270" width="68" height="234" fill="#101821"/>
+<rect x="180" y="270" width="68" height="234" fill="#19283a"/>
+<rect x="254" y="270" width="68" height="234" fill="#101821"/>
+<rect x="328" y="270" width="68" height="234" fill="#19283a"/>
+<rect x="402" y="270" width="68" height="234" fill="#19283a"/>
+<rect x="476" y="270" width="68" height="234" fill="#101821"/>
+<rect x="550" y="270" width="68" height="234" fill="#19283a"/>
+<rect x="624" y="270" width="68" height="234" fill="#101821"/>
+<rect x="698" y="270" width="68" height="234" fill="#19283a"/>
+<rect x="772" y="270" width="68" height="234" fill="#101821"/>
+<rect x="846" y="270" width="68" height="234" fill="#19283a"/>
+<rect x="920" y="270" width="68" height="234" fill="#19283a"/>
+<text data-objname="title" x="32" y="48" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="start" dominant-baseline="middle">PRESSURE INSTRUMENT</text>
+<text data-objname="uartInfo" x="748" y="48" fill="#94a2bd" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="start" dominant-baseline="middle">UART 115200</text>
+<text data-objname="labelMode" x="48" y="118" fill="#94a2bd" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="start" dominant-baseline="middle">MODE</text>
+<text data-objname="labelActive" x="366" y="118" fill="#94a2bd" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="start" dominant-baseline="middle">ACTIVE (HEX)</text>
+<text data-objname="labelState" x="684" y="118" fill="#94a2bd" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="start" dominant-baseline="middle">STATE</text>
+<text data-objname="labelPressure" x="32" y="241" fill="#94a2bd" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="start" dominant-baseline="middle">PRESSURE (HEX 000-FFF)</text>
+<text data-objname="labelKeys" x="700" y="241" fill="#94a2bd" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="start" dominant-baseline="middle">13 KEYS / 12-BIT</text>
+<text data-objname="footer" x="32" y="552" fill="#94a2bd" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="start" dominant-baseline="middle">PRESS A KEY TO SEE ITS HEX VALUE CHANGE</text>
+<text data-objname="note0" x="66" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">C4</text>
+<text data-objname="note1" x="140" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">C#4</text>
+<text data-objname="note2" x="214" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">D4</text>
+<text data-objname="note3" x="288" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">D#4</text>
+<text data-objname="note4" x="362" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">E4</text>
+<text data-objname="note5" x="436" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">F4</text>
+<text data-objname="note6" x="510" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">F#4</text>
+<text data-objname="note7" x="584" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">G4</text>
+<text data-objname="note8" x="658" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">G#4</text>
+<text data-objname="note9" x="732" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">A4</text>
+<text data-objname="note10" x="806" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">A#4</text>
+<text data-objname="note11" x="880" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">B4</text>
+<text data-objname="note12" x="954" y="299" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">C5</text>
+<text data-objname="t0" x="183" y="165" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">----</text>
+<text data-objname="t1" x="501" y="165" fill="#ffbe21" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">-</text>
+<text data-objname="t2" x="819" y="165" fill="#fffbff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">-----</text>
+<text data-objname="t3" x="66" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t4" x="140" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t5" x="214" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t6" x="288" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t7" x="362" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t8" x="436" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t9" x="510" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t10" x="584" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t11" x="658" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t12" x="732" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t13" x="806" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t14" x="880" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+<text data-objname="t15" x="954" y="386" fill="#3abeff" font-family="Consolas, Liberation Mono, monospace" font-size="32" text-anchor="middle" dominant-baseline="middle">---</text>
+</svg>

@@ -1,0 +1,3864 @@
+{
+  "release_date": "2026-10-22",
+  "description": "Two separate original projects; directory integration only",
+  "files": [
+    {
+      "path": "handoff/.gitattributes",
+      "sha256": "9a05bbe0fe63f5aa65ca1a3135aa33592525597bdf7f6245a4813575c6ad9532",
+      "bytes": 338,
+      "original_sha256": "9c2a7b273e8507644c0218b36467faa3f83be91efe2bea222629473a5a40f0cc",
+      "change": "Preserve exact snapshot bytes on Git checkout regardless of core.autocrlf."
+    },
+    {
+      "path": "handoff/.gitignore",
+      "sha256": "bc8b6cff05b8c2d683c1250175d0cc3c17f11805046a7bd7c282587b724b8e23",
+      "bytes": 419
+    },
+    {
+      "path": "handoff/BOARD_STATE.md",
+      "sha256": "34f6e8f2754272154815e232a770665041bceb9dd6b7de22e0b57db6a6bcbf5c",
+      "bytes": 655
+    },
+    {
+      "path": "handoff/piano_drums_poly4_shared.gprj",
+      "sha256": "8c2056c4979aa8a57599192c2774299b99d39d2890097edfb3d7d0250a19183c",
+      "bytes": 2494
+    },
+    {
+      "path": "handoff/README.md",
+      "sha256": "32978c64e5427e98e2005596cde5b84f5acd1cbf8eb381a682172125b830d3b7",
+      "bytes": 5897
+    },
+    {
+      "path": "handoff/checkpoints/manifest.json",
+      "sha256": "694f82039cef1f1b27412972c82a460014ff246ecc47bd7dfff933208367ff20",
+      "bytes": 932
+    },
+    {
+      "path": "handoff/checkpoints/README.md",
+      "sha256": "7439c0d84cf17851adca1c15178b2a34c57daf7a9147f6d773bd2eeea94015d1",
+      "bytes": 493
+    },
+    {
+      "path": "handoff/docs/ARCHITECTURE.md",
+      "sha256": "1f40ee85c4f518c6957430cb6a88a52095122d0f0ad399abab8fc360aca80c90",
+      "bytes": 1568
+    },
+    {
+      "path": "handoff/docs/CLEANUP_20261019.md",
+      "sha256": "9f569f74620d0d59e2bf1fa3e95481de635647a635552941b9e0973c238bca10",
+      "bytes": 3634
+    },
+    {
+      "path": "handoff/docs/GITHUB_UPLOAD.md",
+      "sha256": "149634921a86041d4f917eeb333d85f0445002a5d50f36ed2155274c6d70525c",
+      "bytes": 1632
+    },
+    {
+      "path": "handoff/docs/HARDWARE.md",
+      "sha256": "23f956ba48467a86d9b4997698fcdaa534120f4956b630fbaacc0ea1307c324f",
+      "bytes": 1225
+    },
+    {
+      "path": "handoff/docs/REPRODUCIBILITY.md",
+      "sha256": "01bf226620d0ad18b15660cd6caddd195533b377b8d973faa6dd9cf09f6fb3db",
+      "bytes": 1832
+    },
+    {
+      "path": "handoff/docs/source_manifest.json",
+      "sha256": "0a3f826384e292a3db10cfca2386cb266672ae66438604167530488bc4cacd40",
+      "bytes": 19065
+    },
+    {
+      "path": "handoff/docs/VALIDATION.md",
+      "sha256": "cc4f7344410d28386b53c1b41c9d997797c3095d31329ee47dcd5d5c1f92dccf",
+      "bytes": 2157
+    },
+    {
+      "path": "handoff/releases/README.md",
+      "sha256": "085b695e5d370266f676ddd87fb955771b163beff6c89318c1fc4eeadccd6387",
+      "bytes": 362
+    },
+    {
+      "path": "handoff/scripts/build.py",
+      "sha256": "72792c55bd130029303c7deff1b5d6dd46f22ccacae52ecc20d68c14e295420c",
+      "bytes": 4630
+    },
+    {
+      "path": "handoff/scripts/check_project.py",
+      "sha256": "3facc17c0b6694d6cc05eac15e46e77b1f6fe098c68f390812838439a2f8f589",
+      "bytes": 2797
+    },
+    {
+      "path": "handoff/scripts/check_shared_fir_sign.py",
+      "sha256": "12f5c4dcdd57d409e5e26be26dcbc26af8197c9938edadb3d76bc58d096ac8a4",
+      "bytes": 3990
+    },
+    {
+      "path": "handoff/scripts/package_release.py",
+      "sha256": "fd9748fd3fcdaf84c0d9d854a4f4f88e0494ab2abc2e9212d755ed316f8fe4ab",
+      "bytes": 2568
+    },
+    {
+      "path": "handoff/scripts/project_common.py",
+      "sha256": "40075e12942b83e47e3da8bf59f2fbd05ddbe2c7dd2daa14e9f08bade2081a7f",
+      "bytes": 1867
+    },
+    {
+      "path": "handoff/scripts/README.md",
+      "sha256": "42b8f14ca1e5dc45a501402ac070772bc589ff564fee38ae64e3c7224dd86c10",
+      "bytes": 948
+    },
+    {
+      "path": "handoff/scripts/run_tests.py",
+      "sha256": "a817471ced4abc240b82b56e1295884cb62c6576b8beae4ddae70aba8df703a0",
+      "bytes": 5288
+    },
+    {
+      "path": "handoff/sim/tb_i2s_tx_16.sv",
+      "sha256": "aa3e3aa30dc6a318f32d130601d79052621d7161fc312b57b565e7fce6385e61",
+      "bytes": 1760,
+      "original_sha256": "635efc4a0ff42407f1ed968cfd1430be5669a3f9a0b0cbe8a69ca6ac889549cb",
+      "change": "Clock-sample frame_tick in I2S testbench to avoid delta-cycle double-counting; production RTL unchanged."
+    },
+    {
+      "path": "handoff/src/adsr.v",
+      "sha256": "d4b162cb75aaafee2810adf28b70d2ce2cfe5f86f8a140023a8d2189773323ac",
+      "bytes": 3333
+    },
+    {
+      "path": "handoff/src/instrument_engine.v",
+      "sha256": "6d2cf95d202e474775e2add8837a0b78e93f83a0d5c30d2c0171aefff56f65d0",
+      "bytes": 5395
+    },
+    {
+      "path": "handoff/src/instrument_voice_slot.v",
+      "sha256": "5714448618429fcfd221a31a696d09b9d69da53ff704b225620ec7cf0751d676",
+      "bytes": 2831
+    },
+    {
+      "path": "handoff/src/key_debounce.v",
+      "sha256": "ddf23ba8bd0384ae35fc4fbaf88c7a260c2c0c5a35da975491079b3eda41d6fd",
+      "bytes": 1799
+    },
+    {
+      "path": "handoff/src/piano_accepted_voice.v",
+      "sha256": "26774d6e35cfeea5d2f45f1fa83fd0966922b8137af22df31e93160e28b24c06",
+      "bytes": 9923
+    },
+    {
+      "path": "handoff/src/piano_tom_top.v",
+      "sha256": "85ec0c582536eab70160d92e3fb59f046288c9b175694f2718043827c09734a2",
+      "bytes": 1815
+    },
+    {
+      "path": "handoff/src/pt8211_tx.v",
+      "sha256": "9da8c186b946cbad23825e76ab194bb3a544d132bb4d24d790c46c25af26583a",
+      "bytes": 2114
+    },
+    {
+      "path": "handoff/src/tang_mega_60k.cst",
+      "sha256": "8e6253a8e974d5de6b36f9bf7532822f129c4a7afbf323148080ca8c50c905b0",
+      "bytes": 692
+    },
+    {
+      "path": "handoff/src/tang_mega_60k.sdc",
+      "sha256": "72d2db8f621a61c41e06802f8c8aa4cd87fd1be29afd01811c48bb2c5d18744b",
+      "bytes": 64
+    },
+    {
+      "path": "handoff/src/tang_mega_60k_top.v",
+      "sha256": "8c7a6334aa67492025641769b54d15e939a625289d9a116427462a56640a45e9",
+      "bytes": 2289
+    },
+    {
+      "path": "handoff/src/tom_voice.v",
+      "sha256": "c2f5656aad1bdd5b35a4cc9f3bb0c8a888bb2969577dccf9b39ab490297298d9",
+      "bytes": 12388
+    },
+    {
+      "path": "handoff/src/two_key_controller.v",
+      "sha256": "39febf5afe98b299bdacb36537cc8379022e040be5faa680ccfacd8cc6bb7ee8",
+      "bytes": 2081
+    },
+    {
+      "path": "handoff/third_party/README.md",
+      "sha256": "09bd3563439563b1f42ceee4ad3a52ec0e0c24db0e7273757c0115df4cd52c46",
+      "bytes": 1161
+    },
+    {
+      "path": "handoff/third_party/notices/salamander/LICENSE",
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "bytes": 19467
+    },
+    {
+      "path": "handoff/third_party/notices/salamander/SOURCES.md",
+      "sha256": "d0af29040be91d45fa1bcc41c3726ac9ca53fc819dc91d824c8c2782f1e0aea9",
+      "bytes": 898
+    },
+    {
+      "path": "handoff/third_party/notices/toms/avl_red_zeppelin/LICENSE",
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74",
+      "bytes": 22239
+    },
+    {
+      "path": "handoff/third_party/notices/toms/avl_red_zeppelin/README.md",
+      "sha256": "f9ea5e7e95d0e78bf6b9b4a3fb5de3943e8cd72157a0176b6c091bbe8e2996aa",
+      "bytes": 1340
+    },
+    {
+      "path": "handoff/third_party/notices/toms/avl_red_zeppelin/sources.json",
+      "sha256": "4a2edc4d8ebd01237e4eb9b28ed39a78cdb796384038338965387bbef3d565cb",
+      "bytes": 17418
+    },
+    {
+      "path": "handoff/third_party/notices/toms/avl_red_zeppelin/SOURCES.md",
+      "sha256": "ce3fbcd2dea2923fc3b30ed90627101eea4d8772b8f2ae3e2169aece5ed102fe",
+      "bytes": 1001
+    },
+    {
+      "path": "handoff/third_party/notices/snare/avl_red_zeppelin/LICENSE",
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74",
+      "bytes": 22239
+    },
+    {
+      "path": "handoff/third_party/notices/snare/avl_red_zeppelin/README.md",
+      "sha256": "f9ea5e7e95d0e78bf6b9b4a3fb5de3943e8cd72157a0176b6c091bbe8e2996aa",
+      "bytes": 1340
+    },
+    {
+      "path": "handoff/third_party/notices/sidestick/avl_red_zeppelin/LICENSE",
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74",
+      "bytes": 22239
+    },
+    {
+      "path": "handoff/third_party/notices/sidestick/avl_red_zeppelin/README.md",
+      "sha256": "f9ea5e7e95d0e78bf6b9b4a3fb5de3943e8cd72157a0176b6c091bbe8e2996aa",
+      "bytes": 1340
+    },
+    {
+      "path": "handoff/third_party/notices/kick/avl_red_zeppelin/LICENSE",
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74",
+      "bytes": 22239
+    },
+    {
+      "path": "handoff/third_party/notices/kick/avl_red_zeppelin/README.md",
+      "sha256": "f9ea5e7e95d0e78bf6b9b4a3fb5de3943e8cd72157a0176b6c091bbe8e2996aa",
+      "bytes": 1340
+    },
+    {
+      "path": "handoff/third_party/notices/hihat/avl_red_zeppelin/LICENSE",
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74",
+      "bytes": 22239
+    },
+    {
+      "path": "handoff/third_party/notices/hihat/avl_red_zeppelin/README.md",
+      "sha256": "f9ea5e7e95d0e78bf6b9b4a3fb5de3943e8cd72157a0176b6c091bbe8e2996aa",
+      "bytes": 1340
+    },
+    {
+      "path": "handoff/third_party/notices/guitar/meta_steel_v1/LICENSE",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048
+    },
+    {
+      "path": "handoff/third_party/notices/guitar/meta_steel_v1/manifest.json",
+      "sha256": "ca8b520f2f1ffa7e7c68fa7730d32e6d0e1a181a897978e355a2fa5bc11ad82d",
+      "bytes": 26309
+    },
+    {
+      "path": "handoff/third_party/notices/guitar/meta_steel_v1/README.md",
+      "sha256": "227dc021760659447b38997b5013808ac9b6a5c2bf589edf0ae8bd6340d676c1",
+      "bytes": 25805
+    },
+    {
+      "path": "handoff/third_party/notices/clap/avl_red_zeppelin/LICENSE",
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74",
+      "bytes": 22239
+    },
+    {
+      "path": "handoff/third_party/notices/clap/avl_red_zeppelin/README.md",
+      "sha256": "f9ea5e7e95d0e78bf6b9b4a3fb5de3943e8cd72157a0176b6c091bbe8e2996aa",
+      "bytes": 1340
+    },
+    {
+      "path": "handoff/third_party/notices/clap/body_percussion/LICENSE",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048
+    },
+    {
+      "path": "handoff/src/clap_audition/clap_audition_controller.v",
+      "sha256": "4d74f3222a0815e7665e46459a86fe090b88b42ffe595ffd60e09d6998adc4fc",
+      "bytes": 2087
+    },
+    {
+      "path": "handoff/src/clap_audition/clap_parameter_port.v",
+      "sha256": "2c77f886104510735cc1ef51d797a8063a6122028d8ff966d3cb9e38334ebef7",
+      "bytes": 1852
+    },
+    {
+      "path": "handoff/src/clap_audition/clap_parameter_storage.v",
+      "sha256": "e5e52b266809ad75b3f8d5930429ceaa85d3b32f88cac682c9dda4a248068f81",
+      "bytes": 52419
+    },
+    {
+      "path": "handoff/src/clap_audition/generator_compact.mem",
+      "sha256": "6b449ee57cea5e7183421e43ef6a10414c3edf0f99bc72d78568146c1b170942",
+      "bytes": 37888
+    },
+    {
+      "path": "handoff/src/clap_audition/instrument_clap_single_engine.v",
+      "sha256": "8522c5134473db76496143da41958ef81ea39a4ca90d6b7879909b0e47cd127c",
+      "bytes": 5527
+    },
+    {
+      "path": "handoff/src/clap_audition/instrument_clap_slot.v",
+      "sha256": "d9fc4fc43305db42cf2f5cf69891a9ce3edfd476b780ef412e156d8c3f12f7de",
+      "bytes": 5300
+    },
+    {
+      "path": "handoff/src/clap_audition/piano_drums_clap_single_top.v",
+      "sha256": "df6a702a3815315487bc65b7fcb1194d082b184db7fc96f62410c96d845204ce",
+      "bytes": 1900
+    },
+    {
+      "path": "handoff/src/clap_audition/shared_parameter_ports.v",
+      "sha256": "7110f34f789249abfa0c371e2b683913b2448ffdb10b9ecdff6a64b123b0661d",
+      "bytes": 1063
+    },
+    {
+      "path": "handoff/src/excitation_v3/cosine_4096x16.mem",
+      "sha256": "f68edf1a4550ffb5d3de71a2962918126cb147e75ee3794d075c2ffe308088b2",
+      "bytes": 24576
+    },
+    {
+      "path": "handoff/src/excitation_v3/cosine_quarter_1024x16.mem",
+      "sha256": "223a89d451352208357e27d62e20e808f1d2bb807c72016a0831069c5ae5ff2c",
+      "bytes": 6144
+    },
+    {
+      "path": "handoff/src/excitation_v3/C_packet_math.v",
+      "sha256": "c9059b18405d444c4028af39ba861e32e1b323e024753379d4ba197fddddb452",
+      "bytes": 2406
+    },
+    {
+      "path": "handoff/src/excitation_v3/C_parameter_storage.v",
+      "sha256": "a488249e32edc7182592f9659d5f5969c15be19af15cc704bf2537225c4f0ffd",
+      "bytes": 27329
+    },
+    {
+      "path": "handoff/src/excitation_v3/C_shared_parameters.v",
+      "sha256": "2ab12780f2556ea1426ee58df29058729a1e766ba350f36cb357fdf6aa9f3961",
+      "bytes": 949
+    },
+    {
+      "path": "handoff/src/excitation_v3/exp2_1024x17.mem",
+      "sha256": "fbc6ccfef002059dc66479ac0a811f4fee7d8f2131184853230bdd825ba63531",
+      "bytes": 7168
+    },
+    {
+      "path": "handoff/src/excitation_v3/exp_sqrt_2048x17.mem",
+      "sha256": "86b1ed757dc3b858512d1c64b839a1cf1526edf85c62c72de86ad6dd81bf33ec",
+      "bytes": 14336
+    },
+    {
+      "path": "handoff/src/excitation_v3/fir_odd_32x24.mem",
+      "sha256": "935c4fcb84c62a12a666f3fb31b6068698b02d16a73822bbc69ef4cc3c6025d9",
+      "bytes": 256
+    },
+    {
+      "path": "handoff/src/excitation_v3/gaussian_packet_datapath.v",
+      "sha256": "702c22644ffa7377a8cf42c2b22a497c640a13fe99de91a387553bef3d79428f",
+      "bytes": 2540
+    },
+    {
+      "path": "handoff/src/excitation_v3/generator_lane0.mem",
+      "sha256": "3c616652b6c10474d170437d29449a1d5c5d80fd5d0ed8796c3cd609b2cbd899",
+      "bytes": 2560
+    },
+    {
+      "path": "handoff/src/excitation_v3/generator_lane1.mem",
+      "sha256": "1cbb4776d34ce364f6ccae39290b97350b599ae33b946b84da0985e76834697a",
+      "bytes": 2560
+    },
+    {
+      "path": "handoff/src/excitation_v3/generator_lane2.mem",
+      "sha256": "f0a87781e01243dfbcca20a48096b7996219da4f0a3eb0aebc022d8d81481bcc",
+      "bytes": 2560
+    },
+    {
+      "path": "handoff/src/excitation_v3/generator_lane3.mem",
+      "sha256": "9595f96679d74459ad96bac0b8ced4bbd14ab440e43f71a3e3e49108eb19ed4d",
+      "bytes": 2560
+    },
+    {
+      "path": "handoff/src/excitation_v3/generator_lane4.mem",
+      "sha256": "c4f1165746bd8b8ab50b6b8d691410a3cf67fd89af70cb760d1535cd39fa9ea7",
+      "bytes": 2560
+    },
+    {
+      "path": "handoff/src/excitation_v3/generator_lane5.mem",
+      "sha256": "1b2067372a89e8ed6d12c0e626079aaee0ecb0b62e3626c1f2fcde651fa433d7",
+      "bytes": 2560
+    },
+    {
+      "path": "handoff/src/excitation_v3/generator_lane6.mem",
+      "sha256": "9996d767a61a242a7e719726e0e895c8f311ed32815becaf1593efab7ba08625",
+      "bytes": 2560
+    },
+    {
+      "path": "handoff/src/excitation_v3/generator_lane7.mem",
+      "sha256": "d5fd44b0e6f03d2e883421b16b10476e480a76dc594850b4a333301747094e0a",
+      "bytes": 2560
+    },
+    {
+      "path": "handoff/src/excitation_v3/generator_lane8.mem",
+      "sha256": "3c82751e9f07e8a04dc06e15cd7c8d715582b182dcacf1ddcd1f624a69c951a9",
+      "bytes": 2560
+    },
+    {
+      "path": "handoff/src/excitation_v3/generator_parameters.mem",
+      "sha256": "2b585660f551ec4c1a827ce5d272d0f11a36219b0aab19fe82d0d9d7ae0d1bf2",
+      "bytes": 18944
+    },
+    {
+      "path": "handoff/src/excitation_v3/instrument_C_engine.v",
+      "sha256": "96f3159f21e2c6359e544fcdc98c3932102d7074d31c7478e63ee7ecce636ea5",
+      "bytes": 8285
+    },
+    {
+      "path": "handoff/src/excitation_v3/instrument_C_slot.v",
+      "sha256": "1e9d21f93ef1aa25ec5e5032e9e67ea41b9d0772a5fcb137b3154827cbc8e9cb",
+      "bytes": 4879
+    },
+    {
+      "path": "handoff/src/excitation_v3/piano_C_pipelined_voice.v",
+      "sha256": "0eddb322d2d56cc40c73bb2c778f07aded5d4880d93ab02cddc232ab9e94640f",
+      "bytes": 11042
+    },
+    {
+      "path": "handoff/src/excitation_v3/piano_tom_C_top.v",
+      "sha256": "48c6c6af94201303f4202d0b679cae123c9d1079d7aea6615fcd667aa810fdd9",
+      "bytes": 1819
+    },
+    {
+      "path": "handoff/src/excitation_v3/tom_C_core.v",
+      "sha256": "79c6f98f940f0e77e4c8e2d65dba492b9c955ecfaa3e1d53b00c592ef52e749f",
+      "bytes": 16080
+    },
+    {
+      "path": "handoff/src/excitation_v3/tom_C_voice.v",
+      "sha256": "9ac14db0304120b8b494799080d84bda7c79bec0b83f6f0673bc0614993ab2bb",
+      "bytes": 2322
+    },
+    {
+      "path": "handoff/src/guitar_audition/guitar_audition_controller.v",
+      "sha256": "3d37b3775eab478bc3c2411a62655a49454ac3bd8ed6aecdff4ad7f08109d435",
+      "bytes": 2567
+    },
+    {
+      "path": "handoff/src/hihat_audition/drum_generator_core.v",
+      "sha256": "6fbbf08458320b60b720c80c225d2a651fc2252a3ba36f6c3bfa38ededf0768f",
+      "bytes": 15971
+    },
+    {
+      "path": "handoff/src/hihat_audition/drum_generator_voice.v",
+      "sha256": "9597ee98a833874a5bf491dae48c1d1cc0a0d1b1d9391959c4400e79b3590020",
+      "bytes": 2726
+    },
+    {
+      "path": "handoff/src/hihat_audition/generator_compact.mem",
+      "sha256": "a49a83a6d3eb500c920de651dc086dbdc4b2f21d41b6b50a5ef01d856015b7ee",
+      "bytes": 37888
+    },
+    {
+      "path": "handoff/src/hihat_audition/hihat_audition_controller.v",
+      "sha256": "09c5c31799a31f5d49ce369de1508525aed2a782da22a3575c17215fcbbe9eda",
+      "bytes": 2088
+    },
+    {
+      "path": "handoff/src/hihat_audition/hihat_parameter_port.v",
+      "sha256": "713b43d0f3bcd44dc36113a8d78cce0bc33bfa82d9850947513d3ef5ac52a2b2",
+      "bytes": 1460
+    },
+    {
+      "path": "handoff/src/hihat_audition/hihat_parameter_storage.v",
+      "sha256": "5d89684100310a9d49140da0bf8760f123eb90de31313b41efecd90a020bddbc",
+      "bytes": 52337
+    },
+    {
+      "path": "handoff/src/hihat_audition/instrument_hihat_single_engine.v",
+      "sha256": "aca37e0e32c708909d96e8825417f1cd6e504a63c6880dba6297d03b16ac2ead",
+      "bytes": 5535
+    },
+    {
+      "path": "handoff/src/hihat_audition/instrument_hihat_slot.v",
+      "sha256": "66a46044a4a7929b63b3fdcbac9c592e995aa6fdaf41dc3a45f4d8be176782cb",
+      "bytes": 5344
+    },
+    {
+      "path": "handoff/src/hihat_audition/piano_drums_hihat_single_top.v",
+      "sha256": "6c541760fb05b7e1d990d8f2a29c75232d3847166d44e3de72960ccf40269979",
+      "bytes": 1903
+    },
+    {
+      "path": "handoff/src/hihat_audition/shared_parameter_ports.v",
+      "sha256": "aea7277141bf7eb945393c50eb6dafe6aa43d01d40697a1415435cffd23ce0bc",
+      "bytes": 1064
+    },
+    {
+      "path": "handoff/src/kick_audition/drum_audition_controller.v",
+      "sha256": "5138c24a74a4822cefe97f34f166e16ddd99223f339010eea7fe9d18208d24a7",
+      "bytes": 2087
+    },
+    {
+      "path": "handoff/src/kick_audition/drum_parameter_port.v",
+      "sha256": "92045ff95b1da67fd344c38f8c4e7b8667c689caa6ea68958bf7349a28253e81",
+      "bytes": 1516
+    },
+    {
+      "path": "handoff/src/kick_audition/drum_parameter_storage.v",
+      "sha256": "88942a277f8315ef399f7401c6f135c7bb9d41066bd49e2d05945f769011db8e",
+      "bytes": 52407
+    },
+    {
+      "path": "handoff/src/kick_audition/generator_banks.mem",
+      "sha256": "0abeef234d6d670c1061a36fcb701e67abf16745cc2415698dcd85caff9cc460",
+      "bytes": 37888
+    },
+    {
+      "path": "handoff/src/kick_audition/instrument_drums_single_engine.v",
+      "sha256": "508fe747855150b59d4a7810298c9752bf834840403d6082fd93dcd8ca56da97",
+      "bytes": 5508
+    },
+    {
+      "path": "handoff/src/kick_audition/instrument_drums_slot.v",
+      "sha256": "7e6719ffee669e218d13964fc0892e69f14a6228a7c9da4a0de201fa250ffaeb",
+      "bytes": 5062
+    },
+    {
+      "path": "handoff/src/kick_audition/piano_drums_single_top.v",
+      "sha256": "a019e66d70e794ce7d66fd39c0fdd4a2e2e77823849d303a9caf485550981e84",
+      "bytes": 1896
+    },
+    {
+      "path": "handoff/src/mem/modal_sine_1024x16.mem",
+      "sha256": "99a7d0a335cd1fe5a62ade4188773927f226e86149a7cc1d923230c53ffc40a4",
+      "bytes": 6144
+    },
+    {
+      "path": "handoff/src/mem/piano_accepted_coefficients.mem",
+      "sha256": "6badfd004c32020483351f310600a8796f2c93be9d8a6df4628d312b9ffd286c",
+      "bytes": 69632
+    },
+    {
+      "path": "handoff/src/mem/tom_modal_coefficients.mem",
+      "sha256": "d0dc6671a029fa5134c2fadc7dedf4088d378e8bd35f688c7f7999255e3423b2",
+      "bytes": 16896
+    },
+    {
+      "path": "handoff/src/mem/tom_modal_serial.mem",
+      "sha256": "07381a5a64c6b6238c833a4d50d0b7b8bc90287d903da1215ff35f00af1d6bf6",
+      "bytes": 20480
+    },
+    {
+      "path": "handoff/src/mem/tom_noise_coefficients.mem",
+      "sha256": "ee01ab05a1179905c1ce79b640500ffa3a1763211c00c16ee1b449f33c2c934e",
+      "bytes": 544
+    },
+    {
+      "path": "handoff/src/mem/tom_sine_4096x16.mem",
+      "sha256": "d62e7528ad6c0400fab616087abbdaa7b7977fcd9adbce1b347e3a5743ea3d6e",
+      "bytes": 24576
+    },
+    {
+      "path": "handoff/src/poly4_opt/instrument_poly4_engine.v",
+      "sha256": "b21ddd838adf12dfa4dce2e45d70c78ff2af93113f3e80c7cfdfedd3893fbb11",
+      "bytes": 8293
+    },
+    {
+      "path": "handoff/src/poly4_opt/instrument_poly4_slot.v",
+      "sha256": "8da7f53f0727e8a5b0f801df5e35033d981becbe6576a8bc99e674870274253d",
+      "bytes": 4878
+    },
+    {
+      "path": "handoff/src/poly4_opt/piano_poly4_voice.v",
+      "sha256": "1b01287a92d720b99f59ae2190d336e5cb70c2edd51d9970dca3eb76df6f39f8",
+      "bytes": 11012
+    },
+    {
+      "path": "handoff/src/poly4_opt/piano_tom_poly4_top.v",
+      "sha256": "8c05628ac7eb087dd6942a81f127fe15488b996d2fcbe534460c8352c1995d29",
+      "bytes": 1827
+    },
+    {
+      "path": "handoff/src/poly4_opt/tom_poly4_core.v",
+      "sha256": "f10d5f726c78eb1398c148478cc443c3fa89547b43383bb078bd0f6b4e2fcb96",
+      "bytes": 16084
+    },
+    {
+      "path": "handoff/src/poly4_opt/tom_poly4_voice.v",
+      "sha256": "fbf19fb1dd9678f0201d8ed8a9393ca964ae62057a5d25f85d897a25d67bda3b",
+      "bytes": 2330
+    },
+    {
+      "path": "handoff/src/poly4_opt/tom_ram_voice.v",
+      "sha256": "797e9dd2c31796406f0751f2754e749826926f7eb0d6ca564fdb2e20a81066a3",
+      "bytes": 13337
+    },
+    {
+      "path": "handoff/src/poly4_shared/drums_parameter_4.v",
+      "sha256": "ed92edc8284dae2a99b0f440f1170a9dbe2be421c2407041736bf285fc4fa6a1",
+      "bytes": 1427
+    },
+    {
+      "path": "handoff/src/poly4_shared/instrument_shared4_engine.v",
+      "sha256": "3cd5d4d6d4a9a3eb9aba6990e287532748b79ac253469df475e3d561dc883beb",
+      "bytes": 9168
+    },
+    {
+      "path": "handoff/src/poly4_shared/instrument_shared4_slot.v",
+      "sha256": "2da6e4b976713789b4a165283cc9eb3aa1409ce7ca5e503c7853707746b158bd",
+      "bytes": 14351
+    },
+    {
+      "path": "handoff/src/poly4_shared/piano_drums_poly4_shared_top.v",
+      "sha256": "4d58b38f93f6e56619ff4c105a9fe2d6d53ec768a1073ed686dc278456d71c2c",
+      "bytes": 2287
+    },
+    {
+      "path": "handoff/src/poly4_shared/resource_ports.vh",
+      "sha256": "88d34d1c1da55f2156d6ea38f4fef98b025c661385ae7eebe9d8c61aea1c8938",
+      "bytes": 4287
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_C_core.v",
+      "sha256": "19ffd23958bd0d776dbd7d6c8fc674a810e7e5de12470075bf7f3b71b965656a",
+      "bytes": 28550
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_C_voice.v",
+      "sha256": "c4c22182ec5ada811aa2fd602cd1a4d31d7786e097c2474673249910c59f1071",
+      "bytes": 2867
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_drum_modes.v",
+      "sha256": "01666db62a7120451bc7e9033cfdad36c559ce46a30f9699a050f2b3d6557160",
+      "bytes": 2046
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_drum_stream.v",
+      "sha256": "b41504141a911945f5d63712991eade4ce0f016448b12ee1efff9eacfdfcd83a",
+      "bytes": 10383
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_fir_mac.v",
+      "sha256": "ff8603fb2fa0c093d0f6cbb9a0f2386acb3aa65200febb944c6aeec1328be7b3",
+      "bytes": 2027
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_modal_kernel.v",
+      "sha256": "829d14c3014f1c211c521dd1b72a758deda0b1fc0438ee90a9d9c0d485b1fd1b",
+      "bytes": 13261
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_noise_biquad.v",
+      "sha256": "8046c26ae5fe63e513d19cdbc30b0566a89f48d4e4bc7984e5897561ad5804f8",
+      "bytes": 1733
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_packet_math.v",
+      "sha256": "d97ab251200b9735cc641439c92b0024e636c6116dc8a45552d5dc01e2384e80",
+      "bytes": 2372
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_piano_modes.v",
+      "sha256": "66aae8cc0354ef6c9626d5d0b9320a006921f8dec5da03e3c505301b9eb07f1a",
+      "bytes": 6873
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_piano_voice.v",
+      "sha256": "e13553e895b81dacdde828037e6583624a0c5a932fd9c1de205fb7de4cfc3c96",
+      "bytes": 6534
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_tom_adapter.v",
+      "sha256": "5072d9ba7883ce348a6393a59ce10d919f7e3971584db1756cbfa1f5199b8088",
+      "bytes": 3596
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_tom_voice.v",
+      "sha256": "7237ff4f15b76424911cc563e368bd7448217e408ccaf4d69ad9c797e6991850",
+      "bytes": 8154
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_voice_mul.v",
+      "sha256": "355829be8fa2f453cf9903cb62d8d9e46787c19a085c76beb5e7da6c790f148b",
+      "bytes": 3411
+    },
+    {
+      "path": "handoff/src/poly4_shared/shared_voice_ram.v",
+      "sha256": "65ed4a51f4fd0265c571ba3eafee3e5413fdd554e8d6670a4084a9f7f73c4d3a",
+      "bytes": 3584
+    },
+    {
+      "path": "handoff/src/refit_v2/instrument_shared_engine.v",
+      "sha256": "604670890f7bb37912b8fc0be186bcc6b195af9e21295ae0892072d069a86622",
+      "bytes": 7926
+    },
+    {
+      "path": "handoff/src/refit_v2/tom_modal_coefficients.mem",
+      "sha256": "61f338c402084f724a816665087507f765d26ddab0a5a9a566b30b7c465f21bf",
+      "bytes": 16896
+    },
+    {
+      "path": "handoff/src/refit_v2/tom_noise_coefficients.mem",
+      "sha256": "f6d1004b1e101f0ee19bf6f2105ca7c24669d4e5d7d85214976e56cba72f246f",
+      "bytes": 544
+    },
+    {
+      "path": "handoff/src/rimshot_audition/generator_compact.mem",
+      "sha256": "8b66ad0bb53cbfce65b56bced64794d3e8509f3385c268473eb2ea447d64e56e",
+      "bytes": 37888
+    },
+    {
+      "path": "handoff/src/rimshot_audition/instrument_rimshot_single_engine.v",
+      "sha256": "a55f056dab57bf24aad04ff04f7be4f18894123407a440951be2524c869e5e85",
+      "bytes": 5551
+    },
+    {
+      "path": "handoff/src/rimshot_audition/instrument_rimshot_slot.v",
+      "sha256": "b2759a9f0042c69266fae42172102ba946c0e73c44eb180860f529f35a771932",
+      "bytes": 5376
+    },
+    {
+      "path": "handoff/src/rimshot_audition/piano_drums_rimshot_single_top.v",
+      "sha256": "ac73be213f63b9bc63b67205090e27b47a2f24b806882dee1046c5ae86efc069",
+      "bytes": 1909
+    },
+    {
+      "path": "handoff/src/rimshot_audition/rimshot_audition_controller.v",
+      "sha256": "01ad49ed2ffaaeb021a231e4d85e6d2e406d4dd9ce003fb1d4e5ba2d76b58682",
+      "bytes": 2090
+    },
+    {
+      "path": "handoff/src/rimshot_audition/rimshot_parameter_port.v",
+      "sha256": "8658f90114259c4a319dbdc489cb6ab57ddbfa50c48efa1bd3b95e9b9c297827",
+      "bytes": 2106
+    },
+    {
+      "path": "handoff/src/rimshot_audition/rimshot_parameter_storage.v",
+      "sha256": "b6c27267881a85ae8ee5fa33ddf119b57b66d02313a306fb8882b0b38bdb9f23",
+      "bytes": 52425
+    },
+    {
+      "path": "handoff/src/rimshot_audition/shared_parameter_ports.v",
+      "sha256": "100a0b34bfb0067cc4e2d82985c33e1c1e8beee95d0ba0569652b1176231ff86",
+      "bytes": 1066
+    },
+    {
+      "path": "handoff/src/shared/instrument_shared_engine.v",
+      "sha256": "2001e44643c5b48bde365bf2c4680a3bc1d38f7787fa353bac8aeb852a9c5982",
+      "bytes": 7916
+    },
+    {
+      "path": "handoff/src/shared/instrument_shared_slot.v",
+      "sha256": "1ff0ab991869be29fe1a5d6faefc26c2dc44f0c4269ffcd1d505e7677c78e146",
+      "bytes": 4002
+    },
+    {
+      "path": "handoff/src/shared/piano_shared_voice.v",
+      "sha256": "579058a1965b557a84fa789f24e6deadd8ff0b942c774182c75fac3f91ed21bc",
+      "bytes": 10571
+    },
+    {
+      "path": "handoff/src/shared/piano_tom_shared_top.v",
+      "sha256": "ca5a8877e52012fab92c8332360ac5b96c7f765b99fa86df128fc3d208bfc0b8",
+      "bytes": 1829
+    },
+    {
+      "path": "handoff/src/shared/shared_rom_4.v",
+      "sha256": "27a0a3172d95236d08056389bf19c4f06e7695cb9a1f796a8fc92c602926bf5f",
+      "bytes": 1921
+    },
+    {
+      "path": "handoff/src/shared/tom_shared_voice.v",
+      "sha256": "fc9d58bcb9a40da83e4f038c6ef27e293cf5c2d2b3679a1c0855aaf8fa91a8f5",
+      "bytes": 12570
+    },
+    {
+      "path": "handoff/src/sidestick_audition/generator_compact.mem",
+      "sha256": "04b6c8e8695d8fa82aa3c5bfc424957762b54471dcfcd2856a6ac4dc3a42551e",
+      "bytes": 37888
+    },
+    {
+      "path": "handoff/src/sidestick_audition/instrument_sidestick_single_engine.v",
+      "sha256": "b2e7a17ba3f4edd6d8e7702c7a00b1bb10418e97559b313da5b3f084ddef5c43",
+      "bytes": 5567
+    },
+    {
+      "path": "handoff/src/sidestick_audition/instrument_sidestick_slot.v",
+      "sha256": "a0dd95d0b9db2738dea4a61325fdaa772b7c6e375d69b0fcd6aea77ce5070cd5",
+      "bytes": 5232
+    },
+    {
+      "path": "handoff/src/sidestick_audition/piano_drums_sidestick_single_top.v",
+      "sha256": "02098bcb98af701367343d45254d8ae62ffbb729d8f4fed231b4d5f9b538fce7",
+      "bytes": 1915
+    },
+    {
+      "path": "handoff/src/sidestick_audition/shared_parameter_ports.v",
+      "sha256": "029c51f078c907867fec311ce2a8d6d5fb9d6b80f73fad8369ad82a67e3477b4",
+      "bytes": 1068
+    },
+    {
+      "path": "handoff/src/sidestick_audition/sidestick_audition_controller.v",
+      "sha256": "3ae20a4f77482ae4086fea3bb4d034f2263dc4a6b092799239a87567fba2df44",
+      "bytes": 2092
+    },
+    {
+      "path": "handoff/src/sidestick_audition/sidestick_parameter_port.v",
+      "sha256": "006c93810b0421ee910eab8d74267e56b3f00366dbfc7bd24d591122987d3b3b",
+      "bytes": 1615
+    },
+    {
+      "path": "handoff/src/sidestick_audition/sidestick_parameter_storage.v",
+      "sha256": "8faea52ca498ac2507ee5a58322afe07dcaf83132bb094bcecb758498f487208",
+      "bytes": 52418
+    },
+    {
+      "path": "handoff/src/single_voice/audition_parameter_port.v",
+      "sha256": "5f0aa61317cd733f206ea27a46fd437cc530a8509db3b61168c992ef893fa6a4",
+      "bytes": 1491
+    },
+    {
+      "path": "handoff/src/single_voice/instrument_single_engine.v",
+      "sha256": "f4477c0c5890cb70ec009766bba162b0edcf2f5f5c231ce2418355205e1c388b",
+      "bytes": 5458
+    },
+    {
+      "path": "handoff/src/single_voice/piano_tom_single_top.v",
+      "sha256": "c8ef8a0cc4caab7c3aa2bf175a03329476145c288b6446d111d836c796cd5ca2",
+      "bytes": 1882
+    },
+    {
+      "path": "handoff/src/single_voice/tom_C_audition_core.v",
+      "sha256": "754fa1ff04860c5a3c4c0f5ace20fad2194e4b404a257155aa02d3623e0e5479",
+      "bytes": 15336
+    },
+    {
+      "path": "handoff/src/snare_audition/generator_compact.mem",
+      "sha256": "a8edd94f940c957ba2ad002341a88dd6329808bc54514a41a76aec8b767be3c1",
+      "bytes": 37888
+    },
+    {
+      "path": "handoff/src/snare_audition/instrument_snare_single_engine.v",
+      "sha256": "f2a54b3960068c0a01dc23618f38e36da10a2e4dd4290eb3ba44726460d4191f",
+      "bytes": 5535
+    },
+    {
+      "path": "handoff/src/snare_audition/instrument_snare_slot.v",
+      "sha256": "1b6d99159a14a709c39528df755cb1e4f776f3074f4b9aed1bc8c6700408d43f",
+      "bytes": 5155
+    },
+    {
+      "path": "handoff/src/snare_audition/piano_drums_snare_single_top.v",
+      "sha256": "c808efc528c1910630c2fc258d76d751d8eb55501a68df8eef13103c7ef2c3de",
+      "bytes": 1903
+    },
+    {
+      "path": "handoff/src/snare_audition/shared_parameter_ports.v",
+      "sha256": "c19f43cae9d63c2a7967897670b3cec72ff1490ee2f6d3194d756ff0101bd5ae",
+      "bytes": 1064
+    },
+    {
+      "path": "handoff/src/snare_audition/snare_audition_controller.v",
+      "sha256": "a2005ef06f4671e8ba5746b522f7fdc3385f90683ebd3b24079cea3963c91175",
+      "bytes": 2088
+    },
+    {
+      "path": "handoff/src/snare_audition/snare_parameter_port.v",
+      "sha256": "f90fdaac202b7ced8b3e750ff426c291e336b3baf497b7ffc0fc970cb57ab20c",
+      "bytes": 1360
+    },
+    {
+      "path": "handoff/src/snare_audition/snare_parameter_storage.v",
+      "sha256": "15efa71a07d73c8352be0b472cf92ca225ab2d87f4320c75c91d6c434fecbe68",
+      "bytes": 52406
+    },
+    {
+      "path": "handoff/research/guitar/ALGORITHMS.md",
+      "sha256": "f609dfceb23558fcb2e1c5a12df299f13cee8a663cc731fb496f6b8d054ed92b",
+      "bytes": 3307
+    },
+    {
+      "path": "handoff/research/guitar/algorithm_comparison.json",
+      "sha256": "518ba367cb3e6e853431b35234df77d432f13ca4e426d807a8742093050314a7",
+      "bytes": 19532
+    },
+    {
+      "path": "handoff/research/guitar/control_verification.json",
+      "sha256": "7d51eda00be10adfdf3d70d4d6bc6fea38f6f50ab92ea322051df6c130f9a0a7",
+      "bytes": 1201
+    },
+    {
+      "path": "handoff/research/guitar/README.md",
+      "sha256": "fcd3c9c378bba824c296b7902d11b9b30441805e1374a073421513e618fa1c2e",
+      "bytes": 480
+    },
+    {
+      "path": "handoff/research/guitar/verification.json",
+      "sha256": "f5b46ad6d508f64f8e3b49145339d52ae06a61e1a737b4395dd4db2e0db4f5cd",
+      "bytes": 6918
+    },
+    {
+      "path": "handoff/research/guitar/candidate/fixed_report.json",
+      "sha256": "e49cd7bb081e059f694a4656b7b792394ebf6c351cd6a34433425a0578a5aa41",
+      "bytes": 4674
+    },
+    {
+      "path": "handoff/research/guitar/candidate/guitar_candidate_16x128x130.mem",
+      "sha256": "0f8cfb0cdfc712b250aa809bd9aefa2624477c7d6aeb00b52194d56484246ce7",
+      "bytes": 71680
+    },
+    {
+      "path": "handoff/research/guitar/candidate/guitar_parameters.csv",
+      "sha256": "3325c67d81b43c7b5f1e059e3534b3c402c3900a373c8482ed5e3fef6e1b954c",
+      "bytes": 115178
+    },
+    {
+      "path": "handoff/research/guitar/candidate/guitar_parameters.json",
+      "sha256": "0360328240be7acabdf0b898c73f1464ee34a041bd1ff9103019af7a144693ff",
+      "bytes": 373925
+    },
+    {
+      "path": "handoff/research/guitar/candidate/guitar_sine_4096x16.mem",
+      "sha256": "d62e7528ad6c0400fab616087abbdaa7b7977fcd9adbce1b347e3a5743ea3d6e",
+      "bytes": 24576
+    },
+    {
+      "path": "handoff/reports/cleanup_20261019/baseline_engine_comparison.json",
+      "sha256": "33bb1ff8c14bad18c6a2001a0d5d4a240ec967f1b9dad5c330a1719e8dac8a16",
+      "bytes": 591
+    },
+    {
+      "path": "handoff/reports/cleanup_20261019/fir_sign_check.json",
+      "sha256": "3099230824704a860b77db68fff0260cc8e734d30495392b743798f95a91861e",
+      "bytes": 1512
+    },
+    {
+      "path": "handoff/reports/cleanup_20261019/post_move_smoke_results.json",
+      "sha256": "daccb892bec68639aa6e463154d088f787323b7ec3f5a12ce1b72aad17123771",
+      "bytes": 1692
+    },
+    {
+      "path": "handoff/reports/cleanup_20261019/pre_activation.json",
+      "sha256": "c7aecc3147492eabfbc0906904a8d63d8f772341f7d888639aa050a17225d295",
+      "bytes": 4802
+    },
+    {
+      "path": "handoff/reports/cleanup_20261019/project_check.json",
+      "sha256": "5a981065491593f8d6f5958165c501e5ed2d47a0c0b86aa3f554532d5f95efd4",
+      "bytes": 377
+    },
+    {
+      "path": "handoff/reports/cleanup_20261019/smoke_results.json",
+      "sha256": "daccb892bec68639aa6e463154d088f787323b7ec3f5a12ce1b72aad17123771",
+      "bytes": 1692
+    },
+    {
+      "path": "handoff/reports/cleanup_20261019/summary.json",
+      "sha256": "1d04899d74426ac19dcd69ac52f812c214fe72cca4a2316b505a140af73fe7ef",
+      "bytes": 1203
+    },
+    {
+      "path": "handoff/reports/cleanup_20261019/synthesis_check.json",
+      "sha256": "b1130e19c643d8c1eb4d2b149fcb8ecee1f190df1507193ed44d98ca838abd15",
+      "bytes": 432
+    },
+    {
+      "path": "handoff/reports/v74/board_validation.json",
+      "sha256": "243e4a4a9d0466443b50ef1a578ab0c265f98e37d10e1ce6d31529bb701ca7da",
+      "bytes": 1179
+    },
+    {
+      "path": "handoff/reports/v74/fir_control_cones.json",
+      "sha256": "06b453c862c8b8fd2207c1d4f14ca2592e6def10e14435a9cf9fcd1ce0c22ce6",
+      "bytes": 9181
+    },
+    {
+      "path": "handoff/reports/v74/physical_result.json",
+      "sha256": "e74507958cad51ec387d923101b45537d34b6eace7fcf9f6eb21466870020f6e",
+      "bytes": 2427
+    },
+    {
+      "path": "handoff/reports/v74/pnr.rpt.txt",
+      "sha256": "331e3b3027de72d54682b210b74c52513e759d2b8d2fedd08ddc34ef17a16cd5",
+      "bytes": 93486
+    },
+    {
+      "path": "handoff/reports/v74/previous_v68_postroute_audit.json",
+      "sha256": "de1bf7fe18ce23deb94714c2b6e095918de1deda7c04195bcd9f838191e7d5c3",
+      "bytes": 4019
+    },
+    {
+      "path": "handoff/reports/v74/prior_rtl_real_keys_result.json",
+      "sha256": "5c0bf765741f167ce737889f45c0898dada003047735c24e68f275b431fb1c34",
+      "bytes": 536
+    },
+    {
+      "path": "handoff/reports/v74/report_origins.json",
+      "sha256": "9c4f7bdac4ead8cb63cef755bc7fbbdf8d078ce7055dc5657926bc2884aa28f2",
+      "bytes": 2115
+    },
+    {
+      "path": "handoff/reports/v74/rtl_fir_sign_128.json",
+      "sha256": "a171ae045f0a382ff07131d91708092542c443416124c369eb1102d787475ee8",
+      "bytes": 1512
+    },
+    {
+      "path": "handoff/integration/excitation_v3/C_packet_math_reference.v",
+      "sha256": "7bc2526245818d34753aec50e7a974f2910c1b00c177f32ed62e14015beff982",
+      "bytes": 2375
+    },
+    {
+      "path": "handoff/integration/guitar_16/key16_instrument_map.v",
+      "sha256": "d3f382878ae6c5bdc36cc9895616b7ed974b2a72377990a6c71e07d7df1a0d36",
+      "bytes": 408
+    },
+    {
+      "path": "handoff/integration/guitar_16/README.md",
+      "sha256": "bfbbd6a32cdff70db514f5dcbc8cc36080b3cb7d820d3f50f5a8309c751d5082",
+      "bytes": 247
+    },
+    {
+      "path": "handoff/integration/guitar_16/tb_guitar_controls.sv",
+      "sha256": "60e668e1f0e5910bcd639f45bc385efd22b88a7b38dd25d4f9edc533dc9bae9a",
+      "bytes": 2829
+    },
+    {
+      "path": "handoff/integration/guitar_16/tb_key16_instrument_map.sv",
+      "sha256": "208bb0e5edf6e615513674cb28b3a84dfc8339eab23844068a67f015941b76e2",
+      "bytes": 529
+    },
+    {
+      "path": "handoff/integration/i2s/i2s_tx_16.v",
+      "sha256": "4eebdaf8597adbca0acff6ae935c1b31e01804d772643a072f2587143ecf9acc",
+      "bytes": 1893
+    },
+    {
+      "path": "handoff/integration/i2s/README.md",
+      "sha256": "d735c8960be77d6583960400b0a887779529728733a89d27838c28782a9d4412",
+      "bytes": 248
+    },
+    {
+      "path": "handoff/integration/keyboard_16/key16_note_map.v",
+      "sha256": "662d315455a24ac8e4031543f130e0d80212dc2267bba3d9f427a6c595da0c5a",
+      "bytes": 522
+    },
+    {
+      "path": "handoff/integration/keyboard_16/README.md",
+      "sha256": "090b8d7d445a8afcdaa71e5bc9204c4fce9b34acd3171c7e91e7c8a6ae66a473",
+      "bytes": 661
+    },
+    {
+      "path": "handoff/integration/keyboard_16/tb_key16_note_map.sv",
+      "sha256": "e2536d635ff35c13fc502926e3cff2d543aedac9ceb6f4f4d2f7abe4d8d0e58e",
+      "bytes": 1262
+    },
+    {
+      "path": "handoff/integration/poly4_shared/C_slot_test_fixture.sv",
+      "sha256": "d7f00029cdcb81151ca014e25a61d2c1e7011b641f5880f55d6f02a2c8f80d0c",
+      "bytes": 5030
+    },
+    {
+      "path": "handoff/integration/poly4_shared/C_test_fixture.sv",
+      "sha256": "9b66515b967768d4e1e8b6995d5df2e1307c3e4e4ff6526ea790ca9e30a04997",
+      "bytes": 5089
+    },
+    {
+      "path": "handoff/integration/poly4_shared/reference_engine.sv",
+      "sha256": "c085bf3e6bf6c3a2b93f65b46769a25b7572e111afd83fbf5aba99572059ab69",
+      "bytes": 8490
+    },
+    {
+      "path": "handoff/integration/poly4_shared/reference_parameters.sv",
+      "sha256": "2ed6fced45520cc9ecb402c31ce035a6a77bf3207f20e4733007e766a41925e7",
+      "bytes": 591
+    },
+    {
+      "path": "handoff/integration/poly4_shared/resource_fixture.sv",
+      "sha256": "95f5575c0c59d7914fde3c6a06cf4e48a1bdd70a1c1091c4365a9db3918e11cd",
+      "bytes": 1326
+    },
+    {
+      "path": "handoff/integration/poly4_shared/sources.txt",
+      "sha256": "dd3a18da37cd582b173aecb12afd089fee3203dd5ab69fef3e268122de443c4e",
+      "bytes": 866
+    },
+    {
+      "path": "handoff/integration/poly4_shared/SP_model.v",
+      "sha256": "522e36c5af0563ee0355d09cbf147885c6de1486cc8207a5721573d646a3b750",
+      "bytes": 3870
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_C.sv",
+      "sha256": "6aa2388dd259e4b110393a350bdbcf9a08fd5986a1141ee6178ed7b428e9ab6a",
+      "bytes": 4515
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_C_modes.sv",
+      "sha256": "b5d92bc3cc51b71c05edd32c5c5b4b364922054685d7232667b425e0dff3e50f",
+      "bytes": 4988
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_decay_carry.sv",
+      "sha256": "f2690465b150aa89b8c20841103fc4f94efc9263b35486200b38ddf8ebc142b2",
+      "bytes": 1326
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_engine.sv",
+      "sha256": "337219816e3b9dcf431635e9ae4a3f8ac0581e5c205bd364aeaca5af12aa0567",
+      "bytes": 11194
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_engine_pitch_range.sv",
+      "sha256": "c748eee3b190cf336ad2e20d3d13102494928751b9bd7e4a617559600fc84f96",
+      "bytes": 11486
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_engine_velocity_range.sv",
+      "sha256": "c2ff6093952b9505e2d219e037f2c6c279fea8ea74b42da1dccda5a5d4273351",
+      "bytes": 11991
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_fir_mac.sv",
+      "sha256": "9297c6710fd438fe2ccbe31c9352d61992af81fe8f28bcb53241d1a7d5bf880d",
+      "bytes": 1749
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_integer_rules.sv",
+      "sha256": "e9745ffbe363dd83c3938aded239505e36d9d69ed86be8866dee6f75b7e062ff",
+      "bytes": 3358
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_noise_biquad.sv",
+      "sha256": "02d46d984f1a2aa81b0d2215cfee1dad1d7df71482c9751ed7a7adfde36d975c",
+      "bytes": 2112
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_parameter_stress.sv",
+      "sha256": "76b84a579c52604b52d1e28d0f6be326eb8752c9669b67062f397e45d49e9250",
+      "bytes": 2549
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_piano.sv",
+      "sha256": "8d576f80339d30e54b246ac8b0adcd55011526a2dde5e80f06cdea93095043af",
+      "bytes": 3800
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_piano_pool_post.sv",
+      "sha256": "bcc10edc1edcff7ab42b9c0481a6dba8bd72f07152321c17887f3c55524cf52e",
+      "bytes": 4117
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_piano_post.sv",
+      "sha256": "8063cf57e4c2f441bf839988d0031150677df0773f7e43dccc025067a79462b6",
+      "bytes": 2608
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_piano_range.sv",
+      "sha256": "4eb914a06fe00600ce002383bd6863c7ddff4605733c4c937f32157c66fd49b9",
+      "bytes": 4245
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_piano_split_tail.sv",
+      "sha256": "232e7e9a71271b174fc05edbdb7c6578d537f647ab2de89fe8172e87c27993c9",
+      "bytes": 4344
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_piano_tail.sv",
+      "sha256": "dd4c8dd40453e0e914b0ae8ef230685f2d14b268ca2a032ebd2e3df868201517",
+      "bytes": 4402
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_resource_stress.sv",
+      "sha256": "18d9ec921ede185fea97047dd21d93386a22fb5d0f323d49d0030dc324b59920",
+      "bytes": 4015
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_shared_top.sv",
+      "sha256": "b5804c39e8dee036ddcc3991a97436885dfdae783094cf116c24b03274432fa1",
+      "bytes": 3137
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_tom.sv",
+      "sha256": "a9b37c82afb25ecacccebe2fd0a7fe1b94d69d121ee0fbb41bd32581f5ae7d06",
+      "bytes": 3642
+    },
+    {
+      "path": "handoff/integration/poly4_shared/tb_tom_tail.sv",
+      "sha256": "36bfb3d740ddfc730589e4e7a08f3706a85e85ada699f4d6c7c64c97f261ad21",
+      "bytes": 4398
+    },
+    {
+      "path": "handoff/integration/poly4_shared/timing.sdc",
+      "sha256": "72d2db8f621a61c41e06802f8c8aa4cd87fd1be29afd01811c48bb2c5d18744b",
+      "bytes": 64
+    },
+    {
+      "path": "handoff/integration/poly4_shared/timing_margin_62m5.sdc",
+      "sha256": "3c01b26eaae0dc531ea3ef95bfb23c1d011ca8e6016b8cf386556311a8a7200a",
+      "bytes": 64
+    },
+    {
+      "path": "handoff/integration/poly4_shared/T_slot_test_fixture.sv",
+      "sha256": "75e77a8ec30488df16533c5c1f2ef2f6bf182ec28a32516f18f977564313cc16",
+      "bytes": 4706
+    },
+    {
+      "path": "handoff/integration/poly4_shared/T_test_fixture.sv",
+      "sha256": "a809fdf937f9c4b65f2906db075360d5ddfebe63bfbb8a7a92c88a0290556a1a",
+      "bytes": 4765
+    },
+    {
+      "path": "handoff/integration/rimshot_audition/piano_drums_rimshot_single.cst",
+      "sha256": "fe830ea77c8adf19e71acd1158575cebea07905065e9d4e317890dab4f53704f",
+      "bytes": 600
+    },
+    {
+      "path": "handoff/docs/lessons/01_c3_waveform_samples.png",
+      "sha256": "71e25f862b56566522a4e0393b23061772e97789d86245ecb9af43c21b67c6e5",
+      "bytes": 116232
+    },
+    {
+      "path": "handoff/docs/lessons/02_c3_onset.png",
+      "sha256": "f2f0040f96ba3c7f4804ccde60a2ce67d6f107ed94f073a310d1bd293395003a",
+      "bytes": 58910
+    },
+    {
+      "path": "handoff/docs/lessons/03_c3_frequency_data.json",
+      "sha256": "902ed42b9c928564c55f9f36ab0f306c2ad065163ff7a097c54230ba5c5b3d60",
+      "bytes": 826
+    },
+    {
+      "path": "handoff/docs/lessons/03_c3_frequency_spectrum.png",
+      "sha256": "702d71aaf214ea363cd0ce6b336a4d4bd6dd02f63f7e033886ae514a96114369",
+      "bytes": 139570
+    },
+    {
+      "path": "v5/.gitattributes",
+      "sha256": "ee3c77794f6cd6b3307549849afc27381f664efff73bd616164e378629921ee7",
+      "bytes": 361,
+      "original_sha256": "2aa423c1f952cf55fb8af85fcc2751f79701634bcf9c8a79496751d450a213e1",
+      "change": "Preserve snapshot line endings in Git and refresh corresponding manifest hash; original manifest retained at release root."
+    },
+    {
+      "path": "v5/.github/workflows/host-tests.yml",
+      "sha256": "5ccb8a9629ee760442f999a900adf00148daac1e52450ac507da088c4c746dc0",
+      "bytes": 495
+    },
+    {
+      "path": "v5/.gitignore",
+      "sha256": "7316f8b9672e6011a3a202eb314c7013fa1b42cd06f2c5e52520e1d2818922de",
+      "bytes": 405
+    },
+    {
+      "path": "v5/CHANGELOG.md",
+      "sha256": "d7111d73f2388e82f3fe8c5608094d75fa5b7cde4c6a1d7e6c8c60317ac86e3e",
+      "bytes": 445
+    },
+    {
+      "path": "v5/config/instrument_registry.json",
+      "sha256": "8a6fb6c256e0d30400a06c3d21ec1c75756652837cbd035f0a3ac09bb867e19d",
+      "bytes": 1419
+    },
+    {
+      "path": "v5/docs/ADC_PRESSURE_AUDIO_REVIEW.md",
+      "sha256": "4b244f993e74155a824c1120ca9c14374db51804b19a4163ecf5f7352a02ae71",
+      "bytes": 29213
+    },
+    {
+      "path": "v5/docs/ADC_SCREEN_DIAG.md",
+      "sha256": "2bd84dfa11a94b67519d3ce6e2782c4f9cac8b05c2ff52336b5ed0f8fb60b61d",
+      "bytes": 3116
+    },
+    {
+      "path": "v5/docs/assets/adc_pressure_simulation_explained.png",
+      "sha256": "04dd2d52d78af49cbf87dac583487ebff1cf3bb2be0b0ebf48e6b2cc444bf71f",
+      "bytes": 188813
+    },
+    {
+      "path": "v5/docs/BUILD_VERIFICATION.md",
+      "sha256": "9827c4c060823e50e45d63bb17361ad5f56f8d3f8c31ab4662e431564674d9d9",
+      "bytes": 9397
+    },
+    {
+      "path": "v5/docs/EMERGENCY_PROTOCOL.md",
+      "sha256": "3306b95776ae19a3e82f6fc0d627d43af83da6923f75808b600cd9544ecd5757",
+      "bytes": 2645
+    },
+    {
+      "path": "v5/docs/HARDWARE_TEST.md",
+      "sha256": "d7e29d9465826a74a6a55f8ba5a4f24a7c643ea2c25312d4daca59681287c357",
+      "bytes": 5770
+    },
+    {
+      "path": "v5/docs/HISTORICAL_README.md",
+      "sha256": "adf1124625662e2709774f5e4721a4b82874c705b6bffc0b6e241f03bc8bc545",
+      "bytes": 19782
+    },
+    {
+      "path": "v5/docs/HISTORICAL_RELEASE_NOTES.md",
+      "sha256": "60dc073d8d3fa3f8f75bdcee2fef14febda43de00afe4094405c17a3494227c2",
+      "bytes": 5236
+    },
+    {
+      "path": "v5/docs/LCD_CTP_BUILD_20260926.md",
+      "sha256": "58e3cfac630a7e0e6cf1d61f79472beba66d1432836b34b9192274f41fcd94ce",
+      "bytes": 1733
+    },
+    {
+      "path": "v5/docs/LCD_CTP_TEST.md",
+      "sha256": "27b33d73069b018dca3c2b7d22617da2461d6e999398f72e612db5605153aa1d",
+      "bytes": 1066
+    },
+    {
+      "path": "v5/docs/MCP3208_13KEY_BRINGUP.md",
+      "sha256": "f490185b6e2f84d2a24f31deecda8ba30ea45ddd28b156d0c5059b47b5537a80",
+      "bytes": 4460
+    },
+    {
+      "path": "v5/docs/MIDI_FPGA_IMPLEMENTATION.md",
+      "sha256": "64fcc01e2c66ccb9a64a8dacfd9efff64c1d819240e22e055ce9ac9640d91e66",
+      "bytes": 7614
+    },
+    {
+      "path": "v5/docs/MIDI_RAM_FIX_20261004.md",
+      "sha256": "1f822969e91b48077b4dd5a2b8ea7b29ddf9a41e7b7849385dc7eca09cc95987",
+      "bytes": 3027
+    },
+    {
+      "path": "v5/docs/MUSIC_WORKSTATION_QUICKSTART.md",
+      "sha256": "464a2e24baa81c50953e901a0d70e9361e1c16c99f4b46bafac4c34adbccf1a2",
+      "bytes": 3894
+    },
+    {
+      "path": "v5/docs/OPEN_SOURCE_IMPLEMENTATION.md",
+      "sha256": "ed10b8ce937f61b4ed6faf2f6a941464b1f0c08578e04f478e829b0ba85bc039",
+      "bytes": 13182
+    },
+    {
+      "path": "v5/docs/OPEN_SOURCE_MUSIC_STACK.md",
+      "sha256": "feb07eee6ba82e44616ff7bdb73ea7b6388aa8f914fbfb3885bfe9307f33a836",
+      "bytes": 8270
+    },
+    {
+      "path": "v5/docs/PROBLEM2_STATUS.md",
+      "sha256": "2ee8d399971fc3c0b0a40c3f38fb78bb17f4da19646c2adf9581af725d8e080c",
+      "bytes": 8174
+    },
+    {
+      "path": "v5/docs/REFACTOR_V5_PROGRESS.md",
+      "sha256": "32a933e8e0cc0c3316764b00c787a55c783e3d48d2f192fb00e87d91ce8bca16",
+      "bytes": 8888
+    },
+    {
+      "path": "v5/docs/RELEASE_STATUS.md",
+      "sha256": "1e917c3ab2f4a654b257ba7ad74b4bc2936d682d8454059769c8b5f2c6269387",
+      "bytes": 988
+    },
+    {
+      "path": "v5/docs/SERIAL_SCREEN_UART.md",
+      "sha256": "d55ffa8bf0b49852feaa299f1eb0e79a92b64475af5502e333721c05ce007593",
+      "bytes": 8881
+    },
+    {
+      "path": "v5/docs/TOUCH_BRINGUP.md",
+      "sha256": "656b1de39497da6fce2823c01afe9721f0f73a7b6c2a48c1b780aed7d642763c",
+      "bytes": 2453
+    },
+    {
+      "path": "v5/docs/UART_LINK_BRINGUP_20260930.md",
+      "sha256": "dc870ae692a9055be9a66cdae24e250b42f21790d54a707db9ed0ee47c52f74e",
+      "bytes": 3986
+    },
+    {
+      "path": "v5/docs/UPLOAD_GITHUB.md",
+      "sha256": "e6e83e89d294f2a90a055c1b47623a52f61ae79ae951f4411b846c640fb4af6c",
+      "bytes": 812
+    },
+    {
+      "path": "v5/docs/UPPER_COMPUTER_PROTOCOL.md",
+      "sha256": "44cf1d552ad8c18fb0018fe41ccf8c10ee0e811f6cae2e56f76ec1083ad1ea8a",
+      "bytes": 3466
+    },
+    {
+      "path": "v5/docs/V12_INSTRUMENT_FULL.md",
+      "sha256": "142d8c95bea982b2642190b4578a4da14a9f568faf2ae8a42ca8aeedf8c1778a",
+      "bytes": 2139
+    },
+    {
+      "path": "v5/docs/V5_QUICK_START.md",
+      "sha256": "642fec746658e017f55c3bae9f1af4ca2a70157f41245580784b7e07fd0524b5",
+      "bytes": 2641
+    },
+    {
+      "path": "v5/docs/WORKSTATION.md",
+      "sha256": "4e7018428477a74a1668e8d0d1edc8987c4576b6331a18599cdd52e63dc5bc07",
+      "bytes": 11524
+    },
+    {
+      "path": "v5/docs/WORKSTATION_PRESSURE_INPUT.md",
+      "sha256": "eb15e9ebf836ebc96457318cd85793195c177cc68ac391cf6ef4ef5b753d7b9f",
+      "bytes": 7035
+    },
+    {
+      "path": "v5/docs/WORKSTATION_REDESIGN_RESEARCH.md",
+      "sha256": "a9ebd93c4ce52f82f6f413d2289f9800de7257ea9344488290f8d63e9fa103e0",
+      "bytes": 15650
+    },
+    {
+      "path": "v5/docs/WORKSTATION_V2_QUICKSTART.md",
+      "sha256": "5b9940887cecf0ecff70195a873c5484f51a9068febdf60e2d72bbc3fa8d4b4c",
+      "bytes": 8452
+    },
+    {
+      "path": "v5/docs/WORKSTATION_V2_RELEASE.md",
+      "sha256": "b4fb84f6c66c51d726deab6a2cc1285d24debe89264bf5d2c8ce5da553fb0532",
+      "bytes": 2343
+    },
+    {
+      "path": "v5/docs/WORKSTATION_V2_STATUS.md",
+      "sha256": "2793ec5177476927a10e0cd5ae58f563989620aeea5dfb8f25e31ba2e8d77517",
+      "bytes": 9207
+    },
+    {
+      "path": "v5/examples/midi/01_single_note.mid",
+      "sha256": "d2177e53f7f2b7b93ea1ba96b2615585d10689c26d877c41dc04541f4e6a7bac",
+      "bytes": 42
+    },
+    {
+      "path": "v5/examples/midi/02_four_voice_chords.mid",
+      "sha256": "46070d1f5d634b60c4d25a9fced449b78103cbfa1448fa4406a6bf795c8d3ff3",
+      "bytes": 165
+    },
+    {
+      "path": "v5/examples/midi/03_tempo_change_scale.mid",
+      "sha256": "24b80fd3558e8705958a852e2cb90a2018bf905e01c93144c7b2064bc1cfe968",
+      "bytes": 112
+    },
+    {
+      "path": "v5/examples/midi/04_long_note_10s.mid",
+      "sha256": "34790875b49e7ae5b9464686f8f0a560138abb62b6af1fd760a06ceec720113a",
+      "bytes": 42
+    },
+    {
+      "path": "v5/examples/README.md",
+      "sha256": "5007ea1c0248fb1658f4b254baf2438ff738338f9104fc1a3a6d0b0c311da9b0",
+      "bytes": 1371
+    },
+    {
+      "path": "v5/examples/timbres/bright_harmonic.ftb",
+      "sha256": "7bba2f9e808e6e3f20e99ae35c90f5d706f41ffdf58b5380c7e5b9f886016f49",
+      "bytes": 552
+    },
+    {
+      "path": "v5/examples/timbres/soft_sine.ftb",
+      "sha256": "7f9cb4b52fa3bed24e4d1df02a303b775c4a1679a0c8128aa75cc0bad6e24b8e",
+      "bytes": 552
+    },
+    {
+      "path": "v5/examples/workstation_v2_demo.fpgamusic",
+      "sha256": "a447677929d9e47eda540533dbf2016d4afcb2423df8041e830b1d2469ca699a",
+      "bytes": 2418
+    },
+    {
+      "path": "v5/experiments/workstation_tracks/midi_tracks_parser.sv",
+      "sha256": "3f2e5d4c25504afd6b111fe2a5b8b73de7eba567d19554f103d494c60cb81a00",
+      "bytes": 11016
+    },
+    {
+      "path": "v5/experiments/workstation_tracks/README.md",
+      "sha256": "07567ec16842da7c30faee334c22bac42afd345e3c9595b4c72046759844640a",
+      "bytes": 3434
+    },
+    {
+      "path": "v5/experiments/workstation_tracks/synth32_tracks.sv",
+      "sha256": "6620f156050c555ece50d6992f3a4ac0e606639dda100f828ce462b758384f8c",
+      "bytes": 19502
+    },
+    {
+      "path": "v5/experiments/workstation_tracks/synth_source.json",
+      "sha256": "1e0238530a3e05c37ea59518c674c72b2409cf38e884be700a19acc9ad24da42",
+      "bytes": 214
+    },
+    {
+      "path": "v5/experiments/workstation_tracks/synthesize_audio.tcl",
+      "sha256": "cbcc37bc358edf04993958f3c49dc9b4af4c88dbda880714211f74af2d98063d",
+      "bytes": 608
+    },
+    {
+      "path": "v5/experiments/workstation_tracks/synthesize_gain.tcl",
+      "sha256": "14fd90827cb24af9b4a7421297c52dc6479752edf87d13debf23f23016b95bd8",
+      "bytes": 515
+    },
+    {
+      "path": "v5/experiments/workstation_tracks/synthesize_parser.tcl",
+      "sha256": "76bc420537f433de1df82b2dcf76d02a59ade7bac9b8cd91e7a5ca1f4c2d017a",
+      "bytes": 524
+    },
+    {
+      "path": "v5/experiments/workstation_tracks/track_gain_bank.sv",
+      "sha256": "3bb2d939d1843ccba059b342743733e5bf438ebddfa94082c6162eb51ef96767",
+      "bytes": 4610
+    },
+    {
+      "path": "v5/gowin/adc_screen_diag.cst",
+      "sha256": "a7ddb8b22b4d627a60d131566a225aee02dab3c9974380518a53b20df2adefeb",
+      "bytes": 1694
+    },
+    {
+      "path": "v5/gowin/adc_screen_diag.gprj",
+      "sha256": "a7e3fb928070e9f12514bb386fff7ab88db0e9cc507e7849c6c9626793d0944e",
+      "bytes": 1089
+    },
+    {
+      "path": "v5/gowin/adc_screen_diag.sdc",
+      "sha256": "1a57da8384ccd8aeb8cc5b5c1c2fa8259debf585151842b324b3dd90f23a75a2",
+      "bytes": 111
+    },
+    {
+      "path": "v5/gowin/audio_smoke.cst",
+      "sha256": "2ed066cef5842f3fa5f47b39129bf1bdb1180fccc4e17d896390526c289bffd6",
+      "bytes": 654
+    },
+    {
+      "path": "v5/gowin/audio_smoke.gprj",
+      "sha256": "7ba859b0adae8d89bd74b9d1255db65121fcc38735062d0623b80bf6608fd723",
+      "bytes": 813
+    },
+    {
+      "path": "v5/gowin/build_adc_screen_diag.tcl",
+      "sha256": "467c1a273c4f1f3f61ebb444027a6a36818fb5c49a55058e7e5b380684004a1f",
+      "bytes": 1050
+    },
+    {
+      "path": "v5/gowin/build_audio_smoke.tcl",
+      "sha256": "f4dbcb83d1026498123ff6d2c1f77d13d0ac0472a37744b4e30160f0ef6d9343",
+      "bytes": 91
+    },
+    {
+      "path": "v5/gowin/build_common.tcl",
+      "sha256": "1f195e73e4d1a8cc6d458fdc7b7949372e0adee61c2b79b93367f2d31389e4c6",
+      "bytes": 4979
+    },
+    {
+      "path": "v5/gowin/build_hdmi_colorbar_800x600.tcl",
+      "sha256": "48fc57f7ef9932017d64da35b58864be93c02126d5e88de3560356357936d481",
+      "bytes": 101
+    },
+    {
+      "path": "v5/gowin/build_instrument_full.tcl",
+      "sha256": "a417ef11d8bd53cde8e245636fba5249b48f63ca7ce72eeee3c4604b055557e7",
+      "bytes": 2032
+    },
+    {
+      "path": "v5/gowin/build_instrument_touch.tcl",
+      "sha256": "19ac156741b770e39a0497039848b24fbb3298bc3d7705662a35ac85864da727",
+      "bytes": 2033
+    },
+    {
+      "path": "v5/gowin/build_instrument_touch16.tcl",
+      "sha256": "2e506529ec1939558a06536f0a11e3f1a1f14a4e733be2aa81a43c60afb23703",
+      "bytes": 2035
+    },
+    {
+      "path": "v5/gowin/build_instrument_workstation.tcl",
+      "sha256": "cc1d509fd08f79fb20c7d74caac711942ca44d5540cb92f4fcb33357316c7b2c",
+      "bytes": 2333
+    },
+    {
+      "path": "v5/gowin/build_instrument_workstation_pnr.tcl",
+      "sha256": "f5222f559f9b370db3993014657eaacd78df0265eb659ff440c49fc9e2c647a8",
+      "bytes": 767
+    },
+    {
+      "path": "v5/gowin/build_instrument_workstation_v2.tcl",
+      "sha256": "7d3b1dd9ac8825fac5c2ac3a189631b59c5ef49ddf8130b5aab81695376fe82a",
+      "bytes": 3286
+    },
+    {
+      "path": "v5/gowin/build_instrument_workstation_v2_pnr.tcl",
+      "sha256": "717013a99bb50969e44d6da4323822d9fc01aa3341e9b453d38e17789b23444f",
+      "bytes": 887
+    },
+    {
+      "path": "v5/gowin/build_instrument_workstation_v2_syn.tcl",
+      "sha256": "5f4df09a95de1ef3f8291e6d8e496d3c9f1d18ab80478ee1290eba339d6186e3",
+      "bytes": 3286
+    },
+    {
+      "path": "v5/gowin/build_lcd_ctp_test.tcl",
+      "sha256": "d4bdf1be24f03a05ca4b7e3ed98c3b272cdd658c25d8057960e3c4654d1d2006",
+      "bytes": 1351
+    },
+    {
+      "path": "v5/gowin/build_lcd_ctp_test_tryopts.tcl",
+      "sha256": "f13bb409bf1dbd12aa1e6e727d062b716068744147281f4a5333fc4ff6d05fa4",
+      "bytes": 1394
+    },
+    {
+      "path": "v5/gowin/build_lcd_only_test.tcl",
+      "sha256": "237b7dabe29dc9f5b5a8ce86a77b50dc408b9cefa5953bb29df79841876323d4",
+      "bytes": 1017
+    },
+    {
+      "path": "v5/gowin/build_mcp3208_13key_hdmi.tcl",
+      "sha256": "1af47949acfe865e3d80df8f1a87c8f00c51d8d7111871ae88008db92e478826",
+      "bytes": 98
+    },
+    {
+      "path": "v5/gowin/build_midi_player.tcl",
+      "sha256": "79982414a40a55d52049dfcea4a8eb0f554e451f0c2f71f4723922c3d5d1c7aa",
+      "bytes": 1823
+    },
+    {
+      "path": "v5/gowin/build_midi_upload_probe.tcl",
+      "sha256": "f6e2d4d60d4e4b165faa3314fc32a65f5d7739e3a59d99faf291bc11a1ce5a42",
+      "bytes": 1136
+    },
+    {
+      "path": "v5/gowin/build_polyphony_demo.tcl",
+      "sha256": "277a548d3da5ff505a795cf46acc4a9b72a75017307e2a9366cd3cf75ba777b4",
+      "bytes": 94
+    },
+    {
+      "path": "v5/gowin/build_polyphony_timbre_demo.tcl",
+      "sha256": "3058bde98330f2440e5a0fb93aec7fbec8a9e634509a13ddb67c649bcbc3bbfa",
+      "bytes": 101
+    },
+    {
+      "path": "v5/gowin/build_pressure_audio.tcl",
+      "sha256": "ebab4b702e01113e53446c34fcdc1a328345baf530abd4463d07e96bee58dd68",
+      "bytes": 94
+    },
+    {
+      "path": "v5/gowin/build_pressure_audio_hdmi.tcl",
+      "sha256": "ae485a036742d0fd07edf36a50bee57b7e6157e34c184115dabd1602212e148b",
+      "bytes": 99
+    },
+    {
+      "path": "v5/gowin/build_uart_ping_echo.tcl",
+      "sha256": "acb2eb6d09579c86a870a099044ec986bb9d750389fc594ca970119da223b113",
+      "bytes": 1051
+    },
+    {
+      "path": "v5/gowin/build_uart_tx_diag.tcl",
+      "sha256": "ebd138e7151bc7b8b1a5464fee111e2cd89d5f82d49ee4ab7fa8d212b03bef34",
+      "bytes": 833
+    },
+    {
+      "path": "v5/gowin/hdmi_colorbar_800x600.cst",
+      "sha256": "2b17e4eae90dcbf15258a1f3be1838203424dba5f19c2adb67c6db4a8b43b0fe",
+      "bytes": 679
+    },
+    {
+      "path": "v5/gowin/hdmi_colorbar_800x600.gprj",
+      "sha256": "1d50833b7988381481ab08bdc31a8be8b447ce154f912f9c9c97ff86fa895cfe",
+      "bytes": 872
+    },
+    {
+      "path": "v5/gowin/hdmi_colorbar_800x600.sdc",
+      "sha256": "68e62b0b261b56f4d9a38a8f0656309d579a192748251ee87dd11380d5743955",
+      "bytes": 281
+    },
+    {
+      "path": "v5/gowin/instrument_full.cst",
+      "sha256": "0eb067c6d22d8409e0bf674f07dbff52c38b6aff6aa1d2d6ebaedf12c99fb353",
+      "bytes": 3950
+    },
+    {
+      "path": "v5/gowin/instrument_full.gprj",
+      "sha256": "3692059b261eb12836ea2149839cabaf471ff699da90178cc541d5deaca7d504",
+      "bytes": 3364
+    },
+    {
+      "path": "v5/gowin/instrument_full.sdc",
+      "sha256": "51e40af9cfbdfdf030b659a6a2c16985c5477e73bdf1dc2eb93c85986452f71f",
+      "bytes": 701
+    },
+    {
+      "path": "v5/gowin/instrument_touch.gprj",
+      "sha256": "3692059b261eb12836ea2149839cabaf471ff699da90178cc541d5deaca7d504",
+      "bytes": 3364
+    },
+    {
+      "path": "v5/gowin/instrument_touch16.gprj",
+      "sha256": "34b6acb35eff6eeb96d0ea230cc5d5f0404969e5e3298d8a915df017d8e7cea4",
+      "bytes": 3444
+    },
+    {
+      "path": "v5/gowin/instrument_workstation.cst",
+      "sha256": "d497d908912d552343eecde8c99d8dfeb0030a8820481e1db4e3ab7cd1217ca1",
+      "bytes": 3937
+    },
+    {
+      "path": "v5/gowin/instrument_workstation.gprj",
+      "sha256": "e994d77beab355d7cbed24845bf82ba0176c5d2183f1d6addad3195856ea65b2",
+      "bytes": 4097
+    },
+    {
+      "path": "v5/gowin/instrument_workstation_v2.cst",
+      "sha256": "028bed2e624e4f0fbeff37f45416cca762fa5e1f4653b7f138ac87e8796e793c",
+      "bytes": 3680
+    },
+    {
+      "path": "v5/gowin/instrument_workstation_v2.gprj",
+      "sha256": "979868f5623136aed2fab7833d7349fbb67d191f9e19c501bc103718e6b126f0",
+      "bytes": 3497
+    },
+    {
+      "path": "v5/gowin/instrument_workstation_v2.sdc",
+      "sha256": "51e40af9cfbdfdf030b659a6a2c16985c5477e73bdf1dc2eb93c85986452f71f",
+      "bytes": 701
+    },
+    {
+      "path": "v5/gowin/lcd_ctp_test.cst",
+      "sha256": "908cff3ef69b50792e97de1ca0d26a164f7a9eef89f5fa41ec28cd672ce3e53b",
+      "bytes": 4190
+    },
+    {
+      "path": "v5/gowin/lcd_ctp_test.gprj",
+      "sha256": "92d35909ba4650372723e8b3106596a516f22c5289a6880f7180a7749b79cf75",
+      "bytes": 918
+    },
+    {
+      "path": "v5/gowin/lcd_ctp_test.sdc",
+      "sha256": "eb971d088cdd0eba1ee6c21107014b9790a93646f81ee68fbf3745dde0ff66d4",
+      "bytes": 1205
+    },
+    {
+      "path": "v5/gowin/lcd_only_test.cst",
+      "sha256": "5f61789e41c0d31c03398000968f0d6e8a790a928ecadf0ace4055efc8ed6144",
+      "bytes": 3594
+    },
+    {
+      "path": "v5/gowin/lcd_only_test.sdc",
+      "sha256": "029aaf3192f746765e170c9e45023ed176bcb8069cc6e0b8ad28fb4011f274b0",
+      "bytes": 429
+    },
+    {
+      "path": "v5/gowin/mcp3208_13key_hdmi.cst",
+      "sha256": "d4d9d0145295087b3576d94b41a85a03530a02a54b77b9840e1a7b34fc0b8c96",
+      "bytes": 3427
+    },
+    {
+      "path": "v5/gowin/mcp3208_13key_hdmi.gprj",
+      "sha256": "da125adc40f5cbef9bc357006d0a64393029d518e8db5e9497b43a50857e9705",
+      "bytes": 1971
+    },
+    {
+      "path": "v5/gowin/mcp3208_13key_hdmi.sdc",
+      "sha256": "51e40af9cfbdfdf030b659a6a2c16985c5477e73bdf1dc2eb93c85986452f71f",
+      "bytes": 701
+    },
+    {
+      "path": "v5/gowin/midi_player.cst",
+      "sha256": "bc226c84fecde15ad56671487144ac5b071e1697e9d1aea11dfef89bdfffc20e",
+      "bytes": 1621
+    },
+    {
+      "path": "v5/gowin/midi_player.gprj",
+      "sha256": "e8f6479da8e92db5ccd7d0dbc7e581cd70bbb275b9710e39fc1ab6c323a577c2",
+      "bytes": 1858
+    },
+    {
+      "path": "v5/gowin/midi_player.sdc",
+      "sha256": "68054512e87e0f54499746fb857213f56839f73a928785997feeb4259293b5c6",
+      "bytes": 302
+    },
+    {
+      "path": "v5/gowin/midi_upload_probe.cst",
+      "sha256": "49280527f21c826ab4176c2511c9c2cce36df04db72ad6c616aba2cb538dbf56",
+      "bytes": 1176
+    },
+    {
+      "path": "v5/gowin/midi_upload_probe.gprj",
+      "sha256": "5813c913cef91c613e4616b41b091a166e31cc1f4af2e15926412ee80c6c8804",
+      "bytes": 991
+    },
+    {
+      "path": "v5/gowin/midi_upload_probe.sdc",
+      "sha256": "0bbacd85894aa33bb568c5066c46d5a9ec8614c92efd227b086e989dce3e823e",
+      "bytes": 65
+    },
+    {
+      "path": "v5/gowin/polyphony_demo.cst",
+      "sha256": "42406cd2b4119e91a630b9b096dd968d57289646ab67043f079f14e81c3c78e8",
+      "bytes": 1437
+    },
+    {
+      "path": "v5/gowin/polyphony_demo.gprj",
+      "sha256": "29bea86d10e2488cb41e15453e7986e38488da8b9d6b31ff889959c8808b997a",
+      "bytes": 1000
+    },
+    {
+      "path": "v5/gowin/polyphony_timbre_demo.cst",
+      "sha256": "e8b3216dec9902c8b9c2d9f649097261537aa016fc069420208d5cf579ea2b8e",
+      "bytes": 1652
+    },
+    {
+      "path": "v5/gowin/polyphony_timbre_demo.gprj",
+      "sha256": "6148b9db77b7fa249a2c8f48e9adb2b8b3dbf5bf9f394d6222677131d670268e",
+      "bytes": 1100
+    },
+    {
+      "path": "v5/gowin/pressure_audio.cst",
+      "sha256": "6330964bbba270a7e1d6e547b1950425e88871370d24963d3548b5a365b704f4",
+      "bytes": 1767
+    },
+    {
+      "path": "v5/gowin/pressure_audio.gprj",
+      "sha256": "6be68a4c30515da75546cc52fee6ce87b1688edba121a6331fbcf58e6763ad81",
+      "bytes": 1162
+    },
+    {
+      "path": "v5/gowin/pressure_audio_hdmi.cst",
+      "sha256": "f9c49e8c9aa68df3962dc2971815a172831aecf59a22d905f6a84135caa92138",
+      "bytes": 2212
+    },
+    {
+      "path": "v5/gowin/pressure_audio_hdmi.gprj",
+      "sha256": "9403c9fad8205133ffaaae9b58e71341f54387687938e52bb90dbdb1ada2c467",
+      "bytes": 1789
+    },
+    {
+      "path": "v5/gowin/pressure_audio_hdmi.sdc",
+      "sha256": "a390116c69002f8f149c80c12e1768c240bded23adf94f51443b8cc4d2e74277",
+      "bytes": 877
+    },
+    {
+      "path": "v5/gowin/timing.sdc",
+      "sha256": "9d285b16734a96c66dd1ee6c19d74c999bdbbb971e98401239a6cda96fd7e880",
+      "bytes": 132
+    },
+    {
+      "path": "v5/gowin/uart_ping_echo.cst",
+      "sha256": "14f98f13242f1c8c2ba5901cb4b2eb6be875054b3ac1bc5f6c57737ae0b5bd37",
+      "bytes": 1439
+    },
+    {
+      "path": "v5/gowin/uart_ping_echo.gprj",
+      "sha256": "4fb28681548908a5746d1f1c65f523584e68fb9f819b8dc98c037617a7af6181",
+      "bytes": 897
+    },
+    {
+      "path": "v5/gowin/uart_ping_echo.sdc",
+      "sha256": "0bbacd85894aa33bb568c5066c46d5a9ec8614c92efd227b086e989dce3e823e",
+      "bytes": 65
+    },
+    {
+      "path": "v5/gowin/uart_tx_diag.cst",
+      "sha256": "f0194155caf51e52b833399c133c25488dc01ab96ad1b146f5571dedbcff70ba",
+      "bytes": 1191
+    },
+    {
+      "path": "v5/gowin/uart_tx_diag.gprj",
+      "sha256": "d8a2ea1f01e97b9210edfceaf07387d6a5efbaf4e9b1f831c99a7c90a8a3283d",
+      "bytes": 639
+    },
+    {
+      "path": "v5/gowin/uart_tx_diag.sdc",
+      "sha256": "0bbacd85894aa33bb568c5066c46d5a9ec8614c92efd227b086e989dce3e823e",
+      "bytes": 65
+    },
+    {
+      "path": "v5/host_app/__init__.py",
+      "sha256": "43309b3c727c1ea8970cfe2cc5697f0ff85723d3a1dcdaf38bc5d5513ad53819",
+      "bytes": 89
+    },
+    {
+      "path": "v5/host_app/cli.py",
+      "sha256": "057af193d6550629908edc3de497c4f4ddd0c62d8624a1fad415a788a4cae9ae",
+      "bytes": 6810
+    },
+    {
+      "path": "v5/host_app/deployment.py",
+      "sha256": "6799d60ea973d382f1f06e8574fbc9dc981aa2395dd2084f785cdcaa523ba730",
+      "bytes": 4691
+    },
+    {
+      "path": "v5/host_app/device_v2.py",
+      "sha256": "0bc7fddc14fb1016da7c6d06dc19c04fef6cd70ac2679f94420761bf7511defc",
+      "bytes": 6988
+    },
+    {
+      "path": "v5/host_app/gui.py",
+      "sha256": "9b4e4a8442832c82aaabb87b8b6c77f91846d99d39e7afe29c1ecc1fe2fcff17",
+      "bytes": 32087
+    },
+    {
+      "path": "v5/host_app/measure_dialog.py",
+      "sha256": "a42d8514fc0996b2b5a06b40c7667e45e2d9797c92815f7cc445d0e2342b1177",
+      "bytes": 12842
+    },
+    {
+      "path": "v5/host_app/measure_editor.py",
+      "sha256": "04dfef55287be3901b7a5224797c874805c6afe0bbbfb23a24f6483115eb4fa0",
+      "bytes": 17653
+    },
+    {
+      "path": "v5/host_app/mixer_view.py",
+      "sha256": "0b31e33a9f21fea9c7855fc3e45674848a4b76ebaa15b057d8d61436e412af96",
+      "bytes": 4836
+    },
+    {
+      "path": "v5/host_app/music_components.py",
+      "sha256": "15b3f5389308afe8d9a6df39bbbfaaacb912c3202dd8719346bde12685e23cea",
+      "bytes": 2350
+    },
+    {
+      "path": "v5/host_app/music_project.py",
+      "sha256": "f7f4aa7ba86bcc66077e1d6b598a375bd90232b31f2b009ea453511b373394b8",
+      "bytes": 25139
+    },
+    {
+      "path": "v5/host_app/notation_view.py",
+      "sha256": "8be99631724765b57273d60c06212f5167fa44802f6db6885330c96e37dfd586",
+      "bytes": 8112
+    },
+    {
+      "path": "v5/host_app/omr_bridge.py",
+      "sha256": "e0520fd38ae65865bd7f135aa8abd922011059198ed6712c86f2d93809832029",
+      "bytes": 919
+    },
+    {
+      "path": "v5/host_app/piano_roll.py",
+      "sha256": "b76b8dc5e9832e62a4824e2d30149375655fc7caa44f9eaf02c215222e514ebe",
+      "bytes": 18858
+    },
+    {
+      "path": "v5/host_app/preview_audio.py",
+      "sha256": "dd7622feaec3463da3305fa10131f8ee8dc3d560d816cc65e9f491f2bd39f0bf",
+      "bytes": 8969
+    },
+    {
+      "path": "v5/host_app/preview_player.py",
+      "sha256": "f704e3a6210bafa4819f6ca491f5227c2c06a06eddf8099de56ddcd15aba48db",
+      "bytes": 6491
+    },
+    {
+      "path": "v5/host_app/process_job.py",
+      "sha256": "cf62e7289bf347080e052984910bb7b89aa0adb74f180544889d8599199b7c22",
+      "bytes": 3797
+    },
+    {
+      "path": "v5/host_app/protocol.py",
+      "sha256": "6aa2fd30e8626eba23f8b1ec1a783a2627b1074e5d48338cfd11870c46b3f4e5",
+      "bytes": 4833
+    },
+    {
+      "path": "v5/host_app/reference_audio.py",
+      "sha256": "a0de819322db915678ff0d4748aa7f4462b024cfe189f3ed2f953a7ac2818bf8",
+      "bytes": 6600
+    },
+    {
+      "path": "v5/host_app/requirements.txt",
+      "sha256": "6fe60e46e246210e81e09f9d016285bfc884f21801a191e677a485ac867c0c8c",
+      "bytes": 15
+    },
+    {
+      "path": "v5/host_app/requirements_workstation.lock.txt",
+      "sha256": "b651f805672efed9f14fad2ae0641c125a13e5e2158b6428d3ea7bd5edfacb82",
+      "bytes": 423
+    },
+    {
+      "path": "v5/host_app/requirements_workstation.txt",
+      "sha256": "9a2ebfb26c393700932a966e025e58aa68c2e0dbc785765ab804e875bf9c7e43",
+      "bytes": 147
+    },
+    {
+      "path": "v5/host_app/score_audit.py",
+      "sha256": "b69838777dfba3e28810fcd081a94a7551cb47544cc3408ee453fb4e43a13530",
+      "bytes": 9256
+    },
+    {
+      "path": "v5/host_app/score_document.py",
+      "sha256": "12ac1c96a26cc03b07fd8efba7f3f01980fc9f8c359d2d4ab03c202bcd1a7e47",
+      "bytes": 32877
+    },
+    {
+      "path": "v5/host_app/score_import.py",
+      "sha256": "36ec6106cedccb5ddcd9d43bc952fb1c37963e14f229162bb95ca5720f672071",
+      "bytes": 10938
+    },
+    {
+      "path": "v5/host_app/score_review.py",
+      "sha256": "fc20bb9b16cf3afa2b60cc278685e46e33faaf3e419e42109a60f40363d72bee",
+      "bytes": 2115
+    },
+    {
+      "path": "v5/host_app/score_review_view.py",
+      "sha256": "b539659ba84afdcc4bf31164cdcb2f16f9d59053a3e9aefebedb7e95e5f3fceb",
+      "bytes": 3756
+    },
+    {
+      "path": "v5/host_app/serial_executor.py",
+      "sha256": "f628fc142d4caf0f3e91a7fd6a4f216f13bd4455c0ca49a0a4e01aef5ebadc74",
+      "bytes": 5818
+    },
+    {
+      "path": "v5/host_app/serial_link.py",
+      "sha256": "8709f59cdda6aaffe6480a50c31a0572cde2ca8ef1266203e0f28d457723aee3",
+      "bytes": 8523
+    },
+    {
+      "path": "v5/host_app/source_tracks.py",
+      "sha256": "08bfc734ba1f6a808ffd49f72aec4416c851f51288daa6b9ec59419a2ebef72e",
+      "bytes": 10991
+    },
+    {
+      "path": "v5/host_app/stream_player.py",
+      "sha256": "acd08674078bf1c7185119b04cf82ba60971cb547fb338e45b081add5e20484a",
+      "bytes": 14371
+    },
+    {
+      "path": "v5/host_app/stream_synth.py",
+      "sha256": "c4fdff857b1e57f8452b2236bf00ce9b731e228d74b2de75cd15c23afed498af",
+      "bytes": 23054
+    },
+    {
+      "path": "v5/host_app/timbre_file.py",
+      "sha256": "a15adee77a04b32068a713b92775b355ad60ed8d16352d9f4542fe2cd4d30f1e",
+      "bytes": 1599
+    },
+    {
+      "path": "v5/host_app/track_compiler.py",
+      "sha256": "57a4b9e590b15e813d3b1a1578b13ef48b3723bcb36ff03951d7ecad34469a4b",
+      "bytes": 12422
+    },
+    {
+      "path": "v5/host_app/vector_score.py",
+      "sha256": "687d08b4afb1189fa2a721037a0f3f47144e18985e37c4f64c430bc261fdac1a",
+      "bytes": 20019
+    },
+    {
+      "path": "v5/host_app/workstation_gui.py",
+      "sha256": "03b0e6df720a2be4c3d14264dce08e55939e84e5e4a500613ecd508fcd6f6977",
+      "bytes": 83118
+    },
+    {
+      "path": "v5/host_app/workstation_layout.py",
+      "sha256": "1319b267c8459a49c7082a314ba774019dc63410c0efe21d681992b7d6e077b6",
+      "bytes": 25005
+    },
+    {
+      "path": "v5/host_app/workstation_probe.py",
+      "sha256": "ce7739724da58e9014964a8ebac89f80341e692effeacc1514e07f9280ba9694",
+      "bytes": 6486
+    },
+    {
+      "path": "v5/LICENSE",
+      "sha256": "ea9b00b3a9484e92e8fef04fc15fc49ab7e03cac304ba35d751cd4a5ccecae1b",
+      "bytes": 1098
+    },
+    {
+      "path": "v5/LICENSES/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "v5/LICENSES/sipeed_LICENSE.txt",
+      "sha256": "8934c44d142cef6753acbe993d8755078890cf79c4633e84d957befc280e4180",
+      "bytes": 590
+    },
+    {
+      "path": "v5/NOTICE.md",
+      "sha256": "2dad274b91d33ce6ff9f9d49f88baacae23b9690324ec4c0b262120349ec3f20",
+      "bytes": 993
+    },
+    {
+      "path": "v5/README.md",
+      "sha256": "1d4e34a098fc4955872aac8b3b7981fcec66225f4ff6cd80c244d057a64ef2ca",
+      "bytes": 5062
+    },
+    {
+      "path": "v5/RELEASE_CHECKS.json",
+      "sha256": "675b995a1a3fad1b323637a2d8e0278b11224b5543f3b7545d7f6b9e6f023d44",
+      "bytes": 1922
+    },
+    {
+      "path": "v5/requirements.txt",
+      "sha256": "6980885f9a958b06b83fdef984ecb6b2548e2f0abd6dec9066be620d4477ed76",
+      "bytes": 62
+    },
+    {
+      "path": "v5/rtl/audio/audio_effects.sv",
+      "sha256": "6e6e106d23123104f35020068c71e974af0f34b80fd224410ef60ffdfe4af552",
+      "bytes": 2532
+    },
+    {
+      "path": "v5/rtl/audio/audio_startup.sv",
+      "sha256": "1df9436a570cc28180500ad217c9ca8adac501bf7fc5f5e5ab4fe7bad4dc9b8f",
+      "bytes": 1157
+    },
+    {
+      "path": "v5/rtl/audio/custom_wavetable_reader.sv",
+      "sha256": "87fd582f3f210a1d826b1365757c2ff46a3494a1c57d614445be3f956d43c85d",
+      "bytes": 1525
+    },
+    {
+      "path": "v5/rtl/audio/drum_synth.sv",
+      "sha256": "e6d615caf7796050acb08dfbeb2ccf26f1a10db61f893c7c532d72760eaa8779",
+      "bytes": 5909
+    },
+    {
+      "path": "v5/rtl/audio/i2s_tx.sv",
+      "sha256": "bff178c4a7f5d5ea58a52cc1544be326af2291b7056cb451077ceee9f38ccae8",
+      "bytes": 2532
+    },
+    {
+      "path": "v5/rtl/audio/midi_poly_synth_4voice.sv",
+      "sha256": "e3d9a8792608fd49bd8ae32f8b0c133c32fac484d5cc9ef3623a8f518d29a826",
+      "bytes": 18378
+    },
+    {
+      "path": "v5/rtl/audio/midi_voice_allocator_4.sv",
+      "sha256": "7c27039d52a0378541b569df58cd8f1de3a237a0b491ea3362de2533f80001e7",
+      "bytes": 4923
+    },
+    {
+      "path": "v5/rtl/audio/pcm_source_mixer.sv",
+      "sha256": "d934e2497fee80817af6f4cad5876154a44cdc183f94e83bc3264e5a831a1ed0",
+      "bytes": 1743
+    },
+    {
+      "path": "v5/rtl/audio/poly_synth_4voice.sv",
+      "sha256": "9b18a224fbe536bc5c9f14a4c04ff2d61c0018b71c31b28ce8bd3181f9370f57",
+      "bytes": 12532
+    },
+    {
+      "path": "v5/rtl/audio/poly_synth_voice.sv",
+      "sha256": "628477a4850407fdded1f6a37663c66ece1f81f87637fe6c9afe59cb74ef12b7",
+      "bytes": 9469
+    },
+    {
+      "path": "v5/rtl/audio/pressure_tone.sv",
+      "sha256": "a581ea122170ab7036bdc6d24fbd670351beedea4ba7922f7d099bb1cf26bc5b",
+      "bytes": 2571
+    },
+    {
+      "path": "v5/rtl/audio/pt8211_tx.sv",
+      "sha256": "252cdaaeab7f8814c1de6444f3ef0ec2e6e936b79ecbe6d58c365a8082b30ed4",
+      "bytes": 3052
+    },
+    {
+      "path": "v5/rtl/audio/sample_ram.sv",
+      "sha256": "4e887d7b9318a925147c07dd0edefab31186663ec15a7335ce4cdd964b3b88a3",
+      "bytes": 1107
+    },
+    {
+      "path": "v5/rtl/audio/synth32.sv",
+      "sha256": "1686185ccd6ada954d056a831d2042bd5f6f458e71188785b3df70b98790ca78",
+      "bytes": 11978
+    },
+    {
+      "path": "v5/rtl/audio/synth32_generated.sv",
+      "sha256": "28045bcae14e8882b5913b71174d979c4a0863d98a7ae5dd157af58d73de43b1",
+      "bytes": 17464
+    },
+    {
+      "path": "v5/rtl/audio/synth32_pitch.inc",
+      "sha256": "df44b421cb8203de734d37019e4648dc3f601fd9267660fa7acd008d68f3c0cb",
+      "bytes": 5514
+    },
+    {
+      "path": "v5/rtl/audio/voice_allocator_4.sv",
+      "sha256": "f1b0d454c0a3d2a31353cd50b341ad7498f6f165fba3aa340f8ec4e4dc32c08d",
+      "bytes": 5889
+    },
+    {
+      "path": "v5/rtl/board/adc_screen_diag_top.sv",
+      "sha256": "9c5a471f1548ae0cde5278bde5739455f63ab9ebac6033f91277dee098ccdf51",
+      "bytes": 5220
+    },
+    {
+      "path": "v5/rtl/board/audio_smoke_top.sv",
+      "sha256": "fa3ba62162da338869df4e700d484588bdf37bd784ccad6f85318187319a1f9d",
+      "bytes": 1625
+    },
+    {
+      "path": "v5/rtl/board/hdmi_colorbar_800x600_top.sv",
+      "sha256": "ec3a168c6b7e194205ec67330f91edea8a669ffbd572c8510c2f9836fdcfb931",
+      "bytes": 1877
+    },
+    {
+      "path": "v5/rtl/board/instrument_full_top.sv",
+      "sha256": "ca611703bf2eff54e7e1999f3983aaa0e8e6580f0e06a89ad6c82898a5d2464b",
+      "bytes": 18401
+    },
+    {
+      "path": "v5/rtl/board/instrument_workstation_top.sv",
+      "sha256": "f61d4dde6ec61ff81eeef925ecfab8589158f725f669606720f78394d1bb971f",
+      "bytes": 20975
+    },
+    {
+      "path": "v5/rtl/board/instrument_workstation_v2_top.sv",
+      "sha256": "5baa19bbb001389ff31d33385e0878c1c79e7ce5f56a26d66a1ca0181bf2f9cb",
+      "bytes": 30280
+    },
+    {
+      "path": "v5/rtl/board/lcd_ctp_test_top.sv",
+      "sha256": "b386c65d11181a9776d5d8bbd2ab431d80399f2959c83c668e82e181528d5255",
+      "bytes": 4842
+    },
+    {
+      "path": "v5/rtl/board/lcd_only_test_top.sv",
+      "sha256": "da52304a514ce70c93bf7206187da4be067b189dd7e226903b5865d50e0a098e",
+      "bytes": 3452
+    },
+    {
+      "path": "v5/rtl/board/mcp3208_13key_hdmi_top.sv",
+      "sha256": "098bdd08208a83ee496300b42ab997c9478f09db765316636cf104620038e056",
+      "bytes": 13682
+    },
+    {
+      "path": "v5/rtl/board/midi_player_engine.sv",
+      "sha256": "9d76a90feca756367202b4efdb2f1d7345152391e1bba8b233a41e619158c407",
+      "bytes": 14567
+    },
+    {
+      "path": "v5/rtl/board/midi_player_top.sv",
+      "sha256": "57d572516c055096df8d87e97cafa032a2dc6646aa114f098ad980422ff14f52",
+      "bytes": 14593
+    },
+    {
+      "path": "v5/rtl/board/midi_upload_probe_top.sv",
+      "sha256": "14301490d59fec2fb7dc2de9e3ea10454a6406a6af825c8145a3ff164c658eab",
+      "bytes": 4573
+    },
+    {
+      "path": "v5/rtl/board/polyphony_demo_top.sv",
+      "sha256": "2fbb1c9afb403fee559d5fa1ee8471f6a7aada7a76d9556ac7f7332a54ea447a",
+      "bytes": 4539
+    },
+    {
+      "path": "v5/rtl/board/polyphony_timbre_demo_top.sv",
+      "sha256": "40d8a28ed2a872f1b3a720e36a9dfe0a7cd0350e50fecbf61fa6e18eacb78432",
+      "bytes": 5100
+    },
+    {
+      "path": "v5/rtl/board/pressure_audio_hdmi_top.sv",
+      "sha256": "5907c954ad3412cc6b683c45cb0cfbdaba7c8257df62b86913ee9059fb0b7afc",
+      "bytes": 6511
+    },
+    {
+      "path": "v5/rtl/board/pressure_audio_top.sv",
+      "sha256": "bd8dc1dbea72b264989efbd870897e3aa5ccb68b626e8e7ace402079743b7b62",
+      "bytes": 3929
+    },
+    {
+      "path": "v5/rtl/board/uart_ping_echo_top.sv",
+      "sha256": "8fc87eea66589dc0d63cbe95a3db87c957c56a227ed69a736bd7b81c95c4d9cd",
+      "bytes": 2075
+    },
+    {
+      "path": "v5/rtl/board/uart_tx_diag_top.sv",
+      "sha256": "ad403c70eed154ac3b151b101fb7d3694b6323aeff208db8d3dcb0df0036e0e8",
+      "bytes": 4654
+    },
+    {
+      "path": "v5/rtl/board/workstation_body.inc",
+      "sha256": "95d198b4d166e4de9d0f5c2e0e18fc063c60ac77c322da5d0265ea438455d0d0",
+      "bytes": 9089
+    },
+    {
+      "path": "v5/rtl/board/workstation_v2_body.inc",
+      "sha256": "ba3eae31542b1cd6b84e0d598cb1956a2d464aa31fd79c373e021fb5b8e63ade",
+      "bytes": 18714
+    },
+    {
+      "path": "v5/rtl/common/button_filter.sv",
+      "sha256": "4f8cfda1fe4a121d1ff6a3dba6f394e1775c1772feea368b43de90d983e82854",
+      "bytes": 1437
+    },
+    {
+      "path": "v5/rtl/common/control_ram_sdp.sv",
+      "sha256": "4eb31bf6a7b84f2752cb3b0a9598af7ca3e0bb86785a1f274ce6b582a7271b49",
+      "bytes": 1244
+    },
+    {
+      "path": "v5/rtl/common/reset_sync.sv",
+      "sha256": "a9327e69639ee9f56462e70f19f94307fb8ea92b3343128c61a5b53cb8bfea1f",
+      "bytes": 392
+    },
+    {
+      "path": "v5/rtl/common/snapshot_cdc.sv",
+      "sha256": "e1fc6810375932268e5b54ee8c75bb5d442e690a9166d73a4cf4d33bce583a5b",
+      "bytes": 1403
+    },
+    {
+      "path": "v5/rtl/common/u64_divider.sv",
+      "sha256": "2d2974db0037980affc13e41244cacc38aad61778422e2ab25e301b04c0d2361",
+      "bytes": 2363
+    },
+    {
+      "path": "v5/rtl/control/drum_sequencer.sv",
+      "sha256": "f92bcbf53c4cfd80dd6699ed295407a4557a9b875eb285c597076245dcb2764d",
+      "bytes": 2782
+    },
+    {
+      "path": "v5/rtl/control/instrument_key_router.sv",
+      "sha256": "29381a31540324f07daf48a732ab8f0e1412b574f945b62def91fb42088dbb88",
+      "bytes": 6735
+    },
+    {
+      "path": "v5/rtl/control/instrument_mode_control.sv",
+      "sha256": "6cedf906588e71f139d177bf5dbdbb5b0af8ddfc1fde8ced8979734b46069ffa",
+      "bytes": 4605
+    },
+    {
+      "path": "v5/rtl/control/instrument_mode_control_v2.sv",
+      "sha256": "0ea0820dacaa5738797d25f1abbdd48fdffc96c5efdb4dafd2ffd2232f7572ef",
+      "bytes": 6773
+    },
+    {
+      "path": "v5/rtl/control/live_touch_key_merge.sv",
+      "sha256": "6302798005855e6899faecef5aae84372564666418f313141010d424a7cb7c8b",
+      "bytes": 2281
+    },
+    {
+      "path": "v5/rtl/control/pressure_control.sv",
+      "sha256": "f1d6d14277c806bf4b7a517ef2c8f5dc438e667f71e5d52284324f43b820857c",
+      "bytes": 3647
+    },
+    {
+      "path": "v5/rtl/control/pressure_key_matrix.sv",
+      "sha256": "51129c4c07a595c1d6ab6dfc1fb976be09aa605ba8f1df3680e005af5f89389d",
+      "bytes": 11082
+    },
+    {
+      "path": "v5/rtl/control/pressure_max16.sv",
+      "sha256": "b931660a541d4f31112ceae18e668b8b0e5789b91e84d8b117f0a7b779c90d59",
+      "bytes": 1260
+    },
+    {
+      "path": "v5/rtl/control/workstation_v2_commands.sv",
+      "sha256": "84f0a4a12044dce572d77d8db5c2df2c574c157c56619e9f7e822a8404bfbdf9",
+      "bytes": 6229
+    },
+    {
+      "path": "v5/rtl/control/workstation_v2_player.sv",
+      "sha256": "3cb200dd6be20185e9f160ac0bf008a85701cbcc5d7c628c240d6e440f572e26",
+      "bytes": 19012
+    },
+    {
+      "path": "v5/rtl/control/workstation_v2_router.sv",
+      "sha256": "ab130b54a95dd504b22872a51f6021196b2a167aa684eed1d24071919197f968",
+      "bytes": 4490
+    },
+    {
+      "path": "v5/rtl/ctp/gt911_controller.sv",
+      "sha256": "f39d7c91ed802a206a70a177ac8f44da84d5e607131559e111931a96071a82d8",
+      "bytes": 7862
+    },
+    {
+      "path": "v5/rtl/ctp/i2c_reg_master.sv",
+      "sha256": "36d6351ca0e4953a9249d52f9d86663f5ef374185a6c91a2a68ebd9e2ac361d8",
+      "bytes": 13982
+    },
+    {
+      "path": "v5/rtl/io/mcp3208_dual_scan.sv",
+      "sha256": "5522aabade79c0626b1eae77312293977760cbfb149504aed590a327962f4195",
+      "bytes": 7817
+    },
+    {
+      "path": "v5/rtl/io/midi_file_ram_sdp.sv",
+      "sha256": "1bb57689ebb7701510f023526330b7375fd303df0528ed15ef39b36c5bf24de7",
+      "bytes": 2356
+    },
+    {
+      "path": "v5/rtl/io/midi_file_store.sv",
+      "sha256": "e110087dfbc1c4fe7351f3ec6e6fecbd30a17851be7d0aee7803de8409eaa93f",
+      "bytes": 8810
+    },
+    {
+      "path": "v5/rtl/io/onchip_adc_scan.sv",
+      "sha256": "b726d2f440c654924552bd19f3e682442ef4f94a716ed9f91a8bf4d9a8c307a3",
+      "bytes": 6329
+    },
+    {
+      "path": "v5/rtl/io/pressure_audio_telemetry.sv",
+      "sha256": "702fc233e49bc61ccc3cdbfeb8abc9a316ec1729a5b2af48395a535bbb9ffcd0",
+      "bytes": 3998
+    },
+    {
+      "path": "v5/rtl/io/screen_touch_keys_rx.sv",
+      "sha256": "298ae0f79325440ec820bb5b88b8d9a37fcbf660b5fa9d61d483b840f93dbbbe",
+      "bytes": 9771
+    },
+    {
+      "path": "v5/rtl/io/serial_screen_nextion_tx.sv",
+      "sha256": "e29576013fab1056f7383d04cf61b452d831083632c219444280ea50b49d21b2",
+      "bytes": 12581
+    },
+    {
+      "path": "v5/rtl/io/timbre_file_store.sv",
+      "sha256": "d68ea776e337edaa41a41440e229a53c070ad3c92dc2e1257416da0fd71ea19a",
+      "bytes": 10184
+    },
+    {
+      "path": "v5/rtl/io/uart_frame_protocol.sv",
+      "sha256": "1c988a24e507fee900bac393968cc8a3f39e8fb87dd9f36b6cff04d3ae6105ad",
+      "bytes": 6686
+    },
+    {
+      "path": "v5/rtl/io/uart_frame_tx.sv",
+      "sha256": "c28a7d461dfea5cfd6f4cf9ae40842d9a3eb5fc0cf1c2de5084af1eb17b07b97",
+      "bytes": 6072
+    },
+    {
+      "path": "v5/rtl/io/uart_frame_tx_v2.sv",
+      "sha256": "f8b05213cfb67ded747a4da7adeffeeb572d1a67c5864db135cfa311050e35c9",
+      "bytes": 3083
+    },
+    {
+      "path": "v5/rtl/io/uart_ping_ack.sv",
+      "sha256": "57debc6a6e086cf433a7504c48059190cafd07d3f38c731e5f79821c11e502da",
+      "bytes": 4053
+    },
+    {
+      "path": "v5/rtl/io/uart_ping_protocol.sv",
+      "sha256": "c1a5e3c64c9e7b5bf92823679d2f8a4e85320d1b183195e3e8a21b6890e25a66",
+      "bytes": 6649
+    },
+    {
+      "path": "v5/rtl/io/uart_rx.sv",
+      "sha256": "f83a4328d94be7633a9bee744c0fc10b783d23cdda927bc80837a29ab16de430",
+      "bytes": 3472
+    },
+    {
+      "path": "v5/rtl/io/uart_tx.sv",
+      "sha256": "c214c5b6812d708070c6ffd59fad6a992acf7b026bd0d1f46a76e04b6ed0786d",
+      "bytes": 1089
+    },
+    {
+      "path": "v5/rtl/io/workstation_screen_tx.sv",
+      "sha256": "762d3525f263f2c0ebbaa2e4a86f0dd99ce54100a97b8cd3cac6180a1bdc98c4",
+      "bytes": 5084
+    },
+    {
+      "path": "v5/rtl/io/workstation_v2_emergency.sv",
+      "sha256": "be59e8d35d9583748bd6d71495d37da48049cc61e143067820af25628289e2b6",
+      "bytes": 2926
+    },
+    {
+      "path": "v5/rtl/io/workstation_v2_resources.sv",
+      "sha256": "433e9855d9f4a89a2c73a1743abeb247ba38b96a79f1ffe4633ca49618e1a1b8",
+      "bytes": 27620
+    },
+    {
+      "path": "v5/rtl/io/workstation_v2_screen.sv",
+      "sha256": "256f9d4039b772ae797fe080b145654fa191422e45f53548ad2b59197b286aa4",
+      "bytes": 8034
+    },
+    {
+      "path": "v5/rtl/lcd/lcd_colorbar_1024x600.sv",
+      "sha256": "c86ee9058b074598bd4f60663ccc075203346ec099e28253f52f5ba191f77db5",
+      "bytes": 3180
+    },
+    {
+      "path": "v5/rtl/lcd/lcd_timing_1024x600.sv",
+      "sha256": "f7fb2ee46b5624dd44e831a7e015fa26f082bc0bb53e57d60280a53e0495038b",
+      "bytes": 1376
+    },
+    {
+      "path": "v5/rtl/midi/midi_player_scheduler.sv",
+      "sha256": "2a8d41cb4cd882178adf1ab18c16174ba9282b330c09ae71918547ddb89fe934",
+      "bytes": 10481
+    },
+    {
+      "path": "v5/rtl/midi/midi_type0_parser.sv",
+      "sha256": "afcada9763c21e17fdcfc519e76f31f31960133bacacdabbbadb05a90619c7fc",
+      "bytes": 25286
+    },
+    {
+      "path": "v5/rtl/midi/midi_type0_parser_v2.sv",
+      "sha256": "715bba44dc80e1533c62de20cd34b4d525e75799f0c02fd75e433416f2e3838f",
+      "bytes": 26738
+    },
+    {
+      "path": "v5/rtl/video/dvi_tx.sv",
+      "sha256": "8ac091fe5fc77b3e667d60c0c878951dec83ddbcdc92433d77bc6149952fd0ce",
+      "bytes": 1692
+    },
+    {
+      "path": "v5/rtl/video/gowin_dvi_ip/DVI_TX_Top.v",
+      "sha256": "a2dc2f338438864307dc8da6c8f50b582d412eeb5ea899af9f047a8d6b46815f",
+      "bytes": 84845
+    },
+    {
+      "path": "v5/rtl/video/gowin_dvi_ip/README.md",
+      "sha256": "6b270fd35b135c71a8165ebed327393e2612af2f00cb8174cd71ed7e189a537d",
+      "bytes": 481
+    },
+    {
+      "path": "v5/rtl/video/instrument_ui_1024x600.sv",
+      "sha256": "47ffc03812b00b8b5667ae8ce8dd51bf74ff4270a0510e2ad95dda9870a9cf01",
+      "bytes": 7153
+    },
+    {
+      "path": "v5/rtl/video/pressure_audio_ui_1024x600.sv",
+      "sha256": "dc46c907eef8add6bbd1a81a929144a38b6b0bb2d3dc1f0c2c0e18359c2bd37f",
+      "bytes": 2922
+    },
+    {
+      "path": "v5/rtl/video/pressure_keys_ui_1024x600.sv",
+      "sha256": "c53282ac1ab1e99699f74838d867279a74939c6d88463e14f94c3aec44cccf53",
+      "bytes": 4687
+    },
+    {
+      "path": "v5/rtl/video/tmds_encoder.sv",
+      "sha256": "93e4d0c80882af7ccb5444f611bf7d62970f91639eeeb7873b1b5d47aabaec83",
+      "bytes": 1974
+    },
+    {
+      "path": "v5/rtl/video/video_pll.sv",
+      "sha256": "d799be9e89af8bbe9b299b8f21899e514870be8656a20fb53cc15aa62430d6ee",
+      "bytes": 1196
+    },
+    {
+      "path": "v5/rtl/video/video_pll_800x600.sv",
+      "sha256": "3721baf2757d514e13daf9085658e03d35ad9a4447f659cbe252d9625ba07fcd",
+      "bytes": 1082
+    },
+    {
+      "path": "v5/rtl/video/video_timing.sv",
+      "sha256": "49b5063530fab06a02f1e2a1cb06c632498360c3a9d0949593554601c120e033",
+      "bytes": 681
+    },
+    {
+      "path": "v5/rtl/video/video_timing_800x600.sv",
+      "sha256": "cd1897fc509874a03463261f5759861762374675651a78aa1980590807e0a135",
+      "bytes": 833
+    },
+    {
+      "path": "v5/screen/TJC1060X570/build_dashboard_hmi.py",
+      "sha256": "dec901c39c6b63ed7c74c702666d8fe2d8ef50932f359134b82557184360cd07",
+      "bytes": 13481
+    },
+    {
+      "path": "v5/screen/TJC1060X570/build_hmi.py",
+      "sha256": "62c6886a14f453cd2937ad2ca5ac25f9f1ef03b5aa781f5012dcaa1dd3198fab",
+      "bytes": 8823
+    },
+    {
+      "path": "v5/screen/TJC1060X570/build_native_hmi.py",
+      "sha256": "817e2e328cf58927a1acf7c17c3f06e2435812ab75610a6bd5667d2f8ac2687a",
+      "bytes": 7491
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/build_dashboard_font.md",
+      "sha256": "a058115343d11a7ec59ad3eabeb97ec570a955a7e8a14bcd82db2c5821d8d25e",
+      "bytes": 1161
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/build_dashboard_font.py",
+      "sha256": "22fbab1f34129bf8c7aba5cf7c1ca7bad94e52211ca5104404d85a161e95f5e8",
+      "bytes": 7416
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/build_workstation_font.py",
+      "sha256": "af8b4e3fa529ccb3dde4d231038f7406c4c00ba2fd5a7cf7ad311d6d38f46a7f",
+      "bytes": 4702
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/chord_library.py",
+      "sha256": "6d4fda5aa1492a4a64d6a71b4993cfe2e1ed7375a6e61728076dd550e6ce6e8d",
+      "bytes": 4228
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/controls_manifest.json",
+      "sha256": "d5301c44ff7d8fe555ae9dc0992844941135aae76301bde72d63bf6071066084",
+      "bytes": 17146
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/create_dashboard_v2.py",
+      "sha256": "c4138e98f60d0d05e213178cfeee3812237e075f520e3d93c5c687690be30506",
+      "bytes": 13339
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/create_layout.py",
+      "sha256": "8c147869b32176850a495843ea997917b23475559f4e935acc8ba1a89819b0e8",
+      "bytes": 10068
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/create_touch_piano.py",
+      "sha256": "008dfd69712ac2769754888c557f7cfb2319b5f5cf5896ea781bfd2352785490",
+      "bytes": 15692
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/create_touch_poly.py",
+      "sha256": "e5de7f31cb157d074868871e36a741a4c56d56e9915e829dfc2eb5355bbcc89a",
+      "bytes": 10555
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/create_workstation.py",
+      "sha256": "636be736383646ca3a84c596d14665d9c1b79c9d9a8f7fffd810c806d8505fbe",
+      "bytes": 28750
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/create_workstation_v2.py",
+      "sha256": "4128d2bbb5691991968c0c77417d65ea54c16cc138676e1f252f8c538ea656dd",
+      "bytes": 21293
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/dynamic_controls.csv",
+      "sha256": "138ca82f098a55c1142e8ff6190fd605fcdb6e90f461b2af58f1afbe66d0ec4b",
+      "bytes": 1941
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/hex12_parser.py",
+      "sha256": "53758df78f8bb540dfeaee31dffe329babff6e277fdd6fc7328a6362cc63cd5a",
+      "bytes": 928
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/instrument_ascii_32.zi",
+      "sha256": "2d106eeefb8d922bd928ab060f7ea5a5203488cb55e3c7493de8d68712e9259f",
+      "bytes": 7831
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/instrument_background.png",
+      "sha256": "af5c7ebe98e1addc05ecefb4f0879d7bbc49808924f839af360a303d73fbdc32",
+      "bytes": 41593
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/instrument_background.svg",
+      "sha256": "eeced6cfd5191eec976b79bc74e092689fab21dd2f4c585f3f4e7744666a3c41",
+      "bytes": 5448
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/pressure_instrument_preview.png",
+      "sha256": "2d0a9c13988b72878b9ae238890c67e610746ab5b7ba5747e2742126a3d8e404",
+      "bytes": 43813
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/pressure_instrument_preview.svg",
+      "sha256": "5704996bd187b0a3f53d182f6d4355d9d39be0096db19fc661acab44c517e9d2",
+      "bytes": 8302
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/README.md",
+      "sha256": "04af3118a53b04b23b8a3eb5f5ee07f4380269391189d2e3e3c4b91ccc47bb7e",
+      "bytes": 2662
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/touch/controls_manifest.json",
+      "sha256": "8f09947a179136f961c7ca76536a1d4ed8cf24c774f11299971ec8ccf3211e49",
+      "bytes": 186398
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/touch/instrument_background.png",
+      "sha256": "e9cff0641ebdff4e0ba2b3deb65a2ea60dbc0520ea1dc480277c1e0f016d5394",
+      "bytes": 68508
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/touch/preview_idle.png",
+      "sha256": "bf426ecca486990a334b4d4551c16c8f8f1727f403b67b2f00000181b497fc0b",
+      "bytes": 74072
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/touch/preview_touch.png",
+      "sha256": "bffe3d3dcd59e03d44b84e60e7b36ac4afc24c65dd21fc717c3a53a4f421071d",
+      "bytes": 74122
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/touch/source_checks.json",
+      "sha256": "3b78607894e48876921893b65ecdac39604989ed598bb2e83c762b45029e5661",
+      "bytes": 1298
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/touch/timer.txt",
+      "sha256": "412dd62e8ff469e32b378ef3700787da2cad21bb8c27f1366dc8badde90ed4f5",
+      "bytes": 48415
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/touch16_base.py",
+      "sha256": "ad5d90fac7c444f0a723d98c832beec6061c70b0612fd982b973ca6ae96b8382",
+      "bytes": 4741
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/touch_poly/chord_catalog.json",
+      "sha256": "09b212e93e19d4b8c4cf59e29c4fd84427d51fcd9f81dfe194a68425413c8ecc",
+      "bytes": 41491
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/touch_poly/controls_manifest.json",
+      "sha256": "50b10580f32042da4efe130e08b249943016770c74e0de6e96a743e85ab93081",
+      "bytes": 531424
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/touch_poly/instrument_background.png",
+      "sha256": "1e813ad3f102db7bb3c183fdf4a67b32ca4363527eb43d241544ec2461444a9c",
+      "bytes": 60335
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/v2/controls_manifest.json",
+      "sha256": "a4d24773b3218e8314cd57bb62602b3dd1f85a31a7647b8fe1513118bc860c0f",
+      "bytes": 59020
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/v2/dashboard_ascii_32.json",
+      "sha256": "89ab6542a073de9080772178c9ed93637d70f2835f30cf300a8c721227544f7d",
+      "bytes": 1709
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/v2/dashboard_ascii_32.zi",
+      "sha256": "513d06ee5d5ac8ffa651ccc6fe0b0185767f4ff2833c2fd48c2098b3aa3df4f4",
+      "bytes": 11102
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/v2/dashboard_ascii_32_preview.png",
+      "sha256": "e742637b5be2fe9db012ba5b996b7d50931bf5d8162b830441ad1b17ea096ebd",
+      "bytes": 8682
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/v2/dashboard_ascii_32_v5.zi",
+      "sha256": "9b7a611b2a5dcb84a885855401466dfc220f15bae6c0a70e60c16c9b2b256de2",
+      "bytes": 11101
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/v2/instrument_background.png",
+      "sha256": "e1eabc9edad9931dc1a4b781b648328ecddecdc149a442f42b2a80f536d7336e",
+      "bytes": 81943
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/v2/preview_idle.png",
+      "sha256": "d41e79914867a5fc6c9b33987dfcb257bd3ee63704d24de132611f372838b0b4",
+      "bytes": 86344
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/v2/preview_live.png",
+      "sha256": "3ee8250cef43e0583d4c51f9d555a99572ab5c1af9b5df55371e2011b76dd626",
+      "bytes": 91651
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/v2/timer.txt",
+      "sha256": "d467b5a8867b3849196e61252be70781a86afc9e846810657f5282359fb508bb",
+      "bytes": 12578
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation/controls_manifest.json",
+      "sha256": "f06bea71247c5774cb52517237621d82823101aad1c506819fe1e36cc43bc3bc",
+      "bytes": 570154
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation/instrument_background.png",
+      "sha256": "33fd03fdaf58e5f94d27063aacef9849b26bba68e92821cda572c54e3e7aaba4",
+      "bytes": 105667
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation/registry.json",
+      "sha256": "ee371fda51b91e4e6074e1656ad75dd58dc70b05d460fbaa24831f46dc628d7e",
+      "bytes": 1962
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation/workstation_zh_32.json",
+      "sha256": "64472926317786daf3c9ba607962d15a44b1e3024f8fbafe2507232bf45cd1ee",
+      "bytes": 595
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation/workstation_zh_32.zi",
+      "sha256": "1c71b2fbd6053ccc2523dc5cf6c4045da348ebc87d732a965983b9c0f5ce3dcb",
+      "bytes": 51425
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation_theme.py",
+      "sha256": "819ba9e511250dcdb8c00a290c42c94be2c0a770c52708f7550a7f7bbc231233",
+      "bytes": 4025
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation_v2/controls_manifest.json",
+      "sha256": "333b7cf99c5268a8443e28c0c20bb83a9b786f6e39783926a5c4febe16b6d22f",
+      "bytes": 448505
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation_v2/instrument_background.png",
+      "sha256": "2593443335284f2eeff5bcd4c11cb9b03ef07b2384e3124b10e42fe4d9a7cda3",
+      "bytes": 3387
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation_v2/workstation_v2_32.json",
+      "sha256": "f0086990a3a2ee036a752a2958e5536a97c0f0f464aaa554afc68cdba9db0e7a",
+      "bytes": 622
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation_v2/workstation_v2_32.zi",
+      "sha256": "e0e11f77294c39768e82a0760dcb07bd9642718f5fd1f3f4985cef176669a56c",
+      "bytes": 2206306
+    },
+    {
+      "path": "v5/screen/TJC1060X570/design/workstation_zh.py",
+      "sha256": "9f1ce27d792e9e18c2b49d6ead31c6b18e2949db607e45513f8f685f3b609c51",
+      "bytes": 4594
+    },
+    {
+      "path": "v5/screen/TJC1060X570/generated/instrument_workstation_fixed/build_manifest.json",
+      "sha256": "0f19b86c41730c5876088a76a218f5e12250909d291882f3df20b8e3318b2d27",
+      "bytes": 5682
+    },
+    {
+      "path": "v5/screen/TJC1060X570/generated/instrument_workstation_fixed/instrument_workstation.HMI",
+      "sha256": "93830d37e76d531cf94db3afd74c41ffd83391453d7258e28959d8efd411a3f9",
+      "bytes": 8159191
+    },
+    {
+      "path": "v5/screen/TJC1060X570/generated/instrument_workstation_fixed/page0.pa",
+      "sha256": "45ec4abcbe2cf8ad5eec27f87179d40502f386c76f0c625755127194e09898d1",
+      "bytes": 422078
+    },
+    {
+      "path": "v5/screen/TJC1060X570/generated/instrument_workstation_fixed/Program.s",
+      "sha256": "098c82ff025cea2c3ed0f40cadd8c9a25826bb94a63eece2c161ecce9b068bd9",
+      "bytes": 581
+    },
+    {
+      "path": "v5/screen/TJC1060X570/generated/instrument_workstation_fixed/README.md",
+      "sha256": "c2449f23ea30b894047b023e4231aea135a8a4538cc7da4416bb257d80d97619",
+      "bytes": 1274
+    },
+    {
+      "path": "v5/screen/TJC1060X570/generated/instrument_workstation_v2/build_manifest.json",
+      "sha256": "c08ed6a538271215244a78421f28737b6c0ab27c436d96639004efbc86369b9e",
+      "bytes": 5774
+    },
+    {
+      "path": "v5/screen/TJC1060X570/generated/instrument_workstation_v2/instrument_workstation_v2.HMI",
+      "sha256": "5ebbd67c2fe85b5811f9fac7684fdee21ad6b55f52e194473b1b25bc94e691b2",
+      "bytes": 10066598
+    },
+    {
+      "path": "v5/screen/TJC1060X570/generated/instrument_workstation_v2/page0.pa",
+      "sha256": "3eab871c43cbdd1f95fc72e3b3a950ea20effd51ab4f21006fc0efe45c76b30b",
+      "bytes": 353807
+    },
+    {
+      "path": "v5/screen/TJC1060X570/generated/instrument_workstation_v2/Program.s",
+      "sha256": "098c82ff025cea2c3ed0f40cadd8c9a25826bb94a63eece2c161ecce9b068bd9",
+      "bytes": 581
+    },
+    {
+      "path": "v5/screen/TJC1060X570/program.s",
+      "sha256": "f155da585b19047d9b5da60393104826bfebf092cd4895de4411f994aa14bf37",
+      "bytes": 708
+    },
+    {
+      "path": "v5/screen/TJC1060X570/README.md",
+      "sha256": "08d09be55e41dcb270694278991f9089e0d9fc2888883cd139bbe3d8c2ec4a85",
+      "bytes": 3558
+    },
+    {
+      "path": "v5/screen/TJC1060X570/vendor/README.md",
+      "sha256": "e73b9c12629f084212b9cbfa4a1cad201cd5844ed265a670cab9dee39bad1e17",
+      "bytes": 720
+    },
+    {
+      "path": "v5/screen/TJC1060X570/vendor/templates.lock.json",
+      "sha256": "755b55c90eb3b586863a41919b9b56090150fdab813be6000744346a547f4195",
+      "bytes": 430
+    },
+    {
+      "path": "v5/scripts/build.ps1",
+      "sha256": "054e370721996bc79dd3bddc91a1d564e3268efb3dc201f14f55b2d9ba50d9c3",
+      "bytes": 7607
+    },
+    {
+      "path": "v5/scripts/build_touch_firmware.ps1",
+      "sha256": "4f60c8c303bf3661f73d5eb383792d4ea0bb52b8c0ba5c0f7afce6da68c41fd4",
+      "bytes": 2626
+    },
+    {
+      "path": "v5/scripts/build_workstation_v2.ps1",
+      "sha256": "951099306814144492d2432f8f3c209f20c7239f27dea936c6ddf81f5aec8b6e",
+      "bytes": 5770
+    },
+    {
+      "path": "v5/scripts/build_workstation_v2_incremental.py",
+      "sha256": "e5930a7896f00e1b335a1582f2fa29fc45e1760112eb79ca2021389d37c34102",
+      "bytes": 14162
+    },
+    {
+      "path": "v5/scripts/collect_touch_tft.py",
+      "sha256": "ef6051beefc814e4d6ddc0964373406c7589befb61cdddf62723ca4534f2033e",
+      "bytes": 3335
+    },
+    {
+      "path": "v5/scripts/convert_kern_candidate.py",
+      "sha256": "1b56024b7f29f67ae37ac756c60c3adda9e710ca88057f7b0b4973729de9b2b3",
+      "bytes": 1157
+    },
+    {
+      "path": "v5/scripts/create_workstation_v2_demo.py",
+      "sha256": "6addf77e320111f0fa73cf0b54e28e86bb3bd3ddb3d5251a89dc8cd7ff7f4bb5",
+      "bytes": 2277
+    },
+    {
+      "path": "v5/scripts/generate_demo_assets.py",
+      "sha256": "cd362ca73d8f4087184cb8bf2777f9e3e6a996073c0cae82d570d8e912d76564",
+      "bytes": 4658
+    },
+    {
+      "path": "v5/scripts/prepare_16key_tests.py",
+      "sha256": "b15b80787a8cc31f4a46ddff06a8d655e96dd1bd21567c6687185199de9b463f",
+      "bytes": 4982
+    },
+    {
+      "path": "v5/scripts/prepare_audiveris.ps1",
+      "sha256": "fa51146819f568e03ba509f9e76b6aa3282ad2a7365ff2e261239ec512e907a9",
+      "bytes": 1818
+    },
+    {
+      "path": "v5/scripts/prepare_music_stack.py",
+      "sha256": "3cc1ffdcd35829f1eb25af4a66c3e419189927cb28df24a668a93cc27cf7dcd1",
+      "bytes": 6472
+    },
+    {
+      "path": "v5/scripts/prepare_omr_bridge.py",
+      "sha256": "bce9053594467d9147727ab5aa494b4071f5c2460dc6619a819add948e605a57",
+      "bytes": 1431
+    },
+    {
+      "path": "v5/scripts/prepare_screen_templates.py",
+      "sha256": "464845f51a7d05cc0f04f4726b5d3f0eb7c5b88e1fde4f3b6ad99eb7b51be2cf",
+      "bytes": 1653
+    },
+    {
+      "path": "v5/scripts/prepare_track_synth.py",
+      "sha256": "b57cb3147fcf4b01bfdadbcfd3e96e0bf0facbabf72a53133437db84071675a0",
+      "bytes": 5422
+    },
+    {
+      "path": "v5/scripts/prepare_transcoda.py",
+      "sha256": "8670321ea6a1e71fbac2da5b0282bfe0fd21513f3a9706408da8f31417823986",
+      "bytes": 3138
+    },
+    {
+      "path": "v5/scripts/prepare_workstation.py",
+      "sha256": "a13e221dda1a56ddbc4d4c0c1ce5f2d805a526217df224d39fcb2cd894112798",
+      "bytes": 10206
+    },
+    {
+      "path": "v5/scripts/prepare_workstation_tests.py",
+      "sha256": "047bf5c2ebb22390c5acff2d88157f8b664c82c9ceeac9e21b868408a4c639af",
+      "bytes": 6525
+    },
+    {
+      "path": "v5/scripts/prepare_workstation_v2.py",
+      "sha256": "27dc7c52217953a86c2a8da5efbbfb18691c40ab7b2877f35cccc877a3386587",
+      "bytes": 6280
+    },
+    {
+      "path": "v5/scripts/prepare_workstation_v2_tests.py",
+      "sha256": "c2e035119ac5521e7f3f2da80ae0a3fb4157ea8db37f449d987eee1fda0ca112",
+      "bytes": 4837
+    },
+    {
+      "path": "v5/scripts/preview_workstation_v2.py",
+      "sha256": "232132e43d4324cc332f6858d69691717d763b35bfa5724dc836ae3dfb6c1483",
+      "bytes": 3105
+    },
+    {
+      "path": "v5/scripts/program_instrument16.ps1",
+      "sha256": "f7fc50877da9e7d19043f29c559c0227af62d66bd7d9079af0788b691c6df779",
+      "bytes": 1920
+    },
+    {
+      "path": "v5/scripts/program_lcd_ctp.ps1",
+      "sha256": "9792fc8d1c55cfd4582e94f83f7ba74888e126f662836e8944b6d4fc10830e37",
+      "bytes": 1331
+    },
+    {
+      "path": "v5/scripts/program_lcd_only.ps1",
+      "sha256": "e3350ff4ef660b1fe9c0151f02ef26e9b96bf9b41151c38c03e71b834c005c22",
+      "bytes": 908
+    },
+    {
+      "path": "v5/scripts/program_workstation.ps1",
+      "sha256": "002e8723fe39216f87ceefa3d3e2404e7c542ff466d32710ae68878f87b21a26",
+      "bytes": 2361
+    },
+    {
+      "path": "v5/scripts/publish_workstation_v2.py",
+      "sha256": "e24240f1fcea175a5db0f8c52aa1d975b6557c9a800d06095b7ff2bb7e510303",
+      "bytes": 4811
+    },
+    {
+      "path": "v5/scripts/read_touch_probe.py",
+      "sha256": "8454ce7140fbf8163f50b1fe83f22acd9578952d3b011a85c996ce8a3a52dbf2",
+      "bytes": 2772
+    },
+    {
+      "path": "v5/scripts/report_workstation_v2_latency.py",
+      "sha256": "7cfa5cac79798cac8c31a89fc0db0f5a94b46fd82ac8eecb288a82d2a44a65fe",
+      "bytes": 4219
+    },
+    {
+      "path": "v5/scripts/requirements_omr_bridge.txt",
+      "sha256": "162b66ce69ed10fff4c02c3f94f6f95330a4c3c35c3da8bcee4d5c5ca156d38c",
+      "bytes": 444
+    },
+    {
+      "path": "v5/scripts/requirements_transcoda.txt",
+      "sha256": "2746586ca3066fcddbe9b1c32af1ef3c02ce640023692fd0229c7cd85f1803d8",
+      "bytes": 142
+    },
+    {
+      "path": "v5/scripts/run_tests.py",
+      "sha256": "0f6e74c0f0f5fcafa4f6de9cc5075aee479a2860648a8f93b2021cfe328135c8",
+      "bytes": 10246
+    },
+    {
+      "path": "v5/scripts/start_host_gui.ps1",
+      "sha256": "a9e39d5d1d67f7dc70e80a1184d5bc7a9446bf735d1398790440b686ffabe9e5",
+      "bytes": 500
+    },
+    {
+      "path": "v5/scripts/test_midi_tracks.py",
+      "sha256": "b22f5c4cd05e150cbfc493d5bafa48a6b14b15ee740390fbd8a6f9b77845269f",
+      "bytes": 5466
+    },
+    {
+      "path": "v5/scripts/test_track_audio.py",
+      "sha256": "320dd4b174632093d58dae37437c660e4e077dbead33b382244f924b0afb92f8",
+      "bytes": 1811
+    },
+    {
+      "path": "v5/scripts/test_workstation_v2.py",
+      "sha256": "b6ea60f465ea4d9a667d0ed2dffb1dbd88d178ed489f12dd5055d94df6fd9658",
+      "bytes": 3960
+    },
+    {
+      "path": "v5/scripts/test_workstation_v2_full_load.py",
+      "sha256": "edc9a4f159ab3e20a51e081f8aeb179aeb2104e70cc03f93a50886658a819a36",
+      "bytes": 3828
+    },
+    {
+      "path": "v5/scripts/test_workstation_v2_key_pipeline.py",
+      "sha256": "49013fe8ad61ccd6b438c43e738073de2da3a1203605094610a881669e4b87fb",
+      "bytes": 1523
+    },
+    {
+      "path": "v5/scripts/test_workstation_v2_latency.py",
+      "sha256": "833fb88b451f605336eb3f8139bda0b257e1c1c4d72268c02a5924ae3b631d5b",
+      "bytes": 1514
+    },
+    {
+      "path": "v5/scripts/test_workstation_v2_load.py",
+      "sha256": "cbb9f773e1d6af3dd89bf26aa25a746cd9d3cb591b85afbd20b3b0dbc38fe6f8",
+      "bytes": 1996
+    },
+    {
+      "path": "v5/scripts/verify_four_voice_spectrum.py",
+      "sha256": "4ae43451940c5ce3e9bc54e80fcbf4b1d3b3adef3390f8f22e52e8204445dcd2",
+      "bytes": 1678
+    },
+    {
+      "path": "v5/scripts/verify_instrument_elaboration.py",
+      "sha256": "f8f8482f130579ab7bcec78d3be12ceeefef06679b018cc2bf16248e5d4ded88",
+      "bytes": 1464
+    },
+    {
+      "path": "v5/scripts/verify_musicxml_roundtrip.py",
+      "sha256": "91e1aefe5f6b2fe03d0dcd700671693b900febf52e9b7787419a3fa49a24eb66",
+      "bytes": 5282
+    },
+    {
+      "path": "v5/scripts/verify_nocturne_pdf.py",
+      "sha256": "f3f0d8e0e1b7d7aa4d415f8782da9ce0057963ea8ec913cabaf804205610d07b",
+      "bytes": 3930
+    },
+    {
+      "path": "v5/scripts/verify_omr_bridge.py",
+      "sha256": "8925ce8303cb9abc481dcf5e4e8be9ccd56615976e65afcca51f9ffe859b818c",
+      "bytes": 2519
+    },
+    {
+      "path": "v5/scripts/verify_streaming_audio.py",
+      "sha256": "dc80abedaacf18e967b045fef9145dd25e69ee21c28b6c542e73ab57e957f872",
+      "bytes": 1807
+    },
+    {
+      "path": "v5/scripts/verify_synth32_spectrum.py",
+      "sha256": "f855bf9900230469a0b0a052bd8c0dba14c882b14edcb3c47299c8c8817cff87",
+      "bytes": 2113
+    },
+    {
+      "path": "v5/scripts/verify_touch_poly.py",
+      "sha256": "062a7fb55f05d2e330d5ca9aa4756d7f0bb4ea679837121e5aa278755e8af907",
+      "bytes": 9469
+    },
+    {
+      "path": "v5/scripts/verify_touch_screen.py",
+      "sha256": "217df86d9f3328446b213bd0ecba7adc39ad299c02bd068563665e5c1c0c2709",
+      "bytes": 14343
+    },
+    {
+      "path": "v5/scripts/verify_v5_layout.py",
+      "sha256": "881162ba301ca06225bcc180cb5eec970d82ef72b722926353631ab1703d73d6",
+      "bytes": 4692
+    },
+    {
+      "path": "v5/scripts/verify_workstation.py",
+      "sha256": "3a14a6b35dc17e78c97fdf92511dace43a16d14e6ab4f83c2c9b89c9a4c5f03d",
+      "bytes": 15905
+    },
+    {
+      "path": "v5/scripts/verify_workstation_elaboration.py",
+      "sha256": "962ac4e0cbb3aa272eb39c19211d55ade36a3a7805f076ae34f473c6d93ec15e",
+      "bytes": 1400
+    },
+    {
+      "path": "v5/scripts/verify_workstation_pinout.py",
+      "sha256": "0542b65ed2ba34bb61d8c31f487aae76dba87cb6c496acb7e81da7babf1340a6",
+      "bytes": 2330
+    },
+    {
+      "path": "v5/scripts/verify_workstation_preview.py",
+      "sha256": "bdd610327f39b34238e760b976b59645c9dc12ed467aa65f02d2cb28c6e05d8e",
+      "bytes": 3140
+    },
+    {
+      "path": "v5/scripts/verify_workstation_v2.py",
+      "sha256": "e0df7bce978962ce9fb5f8c777f950b825718514ed2b18a65cff4c590764ebcd",
+      "bytes": 3729
+    },
+    {
+      "path": "v5/start_host_gui.bat",
+      "sha256": "40c01c1f5435a100e240427b7c26830a6dec5442471aed91d89bd9e9ad2d2cae",
+      "bytes": 801
+    },
+    {
+      "path": "v5/start_workstation_v2.bat",
+      "sha256": "dc48f100ca451903bd4492cd3de00e2ec3935b6584186aede9b402af3b30a762",
+      "bytes": 1137
+    },
+    {
+      "path": "v5/tests/mcp3208_dynamic_model.sv",
+      "sha256": "8a93120e56c04bac30e113f5894bee1465a18492e327cd6d3b64f132e3e1e935",
+      "bytes": 784
+    },
+    {
+      "path": "v5/tests/mcp3208_model.sv",
+      "sha256": "384554070b6b9eea1dace8080c7cced712638c8c24f89dc1544e1324f71f3675",
+      "bytes": 3744
+    },
+    {
+      "path": "v5/tests/models/sdpb_model.sv",
+      "sha256": "308f3110cfd64861dbeb13f3a6e3c032a79cae213146c791c9932d7adea70f15",
+      "bytes": 742
+    },
+    {
+      "path": "v5/tests/models/video_elaboration_stubs.sv",
+      "sha256": "46650abd3fe52ef8f0885c1bd331f835c1d4e0d2601b7ddd08d958873bd4bdbc",
+      "bytes": 660
+    },
+    {
+      "path": "v5/tests/tb_13key_audio_path.sv",
+      "sha256": "75a511e95df1d88ad040918a5e979f43683a758dddd0225124e66fd239e6f3c3",
+      "bytes": 4900
+    },
+    {
+      "path": "v5/tests/tb_16key_pressure_audio_path.sv",
+      "sha256": "eb8fecee1a025df32276d1c50c32dd67e1c53159a6a34778528b21b36dbe6713",
+      "bytes": 5572
+    },
+    {
+      "path": "v5/tests/tb_16key_pressure_rising_audio_path.sv",
+      "sha256": "ce7799cb53d578ba04dd14750cb0499bf47f5c8fcc1d4495c390ecf520acfd8c",
+      "bytes": 374
+    },
+    {
+      "path": "v5/tests/tb_adc_screen_diag_top.sv",
+      "sha256": "e8489057c89f19ddbc377ace3648c747cd9ad38b61ef929ef90f4774716262ef",
+      "bytes": 4806
+    },
+    {
+      "path": "v5/tests/tb_audio_effects.sv",
+      "sha256": "dc997b6ecd25e9c212b964d59f081c5d27325055972e2ae8dd619ea46f101d69",
+      "bytes": 1411
+    },
+    {
+      "path": "v5/tests/tb_drum_synth.sv",
+      "sha256": "ee6a01b9ba3abd96692497d9c3025104d2e929e8747fe83d17f273692dc9991d",
+      "bytes": 1382
+    },
+    {
+      "path": "v5/tests/tb_i2c_reg_master.sv",
+      "sha256": "e2c3d4884b66845379e055349f4282a871f6cdf92130b62325cf889492ffd8b2",
+      "bytes": 10148
+    },
+    {
+      "path": "v5/tests/tb_i2s_tx.sv",
+      "sha256": "733f2f0f62aa5cfa400b0b1fda2e69d6a847b6568f0ddb8f8a9b2583b8aa0b3a",
+      "bytes": 1929
+    },
+    {
+      "path": "v5/tests/tb_instrument_latency.sv",
+      "sha256": "1a99c24d493e7cc09783836a8998eb42d8e75cc10a3ce1bbe6ed9d5fc3894a19",
+      "bytes": 6687
+    },
+    {
+      "path": "v5/tests/tb_instrument_ui_1024x600.sv",
+      "sha256": "7c359e9c48cde5d41187c3edca4ab56cc004886fd1709acf61a8140b65e281d8",
+      "bytes": 2267
+    },
+    {
+      "path": "v5/tests/tb_key_router_events.sv",
+      "sha256": "cef4066e4620ca445b3ab04c178c485e031a4869c7af063eea3b0e8746aa617a",
+      "bytes": 2378
+    },
+    {
+      "path": "v5/tests/tb_key_sound_mapping.sv",
+      "sha256": "2e3d27bc839e57d80d7d6b21442dab1975bf8ebe9023432abf6a1baec1fddada",
+      "bytes": 1880
+    },
+    {
+      "path": "v5/tests/tb_mcp3208_dual_scan.sv",
+      "sha256": "6753016f5e17a4bcba2ad2d02a7b98f6ea074aaab27b60d81384cf4d2073ae70",
+      "bytes": 7931
+    },
+    {
+      "path": "v5/tests/tb_midi_player_engine.sv",
+      "sha256": "62cb6ded50ba6eaa413bcd9a6d0ba76b1bba60df438d7cd12200b8a58ca93f67",
+      "bytes": 8189
+    },
+    {
+      "path": "v5/tests/tb_midi_player_scheduler.sv",
+      "sha256": "7573ea761a8d6dbbb7be6e31402ac8775a42d27bce22ac8c90809213d87d1d79",
+      "bytes": 3346
+    },
+    {
+      "path": "v5/tests/tb_midi_player_top.sv",
+      "sha256": "bcbd5a5d73eb1749272a247be1a0c9c257a77d6b087e2488144d482ab002d46a",
+      "bytes": 7109
+    },
+    {
+      "path": "v5/tests/tb_midi_tracks_parser.sv",
+      "sha256": "b8bc4b9a07291fdf44dcc405194b1fe17b674af791bd2b1980647524205d91a6",
+      "bytes": 4298
+    },
+    {
+      "path": "v5/tests/tb_midi_type0_parser.sv",
+      "sha256": "32416f67efcd46759b7f3f804326e7d8f0bc2de6b0cd4c553e0425a8398f62b2",
+      "bytes": 2573
+    },
+    {
+      "path": "v5/tests/tb_midi_type0_parser_64k.sv",
+      "sha256": "bef78f0a369ef58c7361471f7e3dc9869802ff04a0e4d19928029d5282a35730",
+      "bytes": 3005
+    },
+    {
+      "path": "v5/tests/tb_midi_type0_parser_sync.sv",
+      "sha256": "1bf54bd5c9d1eb7dbb23f5ec0cd85d55c65ee1c5e8aa929b448d0a83562808b2",
+      "bytes": 2903
+    },
+    {
+      "path": "v5/tests/tb_poly_synth_4voice.sv",
+      "sha256": "0b58a5c31e3ae49f562b86b28c7f1dc56bb4d7f262a9e97a40bf94cca37c8579",
+      "bytes": 5805
+    },
+    {
+      "path": "v5/tests/tb_poly_synth_adsr.sv",
+      "sha256": "3835c2bbf3598c7af0cd6a37dd29fc021f002ec0b4fd701f3d0db6a837610218",
+      "bytes": 1573
+    },
+    {
+      "path": "v5/tests/tb_poly_synth_pipeline.sv",
+      "sha256": "0b254ef16e0df0bac44d4a8e3b07f755696e61ea6bf75ba263c0a009c39aa7bc",
+      "bytes": 4379
+    },
+    {
+      "path": "v5/tests/tb_polyphony_demo_top.sv",
+      "sha256": "87f1e22013bf4fc2891b73f8c871626280bd1fdcaafcff3fdd4210e91bec3381",
+      "bytes": 1728
+    },
+    {
+      "path": "v5/tests/tb_polyphony_timbre_demo_top.sv",
+      "sha256": "a0f88fcc8c36ec0da4cb3620e08675727326b871ba542d5d0f2e1207181e1133",
+      "bytes": 1897
+    },
+    {
+      "path": "v5/tests/tb_pressure_audio_path.sv",
+      "sha256": "a4568157ddc2d292a8ac93ea9b586bae17756a5f4e1a3ac5800f83ae038f4f2e",
+      "bytes": 3127
+    },
+    {
+      "path": "v5/tests/tb_pressure_control.sv",
+      "sha256": "2e5bdda85255813a3a80ebc929bc10c89199059f98a0ac7413adf62081009a49",
+      "bytes": 2788
+    },
+    {
+      "path": "v5/tests/tb_pressure_key_matrix.sv",
+      "sha256": "f06aa5f0d84332907e05ff8e3021688587ec4f020521877f81d574b11f072f76",
+      "bytes": 5684
+    },
+    {
+      "path": "v5/tests/tb_pressure_max16.sv",
+      "sha256": "c2228edf994ab8efbe554f5354cc02e12a78aa8df23fd2fbfd98897df5cf8737",
+      "bytes": 1137
+    },
+    {
+      "path": "v5/tests/tb_pressure_tone.sv",
+      "sha256": "ced24197c55911ed91797a5cbd075bdbe401b4b970a9f8a7fc2e1a67eb769463",
+      "bytes": 1974
+    },
+    {
+      "path": "v5/tests/tb_pt8211_tx.sv",
+      "sha256": "c20e5bc85584a79426424871d075fba2365e218ef7e49b47b00234f984a16edb",
+      "bytes": 1481
+    },
+    {
+      "path": "v5/tests/tb_screen_performance_controls.sv",
+      "sha256": "98dde94e30d50e0d61b1d0072c0f08ce917bc4ce78657a7ba00c006deda2b107",
+      "bytes": 4124
+    },
+    {
+      "path": "v5/tests/tb_screen_touch16_audio_path.sv",
+      "sha256": "4e6026969d6e12f941a700c11868d42e6bf7a84110b032ec58f26d38a7817dfc",
+      "bytes": 13979
+    },
+    {
+      "path": "v5/tests/tb_screen_touch_audio_path.sv",
+      "sha256": "d315298125164337885bccc4723884f19cea9067eee74eba3166812d74e1e85b",
+      "bytes": 12714
+    },
+    {
+      "path": "v5/tests/tb_screen_touch_keys_rx.sv",
+      "sha256": "2d9b92fefbd17503d31f3aa215e0b347481fbe38c8a84b2385cb9c24c144b242",
+      "bytes": 7066
+    },
+    {
+      "path": "v5/tests/tb_serial_screen_nextion16_tx.sv",
+      "sha256": "f96bca5cfbfac1def03426df6467d101cf72cee0ec0e6d3ec2cd62e8b5502460",
+      "bytes": 7298
+    },
+    {
+      "path": "v5/tests/tb_serial_screen_nextion_tx.sv",
+      "sha256": "f4191109f18d4a1eaf232419a298dcba30653a3fc0020547211e70205ed15a80",
+      "bytes": 7120
+    },
+    {
+      "path": "v5/tests/tb_snapshot_cdc.sv",
+      "sha256": "b6f606c5d44d7bbcb04728d921ff05d784ba57c3fb70648f91e7aa0b72109947",
+      "bytes": 1244
+    },
+    {
+      "path": "v5/tests/tb_synth32.sv",
+      "sha256": "7e0994a11e909d50750186cca80f09dde094b2b5f5c283bb22b3bcc43e619a6a",
+      "bytes": 4069
+    },
+    {
+      "path": "v5/tests/tb_synth32_spectrum.sv",
+      "sha256": "377af3149631716f868ffb1bf5b3e217989b28436f4e4424bc7187fdcca72e26",
+      "bytes": 1804
+    },
+    {
+      "path": "v5/tests/tb_synth32_tracks.sv",
+      "sha256": "041b9c2f9556ccc67e5163e3e21b0357b07e925ff13efdd42ac24a817dd79f30",
+      "bytes": 3951
+    },
+    {
+      "path": "v5/tests/tb_timbre_file_store.sv",
+      "sha256": "b7818377fd879d51277a0dc4c8c177d80b0c6038b4e6251ab7f62e2ea410164b",
+      "bytes": 5057
+    },
+    {
+      "path": "v5/tests/tb_track_gain_bank.sv",
+      "sha256": "e361096824d8341468443e75fee62bf157c14e5f774aaadf814167a3968c0e4d",
+      "bytes": 2661
+    },
+    {
+      "path": "v5/tests/tb_uart_frame_tx_v2.sv",
+      "sha256": "79eb8ed7717ad8981bd66f0f9e62093820bf5d0b8577e50cad1e94a7c73f8c8b",
+      "bytes": 1149
+    },
+    {
+      "path": "v5/tests/tb_uart_ping_echo_top.sv",
+      "sha256": "4809d34ce6214d3dfb2a464caf18c76ae13c3ecabd90f22b423c65e34610c919",
+      "bytes": 4326
+    },
+    {
+      "path": "v5/tests/tb_video_1024x600.sv",
+      "sha256": "ccf45b120d22809867bcd189b2f3ab674d7e7ee34f9f2ec0e14442019fddf951",
+      "bytes": 4120
+    },
+    {
+      "path": "v5/tests/tb_workstation_latency.sv",
+      "sha256": "5adaf04d0bf651f43f51f5494521ae2c285b0fbb41a2cfec7a45ca3b5b1c6bb2",
+      "bytes": 8936
+    },
+    {
+      "path": "v5/tests/tb_workstation_screen_tx.sv",
+      "sha256": "91916e4219ec85763848ee4b5fa728bb4b703abedd4b21a4e4b7463818b0a41b",
+      "bytes": 1724
+    },
+    {
+      "path": "v5/tests/tb_workstation_services.sv",
+      "sha256": "a251ede2e357f83b7ea5f29cdd53bf04d6222eae371bce5287dd13f3265e9e6b",
+      "bytes": 3644
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_commands.sv",
+      "sha256": "c950c77f7006ecb6d65d35282369120715f31c2ab8bf5b7ebf0221873d40e276",
+      "bytes": 3610
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_emergency.sv",
+      "sha256": "335d23d0c9709535bbe4f7bd812522a9fb36bb34c9fb8d8c0cc0ce82f4b80a7c",
+      "bytes": 7644
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_full_load.sv",
+      "sha256": "5287126c98091388b8ac3276d9cd47ffacca91fa080c9b56fb6d2713024df55c",
+      "bytes": 4510
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_integration.sv",
+      "sha256": "cd2883c62443c659a9aface0cdd520a3be0d45725a3110a43f6377ca07399b65",
+      "bytes": 10569
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_key_pipeline.sv",
+      "sha256": "569598b55936ec54f3042e27e04fb136862f54cd322dcb06240cf4619babcaf8",
+      "bytes": 2379
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_latency.sv",
+      "sha256": "ec65a10b653e02b37aebe79d6b2b3a43b2df4833d1019f281150a7d8fa9097c4",
+      "bytes": 4280
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_load.sv",
+      "sha256": "7ab9010ee5ca27184652ac03335f9fdd93a3637703a6f3ef5184f8431f4d6962",
+      "bytes": 3936
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_mapping_commit.sv",
+      "sha256": "d4c5db569295925108f7c00fcaf960285204d2baa40f9cd7fa9529ed0bc10084",
+      "bytes": 3537
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_router.sv",
+      "sha256": "26d675a7c6cd3b7b628ea6e5c90061838c3606e138e1b59ac4cc3ecde3ade2ad",
+      "bytes": 1739
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_screen.sv",
+      "sha256": "17bf06ef59d12305be1caaf8e918a33cebd2d1a542042388c5d4eb5f8f92f984",
+      "bytes": 1852
+    },
+    {
+      "path": "v5/tests/tb_workstation_v2_serial_router.sv",
+      "sha256": "ca95b90769f1aeb2202eb8f2def7007cc0053807b654115449b50b2378b813d2",
+      "bytes": 2994
+    },
+    {
+      "path": "v5/tests/test_demo_assets.py",
+      "sha256": "a84c2835ca4aa3df13df38988ecc39171d4c9d3f35b08f9cc5b008445655c36f",
+      "bytes": 1172
+    },
+    {
+      "path": "v5/tests/test_deployment_receipts.py",
+      "sha256": "cde20e8a97c40321a5283667de5bee2fc1908633a8c3aaafdeb01afa5da880bf",
+      "bytes": 2180
+    },
+    {
+      "path": "v5/tests/test_host_protocol.py",
+      "sha256": "2c8400ded9a0f79d14f6dc50f995b739f4d0e2ad1647fc1b55be7f4933175578",
+      "bytes": 2072
+    },
+    {
+      "path": "v5/tests/test_measure_editor.py",
+      "sha256": "03fb56c24c6271fdf596e2a9801dfae707e2a10c85e5078276046dbb6cf45029",
+      "bytes": 6775
+    },
+    {
+      "path": "v5/tests/test_music_project.py",
+      "sha256": "9a00c0b4de679d64b960e029fb3266cc6a831d42dc3d540e2dd989de70f9f1be",
+      "bytes": 9791
+    },
+    {
+      "path": "v5/tests/test_opensource_music.py",
+      "sha256": "2243a994f1bd09759c0805514d6b87cd470f0d04b1160e1cda7c46295ea2b238",
+      "bytes": 12711
+    },
+    {
+      "path": "v5/tests/test_preview_audio.py",
+      "sha256": "c80eab388c01b3d3b5c5e236bce9ef81d5213830f865abb2b401d334f68df88a",
+      "bytes": 4087
+    },
+    {
+      "path": "v5/tests/test_process_job.py",
+      "sha256": "7ebdd1c977cb865b51e79d1056a148874c98f07b2a3b53490d99d645815d4403",
+      "bytes": 1119
+    },
+    {
+      "path": "v5/tests/test_score_reengraving.py",
+      "sha256": "b24e11af4d4fcc6b3e1ec3d6790735f8a5b136ad773e13eba074f8228555921e",
+      "bytes": 2942
+    },
+    {
+      "path": "v5/tests/test_score_review.py",
+      "sha256": "c85ddec288f0da2d7ada19ab6bf9de1cf81aa6699034e53bfc38cbaa013d68df",
+      "bytes": 3100
+    },
+    {
+      "path": "v5/tests/test_serial_executor.py",
+      "sha256": "5d807692709a89114ec45958282f554e4e1ef937b352b1458386fde98d505c70",
+      "bytes": 4954
+    },
+    {
+      "path": "v5/tests/test_source_tracks.py",
+      "sha256": "d9500b01985b11cf93de34d4b4effbcd5e31ed3b49a3d809a85a00c5136acebb",
+      "bytes": 7482
+    },
+    {
+      "path": "v5/tests/test_stream_mixing.py",
+      "sha256": "35c19345ad247fc73e489adf9b6d720c58d8816d3aeec1c4c3406efb0d381775",
+      "bytes": 1774
+    },
+    {
+      "path": "v5/tests/test_track_compiler.py",
+      "sha256": "8d13c27436b1ca044034ee790674aaafb179c061834acad3b050bd328af86805",
+      "bytes": 6111
+    },
+    {
+      "path": "v5/tests/test_workstation_gui.py",
+      "sha256": "d7cf9bb5bd123ab3322f83cc63d650832173d98703f6a33618fcae5bc7f4adb6",
+      "bytes": 19677
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/LICENSE",
+      "sha256": "cf6e9989f9f5f0f402dd98f486beb7bab29aa77284effd14d359f12358931570",
+      "bytes": 1083
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/__init__.py",
+      "sha256": "149cb0aa6362239a75bc9aa4982fc7f7c2caa3b8b0789be49cb1a7a254e7562a",
+      "bytes": 2855
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/__main__.py",
+      "sha256": "fd860037dd55b06637cd907eaf6efa4ba12f072e134d3393d8bde0e390758626",
+      "bytes": 87
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/a_line_rules.py",
+      "sha256": "4eaa1933bd87ba1903d9ccca3a612af7ce56a26ab503722c49e13e63e6b314c6",
+      "bytes": 7454
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/agent_preview.py",
+      "sha256": "a3f2af35fdaba15c0cf09a2063194e43e374cb76ad54bd368b4f99f5be34b06f",
+      "bytes": 34345
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/api.py",
+      "sha256": "117bc38814c58555a28a02c08e39884be6b696f4af2c73f10c546a5d8bab0b59",
+      "bytes": 36068
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/cli.py",
+      "sha256": "346c1c59990344a107ff2d7465b40cfeb02d7ea3095ac0f3ed2312e2350275f5",
+      "bytes": 151956
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/design_ops.py",
+      "sha256": "e6a6985acfb987cc56b8471b8a6aa9c5779382f32dd66d9ef30d6ad14597865d",
+      "bytes": 30790
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/editor.py",
+      "sha256": "8d1c36e69f26406448afa02b8c43a51e67ed6fea8515e8326ade6f44df61b968",
+      "bytes": 155639
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/editor_capabilities.py",
+      "sha256": "1ed0f7abf665f5fe7c6e60bdf87352279d83925327a824c8e7dfd6a18e265429",
+      "bytes": 50386
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/event_bytecode.py",
+      "sha256": "1b3c0077607a7ecc1f04838be2e096521ec4dc7f38b9ab3ee55d691c0d2c8f6b",
+      "bytes": 10799
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/event_logic.py",
+      "sha256": "3add88fe5f88f5284272a6aad0eb38bab2d6874ef1e245d1785396f4b5804fe3",
+      "bytes": 23163
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/event_simulator.py",
+      "sha256": "8fafee945bf0090f4f9c2a4bc6fc208ab1f3c84d74c158761fa9ff9e71bf32ca",
+      "bytes": 28508
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/export_bundle.py",
+      "sha256": "37299212cb510afd6677268d77f7ba4b969c5160818add652e11bfbaf929998a",
+      "bytes": 10454
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/font_toolchain.py",
+      "sha256": "8098bda7d089d6b57dde2abf7837a6c673584150d2eef86d9f37eef6cc6c2326",
+      "bytes": 7397
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/hmi_cfs.py",
+      "sha256": "086dbcd6d679e58dacef35c3c54b6bd434c52dd91bf6a4b1f4125a5585153a15",
+      "bytes": 4973
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/hmi_donor_patch.py",
+      "sha256": "c5e8517ef08bc9373485a440191410a8ae5b1a60f729fd784bb46aafd45538f1",
+      "bytes": 72976
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/hmi_donors.py",
+      "sha256": "2c41c607ae485bb25c2e1607bf16f5726022df863ff2e5bec168190de45b961d",
+      "bytes": 9568
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/hmi_import.py",
+      "sha256": "ed1e3af7ce9233893e45158ff393abc4066b407ac5a573ecd92c03697fc6ffa6",
+      "bytes": 14657
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/hmi_inspect.py",
+      "sha256": "c1d1fe4b5cea0a318bb9e045be78608cb451b1ab42c3da31c77a5696fc8ee334",
+      "bytes": 15447
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/hmi_pagesafe.py",
+      "sha256": "07554ce254a44fcb87c4f728e035bec1df1bec2f232091188ce2c3ed40b5363d",
+      "bytes": 3905
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/hmi_roundtrip.py",
+      "sha256": "a617faba7433c5c9f04b43e7decee7e49895715b8a86be6469d692326782b2f4",
+      "bytes": 16809
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/layout.py",
+      "sha256": "141c40414f3cc77cfa62119e3a965f7033dbed6ecbe6258db558fa4d5e6324f2",
+      "bytes": 7080
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/object_hash.py",
+      "sha256": "9e2db02cacae4acccfc69a2441a6fd11a3757a6d83566b50bbbaebea397b5242",
+      "bytes": 1241
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/official_gui_automation.py",
+      "sha256": "168570f8076eb3683763f7b8399ad9a4f4ce0abb3599060807eef5c2374b6538",
+      "bytes": 44539
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/official_lowlevel_probe.py",
+      "sha256": "d5757b1aa917b42a054bff5beaba61a2a92c183265b09bd7c8698e801da5f795",
+      "bytes": 11478
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/official_probe_cache.py",
+      "sha256": "2a72be9165d7810fbfc0664727eb867def413eb93ef9c29d48495786967394ba",
+      "bytes": 15721
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/page_format.py",
+      "sha256": "eb4ccc7a212522c7fbc7a922b5de880e0206eafba8c86cb734e8e0326c440408",
+      "bytes": 15226
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/preview.py",
+      "sha256": "501876d96f8574ca1df276637dc1bb633cf0b2018adda801a7dd1318e5fb9ae1",
+      "bytes": 34481
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/preview_app.py",
+      "sha256": "a1fc66257bbe0fbd09c919e54a82e7721d848f670a1f3f5d58c0df902c142508",
+      "bytes": 118280
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/protocol.py",
+      "sha256": "4e27a7efe6afef42a639f8109c6a89d4806f45da22c8e1f20e53e85ff44443c7",
+      "bytes": 5845
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/runtime_preview.py",
+      "sha256": "33cfc84e8146aab16c21aa13bb911a516a333b74fe5e43b3e7f82fe89061a6a1",
+      "bytes": 8209
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/scenario_runner.py",
+      "sha256": "8f8fc7da7ec4a0bb58080e705d0a39b30165f50247c558bb90b1a51bac1e0dd5",
+      "bytes": 13195
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/scene.py",
+      "sha256": "c2163486adf9c244ecc18aa411c4a1914f1fe7750ae0d8db0e90b5485166751a",
+      "bytes": 18847
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/scene_check.py",
+      "sha256": "0a2023d45ee3b862b9ea0263eff459dcac9eb61c13fd6a5d59991662cb1f06ef",
+      "bytes": 19968
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/scene_edit.py",
+      "sha256": "f0889ed9cbdf7c21e68e3d7878524b5151f038d50f1007d83e2a6d1a49b44f08",
+      "bytes": 61490
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/scene_smoke.py",
+      "sha256": "36615d22d00702b7fa941b7cc5fe6790f92200bcce12c831676a313ccd3f89b1",
+      "bytes": 19987
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/sd_recovery_guard.py",
+      "sha256": "bb59c1764ca5d275d0cfbc08c4cfa45f9287a9156bf6f4b3067dfe03628819e7",
+      "bytes": 2653
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/serial_health.py",
+      "sha256": "78f13f7d266c1e03caa6540358ad430801550ec5e9251c042b4e49d11ecc76d4",
+      "bytes": 4002
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/target_invariants.py",
+      "sha256": "208474e4ea511561b2b36899cb572d71df697c2942b66722f4d1fe250ae21de0",
+      "bytes": 9665
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/target_probe.py",
+      "sha256": "0b40cf5de094b2351582fb6594e285cb477ca8a2da68e67b907a5f9c3d750113",
+      "bytes": 14470
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/target_status.py",
+      "sha256": "ff93269917f24ac449d05ec19cf6a4699a25df26616ac8a10b98156e7b9e996f",
+      "bytes": 245137
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_case_diff.py",
+      "sha256": "d36a3a0ad71591328e862d8ca89648591f578875e937a9845cf7294614b3c11b",
+      "bytes": 7968
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_checksum.py",
+      "sha256": "60b43bf4d7b7a72314341c2fa57b538dff09c049057301a9c322ddc013743d78",
+      "bytes": 3980
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_download.py",
+      "sha256": "b8eed5252af06616d4e6e71a8fae051c586905d3679cec0134baa749fc15a44d",
+      "bytes": 21541
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_event_index.py",
+      "sha256": "d6813a381cc83728253c634dc0067d6058dd054d1a5085a6e6660f907b933cb2",
+      "bytes": 75302
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_font_pack.py",
+      "sha256": "c9ad24b07f33bc8284a128a6f3bcbdbc9eb799c8af3344cc3c7b9ffca3414769",
+      "bytes": 5578
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_fonts.py",
+      "sha256": "9a7098f6cef8094471905c58c588bf5ab78a5a0afa795e231202d99c71dbc06b",
+      "bytes": 5559
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_hmisafe.py",
+      "sha256": "6f61e8e228c9550bff81e92fabed91af4fa938e39b7b9c145e641230606ca5d4",
+      "bytes": 15541
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_images.py",
+      "sha256": "be2d9bfa0e5faa2e23af49ce9004286655c8259e670d9ae590f250b594fefee6",
+      "bytes": 32971
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_media.py",
+      "sha256": "e13db8bcc584f85fdbe5379342129b3b5b3c5698bd438b6a4beb991e81a74666",
+      "bytes": 17860
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_patch.py",
+      "sha256": "5dbbc77e01af5a8c94031be435cf5c7c7fc901c805164042147d98e2de22205c",
+      "bytes": 458718
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_prehmisafe.py",
+      "sha256": "06b3fa792a55d932229f33e3908b93e6c02314e2bdba9ba1b04f5dec28302bbb",
+      "bytes": 13926
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_reverse.py",
+      "sha256": "9905815630f7bb9f6366032384ffb6cace541883530c3fe98a37145ec5067801",
+      "bytes": 26315
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/tft_toolchain.py",
+      "sha256": "0a2c86696711fe2b246ee75df2253aa1535c74948e3a3ca9face7b9ddc8d139c",
+      "bytes": 5468
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/transport.py",
+      "sha256": "1df8428cdae1bbaf91c71093aaa0106eff23a21fd5de65ff5950a890e58937d6",
+      "bytes": 2473
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/widget_templates.py",
+      "sha256": "2a0b7b2f7e86f2539cc9b242fbc970254b772ca3dc1aab8b88194ed59da23755",
+      "bytes": 4739
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/widgets.py",
+      "sha256": "ed8cf2dcd21e1ab16171c975af0dfa1f46d06ceab302a47968e4cee3ae1d8cc1",
+      "bytes": 19658
+    },
+    {
+      "path": "v5/third_party/tjc_toolchain/usarthmi/zi_font.py",
+      "sha256": "486d0d4e2adee9c2913d5195864f1049344add1620aea806ad9f66b4e6059122",
+      "bytes": 9085
+    },
+    {
+      "path": "v5/THIRD_PARTY_NOTICES.md",
+      "sha256": "8552bb9dea5816c2866b5a0af3c0c364a2b196f20842af02ecbaa698df5b6012",
+      "bytes": 1008
+    },
+    {
+      "path": "v5/VERSION",
+      "sha256": "8b1ddcda7ec0d30e40cd6d3317f1132086ebb5711763e7071816eaa24790c956",
+      "bytes": 11
+    },
+    {
+      "path": "v5/上位机双击启动.vbs",
+      "sha256": "bde6f4376d2a255825410aa0a2851ccd22a0ffa7ecc104cbafb7135e00264b21",
+      "bytes": 842
+    },
+    {
+      "path": "v5/启动音乐工作站.bat",
+      "sha256": "caca876922cfa430d17982b9999b3603e84634d2cb3cd96c137f966dea80df8a",
+      "bytes": 52
+    },
+    {
+      "path": "v5/SOURCE_MANIFEST.json",
+      "sha256": "3f677b18397cbf058362be452af73299d2d9db1f6d849efa1447692b645331a5",
+      "bytes": 58410,
+      "original_sha256": "b6613681814dc74cbe1b4ff439efc51889f01540db664f6d1863a03cee490358",
+      "change": "Preserve snapshot line endings in Git and refresh corresponding manifest hash; original manifest retained at release root."
+    }
+  ]
+}

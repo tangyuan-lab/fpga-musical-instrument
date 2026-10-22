@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="../rtl/common/reset_sync.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/common/snapshot_cdc.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/common/button_filter.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/common/control_ram_sdp.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/io/uart_rx.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/io/uart_tx.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/io/uart_frame_protocol.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/io/uart_frame_tx_v2.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/io/midi_file_ram_sdp.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/io/workstation_v2_resources.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/io/workstation_v2_emergency.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/io/screen_touch_keys_rx.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/io/mcp3208_dual_scan.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/io/workstation_v2_screen.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/control/pressure_key_matrix.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/control/pressure_max16.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/control/workstation_v2_router.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/control/instrument_mode_control_v2.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/control/drum_sequencer.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/control/workstation_v2_player.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/control/workstation_v2_commands.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/midi/midi_type0_parser_v2.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/audio/synth32_generated.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/audio/audio_effects.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/audio/sample_ram.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/audio/i2s_tx.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/audio/audio_startup.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/audio/drum_synth.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/video/video_pll.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/video/video_timing.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/video/tmds_encoder.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/video/dvi_tx.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/video/gowin_dvi_ip/DVI_TX_Top.v" type="file.verilog" enable="1" />
+        <File path="../rtl/video/instrument_ui_1024x600.sv" type="file.verilog" enable="1" />
+        <File path="../rtl/board/instrument_workstation_v2_top.sv" type="file.verilog" enable="1" />
+        <File path="instrument_workstation_v2.cst" type="file.cst" enable="1" />
+        <File path="instrument_workstation_v2.sdc" type="file.sdc" enable="1" />
+    </FileList>
+</Project>

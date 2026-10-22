@@ -1,0 +1,3 @@
+# PASS I2S stereo framing, one-bit WS delay, 16-bit data, 48 kHz accumulator
+#    Time: 8333490 ns  Iteration: 1  Instance: /tb_i2s_tx_16
+# Errors: 0, Warnings: 0

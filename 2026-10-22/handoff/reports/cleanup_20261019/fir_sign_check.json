@@ -1,0 +1,61 @@
+{
+  "netlist_sha256": "c7ec1c7fd64ac4cf1f091dc636cd2efbb29efc7f059eea92cdf665eea9303def",
+  "memory_sha256": "935c4fcb84c62a12a666f3fb31b6068698b02d16a73822bbc69ef4cc3c6025d9",
+  "passed": true,
+  "total_rows": 128,
+  "records": [
+    {
+      "module": "shared_C_core",
+      "tag_leaves": [
+        "fir_read_tag[4]",
+        "fir_read_tag_0[0]",
+        "fir_read_tag_0[1]",
+        "fir_read_tag_0[2]",
+        "fir_read_tag_0[3]"
+      ],
+      "rows": 32,
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "module": "shared_C_core_0",
+      "tag_leaves": [
+        "fir_read_tag[4]",
+        "fir_read_tag_0[0]",
+        "fir_read_tag_0[1]",
+        "fir_read_tag_0[2]",
+        "fir_read_tag_0[3]"
+      ],
+      "rows": 32,
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "module": "shared_C_core_1",
+      "tag_leaves": [
+        "fir_read_tag[4]",
+        "fir_read_tag_0[0]",
+        "fir_read_tag_0[1]",
+        "fir_read_tag_0[2]",
+        "fir_read_tag_0[3]"
+      ],
+      "rows": 32,
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "module": "shared_C_core_2",
+      "tag_leaves": [
+        "fir_read_tag[4]",
+        "fir_read_tag_0[0]",
+        "fir_read_tag_0[1]",
+        "fir_read_tag_0[2]",
+        "fir_read_tag_0[3]"
+      ],
+      "rows": 32,
+      "passed": true,
+      "mismatches": []
+    }
+  ],
+  "method": "Evaluate mapped LUT/INV/MUX cones for all FIR addresses in all four cores; the only variable leaves are five FIR address bits."
+}

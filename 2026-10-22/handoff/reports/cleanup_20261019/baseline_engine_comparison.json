@@ -1,0 +1,7 @@
+{
+  "baseline_exit": 1,
+  "baseline_output": "FATAL: src/poly4_shared/instrument_shared4_slot.v:186: Drum parameter owners overlapped a retained-bank capture\r\n       Time: 190000  Scope: tb_engine.dut.slots[0].slot\r\n",
+  "staged_output": "FATAL: src/poly4_shared/instrument_shared4_slot.v:186: Drum parameter owners overlapped a retained-bank capture\n       Time: 190000  Scope: tb_engine.dut.slots[0].slot\n",
+  "scope": "Same new Icarus engine harness against original pre-cleanup RTL vs staged RTL, not a previously qualified full regression",
+  "same_known_owner_assertion": true
+}

@@ -1,0 +1,3 @@
+# PASS 100000 actual RTL integer-rule vectors :  signed glide rounding/minimum step, C/T decay rounding, alias taper, full-width PCM clipping
+#    Time: 100 us  Iteration: 0  Instance: /tb_integer_rules
+# Errors: 0, Warnings: 0

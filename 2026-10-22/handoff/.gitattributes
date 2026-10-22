@@ -1,0 +1,20 @@
+* text=auto
+*.v text eol=lf
+*.sv text eol=lf
+*.vh text eol=lf
+*.mem -text
+*.py text eol=lf
+*.tcl text eol=lf
+*.sdc text eol=lf
+*.cst text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.png binary
+*.fs binary
+*.vg binary
+*.zip binary
+
+
+# Dated snapshot: preserve source inventory bytes regardless of core.autocrlf.
+* -text

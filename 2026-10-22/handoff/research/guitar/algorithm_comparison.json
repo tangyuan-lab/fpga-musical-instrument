@@ -1,0 +1,521 @@
+{
+  "anchors": [
+    {
+      "index": 0,
+      "note": "C3",
+      "methods": {
+        "basic_ks": {
+          "metrics": {
+            "segmented_mrstft": 1.6157247794258451,
+            "segments": {
+              "attack": 1.9187500144533134,
+              "body": 1.4122133575941043,
+              "tail": 1.516210966230118
+            },
+            "envelope_mae_db": 9.42069625568381,
+            "waveform_nrmse": 1.405709908615588,
+            "correlation": 0.011989826409975847,
+            "reference_t20_s": 6.079074768084205,
+            "synth_t20_s": 11.51234708573852,
+            "t20_relative_error": 0.8937663254578768,
+            "optimal_scalar_gain": 0.011989826409975856
+          },
+          "parameters": {
+            "loss": 0.9995,
+            "brightness": 0.5,
+            "pick": 0.18
+          },
+          "trials": 5,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "extended_ks": {
+          "metrics": {
+            "segmented_mrstft": 0.9494607788583803,
+            "segments": {
+              "attack": 0.9872879606662565,
+              "body": 0.8396536750799389,
+              "tail": 1.0214407008289454
+            },
+            "envelope_mae_db": 4.876784988235125,
+            "waveform_nrmse": 1.1492412060084143,
+            "correlation": 0.3396223252061584,
+            "reference_t20_s": 6.079074768084205,
+            "synth_t20_s": 7.995162994316576,
+            "t20_relative_error": 0.3151940549065196,
+            "optimal_scalar_gain": 0.3396223252061583
+          },
+          "parameters": {
+            "loss": 0.998,
+            "brightness": 0.8,
+            "pick": 0.28
+          },
+          "trials": 15,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "modal": {
+          "metrics": {
+            "segmented_mrstft": 0.27036078931226853,
+            "segments": {
+              "attack": 0.435278653494486,
+              "body": 0.20499905573099453,
+              "tail": 0.17080465871132502
+            },
+            "envelope_mae_db": 0.6736264751380908,
+            "waveform_nrmse": 0.08325858605985847,
+            "correlation": 0.9965340039236545,
+            "reference_t20_s": 6.079074768084205,
+            "synth_t20_s": 6.315259388704704,
+            "t20_relative_error": 0.03885206707120849,
+            "optimal_scalar_gain": 0.9965340039236548
+          },
+          "mode_budget": 64,
+          "actual_modes": 44
+        }
+      },
+      "seconds": 24.125,
+      "reference_sha256": "bcf10e28cbae32e8754bf373d242365ec233ff2267a3afaa309b6e3d3f62bff1",
+      "samples": 611040,
+      "fairness": "Same measured f0, reference, useful duration, RMS scalar and segmented metric; no recorded excitation/IR",
+      "subjective_acceptance": "pending",
+      "hardware_cost_measured": false
+    },
+    {
+      "index": 2,
+      "note": "D3",
+      "methods": {
+        "basic_ks": {
+          "metrics": {
+            "segmented_mrstft": 1.387475568491899,
+            "segments": {
+              "attack": 2.345442104436102,
+              "body": 1.1396490812915117,
+              "tail": 0.677335519748083
+            },
+            "envelope_mae_db": 5.093423209155547,
+            "waveform_nrmse": 1.356556315217792,
+            "correlation": 0.07987748182136194,
+            "reference_t20_s": 4.866520401969611,
+            "synth_t20_s": 7.176901658235592,
+            "t20_relative_error": 0.4747501429010568,
+            "optimal_scalar_gain": 0.07987748182136187
+          },
+          "parameters": {
+            "loss": 0.998,
+            "brightness": 0.5,
+            "pick": 0.18
+          },
+          "trials": 7,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "extended_ks": {
+          "metrics": {
+            "segmented_mrstft": 0.8802503365199562,
+            "segments": {
+              "attack": 0.9999848596617443,
+              "body": 0.8554795938800469,
+              "tail": 0.7852865560180775
+            },
+            "envelope_mae_db": 7.750948476546939,
+            "waveform_nrmse": 1.0190949286123163,
+            "correlation": 0.48072276323832835,
+            "reference_t20_s": 4.866520401969611,
+            "synth_t20_s": 7.496240666998165,
+            "t20_relative_error": 0.5403697195976486,
+            "optimal_scalar_gain": 0.4807227632383276
+          },
+          "parameters": {
+            "loss": 0.998,
+            "brightness": 0.8,
+            "pick": 0.28
+          },
+          "trials": 21,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "modal": {
+          "metrics": {
+            "segmented_mrstft": 0.28012013981411926,
+            "segments": {
+              "attack": 0.429604862874581,
+              "body": 0.17933889826183602,
+              "tail": 0.23141665830594071
+            },
+            "envelope_mae_db": 1.186361823765671,
+            "waveform_nrmse": 0.07863743754742429,
+            "correlation": 0.9969080767079883,
+            "reference_t20_s": 4.866520401969611,
+            "synth_t20_s": 4.7080468274120015,
+            "t20_relative_error": 0.03256404195767285,
+            "optimal_scalar_gain": 0.9969080767079865
+          },
+          "mode_budget": 64,
+          "actual_modes": 51
+        }
+      },
+      "seconds": 31.985000000000014,
+      "reference_sha256": "a45b53560d1c8d479df82ebc2f20b9c1e1f69103f14fb03c409a044d7855e925",
+      "samples": 632160,
+      "fairness": "Same measured f0, reference, useful duration, RMS scalar and segmented metric; no recorded excitation/IR",
+      "subjective_acceptance": "pending",
+      "hardware_cost_measured": false
+    },
+    {
+      "index": 6,
+      "note": "Fs3",
+      "methods": {
+        "basic_ks": {
+          "metrics": {
+            "segmented_mrstft": 1.4781071925327434,
+            "segments": {
+              "attack": 1.96491649542734,
+              "body": 1.2803111188105307,
+              "tail": 1.1890939633603594
+            },
+            "envelope_mae_db": 45.73104791488794,
+            "waveform_nrmse": 1.2204166905099367,
+            "correlation": 0.25529155076239957,
+            "reference_t20_s": 2.242024939077568,
+            "synth_t20_s": 0.5227841112767686,
+            "t20_relative_error": 0.7668250240374861,
+            "optimal_scalar_gain": 0.2552915507623985
+          },
+          "parameters": {
+            "loss": 0.98,
+            "brightness": 0.5,
+            "pick": 0.18
+          },
+          "trials": 5,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "extended_ks": {
+          "metrics": {
+            "segmented_mrstft": 1.015780272476163,
+            "segments": {
+              "attack": 0.765881520554278,
+              "body": 1.0904054209622476,
+              "tail": 1.191053875911964
+            },
+            "envelope_mae_db": 39.26705373093638,
+            "waveform_nrmse": 1.0941896148650612,
+            "correlation": 0.40137454336073985,
+            "reference_t20_s": 2.242024939077568,
+            "synth_t20_s": 0.6152973799229083,
+            "t20_relative_error": 0.7255617592835257,
+            "optimal_scalar_gain": 0.40137454336073736
+          },
+          "parameters": {
+            "loss": 0.98,
+            "brightness": 0.8,
+            "pick": 0.28
+          },
+          "trials": 15,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "modal": {
+          "metrics": {
+            "segmented_mrstft": 0.20256869827800758,
+            "segments": {
+              "attack": 0.20991303625038288,
+              "body": 0.12702260119854156,
+              "tail": 0.27077045738509836
+            },
+            "envelope_mae_db": 0.8185738465971809,
+            "waveform_nrmse": 0.038693526813412454,
+            "correlation": 0.9992514054913703,
+            "reference_t20_s": 2.242024939077568,
+            "synth_t20_s": 2.0928182757865232,
+            "t20_relative_error": 0.06654995700111727,
+            "optimal_scalar_gain": 0.9992514054913681
+          },
+          "mode_budget": 64,
+          "actual_modes": 47
+        }
+      },
+      "seconds": 14.0,
+      "reference_sha256": "0e78d99abdd42b2c5e5ca4ed3ba0ada94710734233846f27007ec325724dd0fb",
+      "samples": 326160,
+      "fairness": "Same measured f0, reference, useful duration, RMS scalar and segmented metric; no recorded excitation/IR",
+      "subjective_acceptance": "pending",
+      "hardware_cost_measured": false
+    },
+    {
+      "index": 7,
+      "note": "G3",
+      "methods": {
+        "basic_ks": {
+          "metrics": {
+            "segmented_mrstft": 1.337727671201808,
+            "segments": {
+              "attack": 1.7653907754555174,
+              "body": 1.119857164589642,
+              "tail": 1.1279350735602647
+            },
+            "envelope_mae_db": 47.44776589850734,
+            "waveform_nrmse": 1.2437447696243857,
+            "correlation": 0.2265494740160078,
+            "reference_t20_s": 6.044629022262647,
+            "synth_t20_s": 1.2857813352586438,
+            "t20_relative_error": 0.7872853188304771,
+            "optimal_scalar_gain": 0.226549474016007
+          },
+          "parameters": {
+            "loss": 0.992,
+            "brightness": 0.5,
+            "pick": 0.18
+          },
+          "trials": 7,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "extended_ks": {
+          "metrics": {
+            "segmented_mrstft": 0.9491192989779152,
+            "segments": {
+              "attack": 0.647804020779403,
+              "body": 0.9615393222055317,
+              "tail": 1.2380145539488108
+            },
+            "envelope_mae_db": 106.84873013546894,
+            "waveform_nrmse": 0.9089462102188278,
+            "correlation": 0.5869083934644227,
+            "reference_t20_s": 6.044629022262647,
+            "synth_t20_s": 0.5765180291826868,
+            "t20_relative_error": 0.9046230914983626,
+            "optimal_scalar_gain": 0.5869083934644197
+          },
+          "parameters": {
+            "loss": 0.98,
+            "brightness": 0.8,
+            "pick": 0.28
+          },
+          "trials": 21,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "modal": {
+          "metrics": {
+            "segmented_mrstft": 0.20053125802685026,
+            "segments": {
+              "attack": 0.1355758029205622,
+              "body": 0.13140811344043327,
+              "tail": 0.33460985771955526
+            },
+            "envelope_mae_db": 1.3275247745004772,
+            "waveform_nrmse": 0.05559906028794242,
+            "correlation": 0.9984543722475405,
+            "reference_t20_s": 6.044629022262647,
+            "synth_t20_s": 5.252497214022655,
+            "t20_relative_error": 0.13104721651610624,
+            "optimal_scalar_gain": 0.9984543722475436
+          },
+          "mode_budget": 64,
+          "actual_modes": 62
+        }
+      },
+      "seconds": 42.047000000000025,
+      "reference_sha256": "57542b61014c441cd5d19ae1c4b650a249d058d0eeb7464ecc30ac9b3e8888c7",
+      "samples": 674160,
+      "fairness": "Same measured f0, reference, useful duration, RMS scalar and segmented metric; no recorded excitation/IR",
+      "subjective_acceptance": "pending",
+      "hardware_cost_measured": false
+    },
+    {
+      "index": 12,
+      "note": "C4",
+      "methods": {
+        "basic_ks": {
+          "metrics": {
+            "segmented_mrstft": 0.9978968833718275,
+            "segments": {
+              "attack": 1.6881646824894585,
+              "body": 0.8305159295328525,
+              "tail": 0.47501003809317144
+            },
+            "envelope_mae_db": 2.023313660094692,
+            "waveform_nrmse": 1.540211990800155,
+            "correlation": -0.1861264883022847,
+            "reference_t20_s": 3.4754765745947034,
+            "synth_t20_s": 3.8513693138443377,
+            "t20_relative_error": 0.10815573956025569,
+            "optimal_scalar_gain": -0.18612648830228448
+          },
+          "parameters": {
+            "loss": 0.998,
+            "brightness": 0.5,
+            "pick": 0.18
+          },
+          "trials": 7,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "extended_ks": {
+          "metrics": {
+            "segmented_mrstft": 0.8264298168218315,
+            "segments": {
+              "attack": 0.9535720766278921,
+              "body": 0.712345810900672,
+              "tail": 0.8133715629369301
+            },
+            "envelope_mae_db": 3.2437099532981986,
+            "waveform_nrmse": 0.9781894609051063,
+            "correlation": 0.5215726892870904,
+            "reference_t20_s": 3.4754765745947034,
+            "synth_t20_s": 4.0420999278102805,
+            "t20_relative_error": 0.1630347208660598,
+            "optimal_scalar_gain": 0.5215726892870906
+          },
+          "parameters": {
+            "loss": 0.998,
+            "brightness": 0.55,
+            "pick": 0.2
+          },
+          "trials": 21,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "modal": {
+          "metrics": {
+            "segmented_mrstft": 0.31893914814364593,
+            "segments": {
+              "attack": 0.34917426229453685,
+              "body": 0.2634995113898465,
+              "tail": 0.3441436707465544
+            },
+            "envelope_mae_db": 2.789936505483995,
+            "waveform_nrmse": 0.12555056653150642,
+            "correlation": 0.9921185276218085,
+            "reference_t20_s": 3.4754765745947034,
+            "synth_t20_s": 3.2733840187739425,
+            "t20_relative_error": 0.05814815651414027,
+            "optimal_scalar_gain": 0.9921185276218095
+          },
+          "mode_budget": 64,
+          "actual_modes": 48
+        }
+      },
+      "seconds": 29.875,
+      "reference_sha256": "506224350316123aa38dd9a314d1e010865be65c6a504d6f313f3d06c1ff5a40",
+      "samples": 451440,
+      "fairness": "Same measured f0, reference, useful duration, RMS scalar and segmented metric; no recorded excitation/IR",
+      "subjective_acceptance": "pending",
+      "hardware_cost_measured": false
+    },
+    {
+      "index": 15,
+      "note": "Ds4",
+      "methods": {
+        "basic_ks": {
+          "metrics": {
+            "segmented_mrstft": 1.087357060462437,
+            "segments": {
+              "attack": 1.5876740655104822,
+              "body": 0.937576195839371,
+              "tail": 0.7368209200374575
+            },
+            "envelope_mae_db": 8.319480606143225,
+            "waveform_nrmse": 1.638232243572231,
+            "correlation": -0.34190244193985314,
+            "reference_t20_s": 4.171746772477975,
+            "synth_t20_s": 7.7480836990584185,
+            "t20_relative_error": 0.8572756501363904,
+            "optimal_scalar_gain": -0.3419024419398534
+          },
+          "parameters": {
+            "loss": 0.9995,
+            "brightness": 0.5,
+            "pick": 0.18
+          },
+          "trials": 7,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "extended_ks": {
+          "metrics": {
+            "segmented_mrstft": 0.7663389792706393,
+            "segments": {
+              "attack": 1.0209033541488068,
+              "body": 0.8426720881293998,
+              "tail": 0.4354414955337116
+            },
+            "envelope_mae_db": 4.420562964210339,
+            "waveform_nrmse": 1.8844784677688573,
+            "correlation": -0.7756295477422295,
+            "reference_t20_s": 4.171746772477975,
+            "synth_t20_s": 3.3422222209807124,
+            "t20_relative_error": 0.19884345736654893,
+            "optimal_scalar_gain": -0.7756295477422301
+          },
+          "parameters": {
+            "loss": 0.998,
+            "brightness": 0.8,
+            "pick": 0.28
+          },
+          "trials": 21,
+          "training_seed": 20261015,
+          "limitation": "Compact extended KS with one polarization and three analytic body resonators; not all possible waveguide models"
+        },
+        "modal": {
+          "metrics": {
+            "segmented_mrstft": 0.28785017216358116,
+            "segments": {
+              "attack": 0.4139802534353636,
+              "body": 0.2067320091953692,
+              "tail": 0.24283825386001082
+            },
+            "envelope_mae_db": 0.7961268225852098,
+            "waveform_nrmse": 0.08067264998309985,
+            "correlation": 0.9967459617723506,
+            "reference_t20_s": 4.171746772477975,
+            "synth_t20_s": 4.075029007942928,
+            "t20_relative_error": 0.023183996970553754,
+            "optimal_scalar_gain": 0.996745961772352
+          },
+          "mode_budget": 64,
+          "actual_modes": 46
+        }
+      },
+      "seconds": 27.343999999999937,
+      "reference_sha256": "6603ee39a3f1a67d9c58a81d02b1c03149d7e5d306586dc80ddf757aa051d2dc",
+      "samples": 435840,
+      "fairness": "Same measured f0, reference, useful duration, RMS scalar and segmented metric; no recorded excitation/IR",
+      "subjective_acceptance": "pending",
+      "hardware_cost_measured": false
+    }
+  ],
+  "mean_segmented_mrstft": {
+    "basic_ks": 1.3173815259144266,
+    "extended_ks": 0.8978965804874809,
+    "modal": 0.2600617009564121
+  },
+  "extended_ks_improvement_over_modal_fraction": -2.4526290383602993,
+  "selected_architecture": "modal",
+  "rule": "Switch from modal only if extended KS reduces average loss >=10% and passes hardware and listening gates",
+  "caveats": [
+    "One measured take per pitch; no independent recording validation",
+    "Only the declared bounded KS variants were measured; no claim of universal algorithm superiority",
+    "FM and neural DDSP are research comparisons, not experimentally trained competitors"
+  ],
+  "research": [
+    {
+      "name": "STK Twang",
+      "url": "https://github.com/thestk/stk/blob/master/src/Twang.cpp"
+    },
+    {
+      "name": "HDL extended Karplus Strong",
+      "url": "https://github.com/htfab/ks-guitar"
+    },
+    {
+      "name": "Guitar differentiable synthesis",
+      "url": "https://github.com/andywiggins/ddsp-guitar-synth"
+    },
+    {
+      "name": "Multiscale spectral loss",
+      "url": "https://github.com/magenta/ddsp/blob/main/ddsp/losses.py"
+    }
+  ]
+}

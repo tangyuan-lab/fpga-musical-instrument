@@ -1,0 +1,18 @@
+{
+  "format": "ZI V6 GB2312 subset",
+  "charset_mode": 2,
+  "index_order": "ascending little-endian uint16",
+  "official_font_reference": "TJC1060X570_factory.HMI:7.zi",
+  "official_font_reference_sha256": "63a3dd481d7dcb9cf82cd742a86d1d220871e23619da00bb5c1e240e6e052f50",
+  "glyphs": 254,
+  "chinese_glyphs": 159,
+  "sha256": "1c71b2fbd6053ccc2523dc5cf6c4045da348ebc87d732a965983b9c0f5ce3dcb",
+  "chinese_font": "C:\\Windows\\Fonts\\msyh.ttc",
+  "size_px": 28,
+  "cell_px": [
+    32,
+    32
+  ],
+  "glyph_mask_roundtrip_equal": true,
+  "official_compile_status": "pending"
+}

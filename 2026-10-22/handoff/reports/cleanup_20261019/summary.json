@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "current_bitstream": "v74_0x00005AA4",
+  "preferred_project": "piano_drums_poly4_shared.gprj",
+  "before": {
+    "files": 58147,
+    "bytes": 16931625901,
+    "GiB": 15.769
+  },
+  "archive": {
+    "location_from_project": "../_archive/github_cleanup_20261019/original_project",
+    "all_files_preserved": true,
+    "files": 58147,
+    "full_SHA256_inventory": "../_archive/github_cleanup_20261019/original_full_inventory.json"
+  },
+  "source_git_candidate_files": 248,
+  "source_git_candidate_bytes": 2811877,
+  "parameters_unchanged": 29,
+  "firmware_unchanged": 3,
+  "project_inputs": 26,
+  "smoke_passed": 8,
+  "post_move_smoke_passed": 8,
+  "actual_normal_RTL_synthesis_passed": true,
+  "mapped_FIR_rows_passed": 128,
+  "new_physical_route_performed": false,
+  "optional_engine_diagnostic": "Unresolved startup assertion reproduced in original and cleaned RTL; not passed",
+  "permanent_deletion": false,
+  "Git_initialized": true,
+  "Git_commits_created": false,
+  "Git_remote_configured": false,
+  "uploaded": false,
+  "board_accessed": false,
+  "project_license_selected": false,
+  "package_manifest": "releases/package_manifest.json"
+}
