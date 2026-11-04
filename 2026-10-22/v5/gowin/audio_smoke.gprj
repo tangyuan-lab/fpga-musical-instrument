@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="../rtl/common/reset_sync.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/audio_startup.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/pressure_tone.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/pt8211_tx.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/board/audio_smoke_top.sv" type="file.verilog" enable="1"/>
+        <File path="audio_smoke.cst" type="file.cst" enable="1"/>
+        <File path="timing.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

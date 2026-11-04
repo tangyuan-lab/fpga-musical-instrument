@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="../rtl/common/reset_sync.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/uart_tx.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/uart_rx.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/uart_ping_protocol.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/uart_ping_ack.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/board/uart_ping_echo_top.sv" type="file.verilog" enable="1"/>
+        <File path="uart_ping_echo.cst" type="file.cst" enable="1"/>
+        <File path="uart_ping_echo.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

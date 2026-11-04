@@ -1,0 +1,14 @@
+# Keep the required Gowin configuration; ignore implementation outputs.
+!Gowin_BT_3664e98a/impl/
+Gowin_BT_3664e98a/impl/*
+!Gowin_BT_3664e98a/impl/workstation_r7_bluetooth_process_config.json
+
+# Tcl terminal status files and simulation outputs are regenerated locally.
+Gowin_BT_3664e98a/runs/*
+!Gowin_BT_3664e98a/runs/.gitkeep
+**/work/
+**/transcript
+**/modelsim.ini
+*.wlf
+*.log
+*.bak

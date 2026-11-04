@@ -1,0 +1,24 @@
+{
+  "preferred": "checkpoints/piano_drums_poly4_shared_v68_full_runtime50_control_v74_20261019.fs",
+  "files": [
+    {
+      "path": "checkpoints/piano_drums_poly4_shared_v68_full_runtime50_control_v74_20261019.fs",
+      "user_code": "0x00005AA4",
+      "sha256": "8e2318a08def7c6200c658e196b8b295555513fd32d5a44823d02075831be249",
+      "status": "audible_and_clean_subjective_audition"
+    },
+    {
+      "path": "checkpoints/piano_drums_rimshot_single_20261014.fs",
+      "user_code": "0x00005A8A",
+      "sha256": "1a9eca3711381e3a2f6aa01bf1919eafd1f7223919fb5c8b1cda6221f78296f8",
+      "status": "accepted_single_voice_drums_fallback"
+    },
+    {
+      "path": "checkpoints/accepted_17_notes_20261005.fs",
+      "user_code": "0x00005A74",
+      "sha256": "f418d36dd0134b5f8a8db9853d2bb0367b22bfe7d439f6fda5a3b2c77bdda518",
+      "status": "accepted_single_voice_17_note_piano_fallback"
+    }
+  ],
+  "flash_written": false
+}

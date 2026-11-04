@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "project_inputs": 26,
+  "parameters_checked": 29,
+  "changed_source_files": [],
+  "strict_source": true,
+  "firmware_checked": [],
+  "board_accessed": false
+}

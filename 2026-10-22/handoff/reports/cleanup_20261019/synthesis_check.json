@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "source_build_only": true,
+  "mapped_FIR_rows": 128,
+  "mapped_FIR_passed": true,
+  "synthesis_evidence_archive": "staging_validation/rtl_20261019_225404_789010",
+  "physical_route_performed": false,
+  "board_programmed": false,
+  "source_equivalence_scope": "Final upload source is text-identical to this snapshot after LF normalization; absolute FIR path was already relative in the synthesized snapshot."
+}

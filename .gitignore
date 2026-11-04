@@ -1,0 +1,46 @@
+# ModelSim / Questa generated files
+sim/**/work/
+sim/**/transcript
+sim/**/*.wlf
+sim/**/*.bak
+sim/**/*.log
+
+# Editor and OS files
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# Gowin generated implementation files
+constr/impl/
+
+# 2026-10-13 snapshot simulator output
+2026-10-13/**/work/
+2026-10-13/**/transcript
+2026-10-13/**/*.wlf
+2026-10-13/**/modelsim.ini
+
+# Repository-wide generated files
+impl/
+*.fs
+*.bin
+*.jou
+*.tmp
+*.rpt
+*.vcd
+*.py[cod]
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+*.local
+
+# 2026-10-16 simulator outputs
+2026-10-16/**/work/
+2026-10-16/**/transcript
+2026-10-16/**/*.wlf
+2026-10-16/**/modelsim.ini
+2026-10-16/**/sim/*.txt
+
+# Regenerated serial PCM dumps
+2026-10-13/**/sim/*.txt

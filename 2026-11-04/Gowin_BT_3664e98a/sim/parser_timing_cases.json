@@ -1,0 +1,56 @@
+[
+  {
+    "label": "valid",
+    "base": 0,
+    "size": 35,
+    "error": false
+  },
+  {
+    "label": "tempo",
+    "base": 35,
+    "size": 49,
+    "error": false
+  },
+  {
+    "label": "overlap",
+    "base": 84,
+    "size": 38,
+    "error": true
+  },
+  {
+    "label": "missing_off",
+    "base": 122,
+    "size": 30,
+    "error": true
+  },
+  {
+    "label": "unsupported_control",
+    "base": 152,
+    "size": 30,
+    "error": true
+  },
+  {
+    "label": "truncated",
+    "base": 182,
+    "size": 34,
+    "error": true
+  },
+  {
+    "label": "bad_header",
+    "base": 216,
+    "size": 35,
+    "error": true
+  },
+  {
+    "label": "zero_division",
+    "base": 251,
+    "size": 35,
+    "error": true
+  },
+  {
+    "label": "empty",
+    "base": 286,
+    "size": 0,
+    "error": true
+  }
+]

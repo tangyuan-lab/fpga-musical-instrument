@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="../rtl/common/reset_sync.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/common/snapshot_cdc.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/uart_tx.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/pressure_audio_telemetry.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/io/mcp3208_dual_scan.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/control/pressure_key_matrix.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/audio_startup.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/poly_synth_voice.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/voice_allocator_4.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/poly_synth_4voice.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/audio/pt8211_tx.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/video/video_pll.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/video/video_timing.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/video/tmds_encoder.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/video/dvi_tx.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/video/gowin_dvi_ip/DVI_TX_Top.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/video/pressure_keys_ui_1024x600.sv" type="file.verilog" enable="1"/>
+        <File path="../rtl/board/mcp3208_13key_hdmi_top.sv" type="file.verilog" enable="1"/>
+        <File path="mcp3208_13key_hdmi.cst" type="file.cst" enable="1"/>
+        <File path="mcp3208_13key_hdmi.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

@@ -1,0 +1,171 @@
+{
+  "status": "PASS",
+  "notes": [
+    {
+      "index": 0,
+      "note": "C3",
+      "samples": 1184740,
+      "full_state_zero_sample": 1183715,
+      "clipped_samples": 0,
+      "peak_pcm": 19422,
+      "fixed_vs_float_nrmse": 0.0013032244762206746,
+      "exact_zero_trailing_samples": 1061
+    },
+    {
+      "index": 1,
+      "note": "Cs3",
+      "samples": 842088,
+      "full_state_zero_sample": 841063,
+      "clipped_samples": 0,
+      "peak_pcm": 20029,
+      "fixed_vs_float_nrmse": 0.0011902556763472884,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 2,
+      "note": "D3",
+      "samples": 1006157,
+      "full_state_zero_sample": 1005132,
+      "clipped_samples": 0,
+      "peak_pcm": 20356,
+      "fixed_vs_float_nrmse": 0.0013090778529785574,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 3,
+      "note": "Ds3",
+      "samples": 704898,
+      "full_state_zero_sample": 703873,
+      "clipped_samples": 0,
+      "peak_pcm": 20136,
+      "fixed_vs_float_nrmse": 0.001458194155314336,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 4,
+      "note": "E3",
+      "samples": 594146,
+      "full_state_zero_sample": 593121,
+      "clipped_samples": 0,
+      "peak_pcm": 19916,
+      "fixed_vs_float_nrmse": 0.001023981493668959,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 5,
+      "note": "F3",
+      "samples": 477169,
+      "full_state_zero_sample": 476144,
+      "clipped_samples": 0,
+      "peak_pcm": 19660,
+      "fixed_vs_float_nrmse": 0.001009733886643445,
+      "exact_zero_trailing_samples": 1057
+    },
+    {
+      "index": 6,
+      "note": "Fs3",
+      "samples": 430740,
+      "full_state_zero_sample": 429715,
+      "clipped_samples": 0,
+      "peak_pcm": 19585,
+      "fixed_vs_float_nrmse": 0.0010303488156322245,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 7,
+      "note": "G3",
+      "samples": 1039052,
+      "full_state_zero_sample": 1038027,
+      "clipped_samples": 0,
+      "peak_pcm": 20230,
+      "fixed_vs_float_nrmse": 0.001292440154278716,
+      "exact_zero_trailing_samples": 1059
+    },
+    {
+      "index": 8,
+      "note": "Gs3",
+      "samples": 936438,
+      "full_state_zero_sample": 935413,
+      "clipped_samples": 0,
+      "peak_pcm": 19963,
+      "fixed_vs_float_nrmse": 0.0012981249305573231,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 9,
+      "note": "A3",
+      "samples": 745613,
+      "full_state_zero_sample": 744588,
+      "clipped_samples": 0,
+      "peak_pcm": 19879,
+      "fixed_vs_float_nrmse": 0.0014928395146809569,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 10,
+      "note": "As3",
+      "samples": 709480,
+      "full_state_zero_sample": 708455,
+      "clipped_samples": 0,
+      "peak_pcm": 20606,
+      "fixed_vs_float_nrmse": 0.0013314114545953401,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 11,
+      "note": "B3",
+      "samples": 386128,
+      "full_state_zero_sample": 385103,
+      "clipped_samples": 0,
+      "peak_pcm": 18382,
+      "fixed_vs_float_nrmse": 0.0010708823364848142,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 12,
+      "note": "C4",
+      "samples": 641989,
+      "full_state_zero_sample": 640964,
+      "clipped_samples": 0,
+      "peak_pcm": 19203,
+      "fixed_vs_float_nrmse": 0.0014466794358984668,
+      "exact_zero_trailing_samples": 1101
+    },
+    {
+      "index": 13,
+      "note": "Cs4",
+      "samples": 732801,
+      "full_state_zero_sample": 731776,
+      "clipped_samples": 0,
+      "peak_pcm": 19427,
+      "fixed_vs_float_nrmse": 0.001262409365304195,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 14,
+      "note": "D4",
+      "samples": 770881,
+      "full_state_zero_sample": 769856,
+      "clipped_samples": 0,
+      "peak_pcm": 20353,
+      "fixed_vs_float_nrmse": 0.0014794606714015046,
+      "exact_zero_trailing_samples": 1025
+    },
+    {
+      "index": 15,
+      "note": "Ds4",
+      "samples": 803348,
+      "full_state_zero_sample": 802323,
+      "clipped_samples": 0,
+      "peak_pcm": 17386,
+      "fixed_vs_float_nrmse": 0.0011398852702598583,
+      "exact_zero_trailing_samples": 1025
+    }
+  ],
+  "all_16_zero_state": true,
+  "clipped_samples": 0,
+  "note": "Offline integer reference; no RTL or board verification claimed",
+  "source_code_sha256": "d73b1600e4e9d853b32e36ea1e2bd2ab30919351122a1977439e6089c7c053f7",
+  "parameter_sha256": "85b0b46c7768cc0056e38db6d9bd66248c7007f35a6968e67eb0481576c7e401",
+  "rom_sha256": "0f8cfb0cdfc712b250aa809bd9aefa2624477c7d6aeb00b52194d56484246ce7"
+}

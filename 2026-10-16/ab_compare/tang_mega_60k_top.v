@@ -1,0 +1,66 @@
+module top_sample_a4_ab #(
+    parameter integer KEY_FILTER_MAX = 250_000
+) (
+    input  wire sys_clk,
+    input  wire sys_rst_n,
+    input  wire key_n,
+    output wire HP_BCK,
+    output wire HP_WS,
+    output wire HP_DIN,
+    output wire PA_EN
+);
+    reg [3:0] init_shift = 4'd0;
+    always @(posedge sys_clk or negedge sys_rst_n) begin
+        if (!sys_rst_n) init_shift <= 4'd0;
+        else init_shift <= {init_shift[2:0], 1'b1};
+    end
+    wire audio_rst_n = sys_rst_n && init_shift[3];
+
+    wire frame_tick;
+    wire key_state;
+    wire note_on;
+    wire note_off;
+    key_debounce #(.KEY_FILTER_MAX(KEY_FILTER_MAX)) key_0 (
+        .sys_clk(sys_clk), .sys_rst_n(audio_rst_n), .key_n(key_n),
+        .key_state(key_state), .note_on(note_on), .note_off(note_off)
+    );
+
+    // 第 1 次按下：真实 A4 采样。第 2 次按下：原来的合成 A4。
+    reg sample_selected = 1'b0;
+    always @(posedge sys_clk or negedge audio_rst_n) begin
+        if (!audio_rst_n) sample_selected <= 1'b0;
+        else if (note_on) sample_selected <= !sample_selected;
+    end
+
+    wire signed [15:0] recorded_pcm;
+    wire signed [15:0] synthesized_pcm;
+    sampled_piano_a4 sample_voice (
+        .clk(sys_clk), .rst_n(audio_rst_n), .sample_tick(frame_tick),
+        .note_on(note_on && !sample_selected),
+        .note_active(key_state && sample_selected),
+        .sample_out(recorded_pcm)
+    );
+    piano_voice synth_voice (
+        .clk(sys_clk), .rst_n(audio_rst_n), .sample_tick(frame_tick),
+        .note_on(note_on && sample_selected),
+        .note_active(key_state && !sample_selected),
+        .phase_step(32'd39_370_534), .velocity(7'd112),
+        .sample_out(synthesized_pcm)
+    );
+
+    // 把两档响度大致拉齐，且都低于2026-10-13 最终版的电平。
+    wire signed [15:0] tone_sample = sample_selected ?
+                                      recorded_pcm : (synthesized_pcm >>> 1);
+    pt8211_tx audio_tx (
+        .clk(sys_clk), .rst_n(audio_rst_n), .sample_in(tone_sample),
+        .bck(HP_BCK), .ws(HP_WS), .din(HP_DIN), .frame_tick(frame_tick)
+    );
+
+    reg [10:0] startup_frames = 11'd0;
+    always @(posedge sys_clk) begin
+        if (!audio_rst_n) startup_frames <= 11'd0;
+        else if (frame_tick && startup_frames != 11'd1024)
+            startup_frames <= startup_frames + 11'd1;
+    end
+    assign PA_EN = !audio_rst_n || (startup_frames != 11'd1024);
+endmodule

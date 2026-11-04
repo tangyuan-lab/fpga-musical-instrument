@@ -1,0 +1,96 @@
+{
+  "directory": "diagnostics/poly4_shared_20261015/build_v74_v68_full_runtime50_control/full/routed/impl/pnr",
+  "complete": true,
+  "status": "completed",
+  "run_ended": true,
+  "invalid": [],
+  "functionally_eligible": true,
+  "resources": {
+    "Logic": {
+      "used": 32452,
+      "total": 59904
+    },
+    "Register": {
+      "used": 10491,
+      "total": 60780
+    },
+    "CLS": {
+      "used": 19484,
+      "total": 29952
+    },
+    "BSRAM": {
+      "used": 77,
+      "total": 118
+    },
+    "DSP": {
+      "used": 56,
+      "total": 118
+    }
+  },
+  "clocks": [
+    {
+      "clock": "sys_clk",
+      "constraint_mhz": 50.0,
+      "fmax_mhz": 52.777
+    }
+  ],
+  "violations": {
+    "Setup": 0,
+    "Hold": 0
+  },
+  "unrouted": 0,
+  "errors": [],
+  "warnings": [
+    "WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew"
+  ],
+  "gates": {
+    "route": true,
+    "setup": true,
+    "hold": true,
+    "frequency": true,
+    "bsram": true,
+    "dsp": true,
+    "cls": false
+  },
+  "timing_gate_mhz": 50,
+  "timing_acceptance": true,
+  "physical_acceptance": false,
+  "worst_setup_paths": [
+    {
+      "slack_ns": 1.053,
+      "start": "engine/new_note_4_s1/Q",
+      "end": "engine/slots[3].slot/C_voice/core/total_accumulator/high_acc/A[0]",
+      "skew_ns": -0.017,
+      "data_delay_ns": 15.505
+    },
+    {
+      "slack_ns": 1.447,
+      "start": "engine/slots[1].slot/arithmetic/n282_s/DOUT[47]",
+      "end": "engine/slots[1].slot/drum_modes/modes/next_main_4_s0/D",
+      "skew_ns": 0.0,
+      "data_delay_ns": 18.496
+    },
+    {
+      "slack_ns": 1.608,
+      "start": "engine/slots[1].slot/arithmetic/n282_s/DOUT[47]",
+      "end": "engine/slots[1].slot/drum_modes/modes/next_main_14_s0/D",
+      "skew_ns": 0.017,
+      "data_delay_ns": 18.318
+    },
+    {
+      "slack_ns": 1.624,
+      "start": "engine/new_note_4_s1/Q",
+      "end": "engine/slots[3].slot/drum_modes/modes/modal_accumulator/high_acc/ACCSEL",
+      "skew_ns": -0.008,
+      "data_delay_ns": 15.063
+    },
+    {
+      "slack_ns": 1.748,
+      "start": "engine/slots[1].slot/arithmetic/n282_s/DOUT[47]",
+      "end": "engine/slots[1].slot/drum_modes/modes/next_main_6_s0/D",
+      "skew_ns": 0.017,
+      "data_delay_ns": 18.177
+    }
+  ],
+  "bitstream_sha256": "8e2318a08def7c6200c658e196b8b295555513fd32d5a44823d02075831be249"
+}

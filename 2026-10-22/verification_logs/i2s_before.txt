@@ -1,0 +1,4 @@
+# ** Fatal: lost I2S frames
+#    Time: 4166810 ns  Scope: tb_i2s_tx_16 File: C:/Users/26369/Desktop/FPGA/sent/2026-10-22/handoff/sim/tb_i2s_tx_16.sv Line: 36
+#    Time: 4166810 ns  Iteration: 2  Instance: /tb_i2s_tx_16
+# Errors: 1, Warnings: 0

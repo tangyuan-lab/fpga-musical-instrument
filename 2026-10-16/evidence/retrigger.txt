@@ -1,0 +1,4 @@
+# vlog -sv pt8211_tx.v key_debounce.v sampled_piano_a4.v tang_mega_60k_top.v tb_retrigger.sv
+# Errors: 0, Warnings: 0
+# PASS: silent first strike, rapid retrigger held and crossfaded; maximum frame jump 101
+# Errors: 0, Warnings: 0

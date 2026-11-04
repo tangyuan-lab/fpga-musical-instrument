@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "seconds": 352.4654200077057,
+  "build_manifest": "fast_fir_only_full_idle/build_manifest.json",
+  "executable_sha256": "840fde6f0025bd29a894ad9721d01019e6faea9b83746a8bfbe3c87ad5051ed3",
+  "log_sha256": "62a40c01289b4d36a80647f33ff54edd9fb2043e91ac6094115e1745cdcd69fe",
+  "scope": "Complete corrected RTL with original v61 mixer/top, real50k POR,250k debounce,1200idle frames before first real key, no voice stubs. Native fast DSP and portableSP models; not mapped/postroute physical proof."
+}

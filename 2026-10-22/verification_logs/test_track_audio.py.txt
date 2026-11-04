@@ -1,0 +1,9 @@
+Prepared independent 32-voice track-gain candidate
+Traceback (most recent call last):
+  File "C:\Users\26369\Desktop\FPGA\sent\2026-10-22\v5\scripts\test_track_audio.py", line 26, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\26369\Desktop\FPGA\sent\2026-10-22\v5\scripts\test_track_audio.py", line 12, in main
+    if not iv or not vvp:raise RuntimeError('未找到Icarus Verilog工具')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: 未找到Icarus Verilog工具

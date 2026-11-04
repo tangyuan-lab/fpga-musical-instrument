@@ -1,0 +1,111 @@
+{
+  "interface_version": 1,
+  "ui_settings": {
+    "auto_home_idle_seconds": 120
+  },
+  "pressure_inputs": {
+    "active_low_mask": 0
+  },
+  "mode_capacity": 8,
+  "timbre_capacity": 64,
+  "descriptor_bits": {
+    "kind": "15:14",
+    "timbre": "13:8",
+    "note": "7:0"
+  },
+  "modes": [
+    {
+      "id": 0,
+      "name": "Home",
+      "label": "HOME",
+      "physical_bank": false
+    },
+    {
+      "id": 1,
+      "name": "Drums",
+      "label": "DRUMS",
+      "physical_bank": true
+    },
+    {
+      "id": 2,
+      "name": "Piano",
+      "label": "PIANO",
+      "physical_bank": true
+    },
+    {
+      "id": 3,
+      "name": "Mix",
+      "label": "MIX",
+      "physical_bank": true
+    },
+    {
+      "id": 4,
+      "name": "Physical key setup",
+      "label": "KEY SETUP",
+      "physical_bank": false
+    }
+  ],
+  "sound_kinds": [
+    {
+      "id": 0,
+      "name": "Melodic",
+      "timbres": [
+        {
+          "id": 0,
+          "name": "Triangle"
+        },
+        {
+          "id": 1,
+          "name": "Soft square"
+        }
+      ],
+      "notes": [
+        "C4",
+        "C#4",
+        "D4",
+        "D#4",
+        "E4",
+        "F4",
+        "F#4",
+        "G4",
+        "G#4",
+        "A4",
+        "A#4",
+        "B4",
+        "C5",
+        "C#5",
+        "D5",
+        "D#5"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Percussion",
+      "timbres": [
+        {
+          "id": 0,
+          "name": "Synth drum kit"
+        }
+      ],
+      "notes": [
+        "KICK",
+        "SNARE",
+        "C-HAT",
+        "O-HAT",
+        "LO TOM",
+        "MID TOM",
+        "HI TOM",
+        "CLAP",
+        "RIM",
+        "RIDE",
+        "CRASH",
+        "COWBELL",
+        "SHAKER",
+        "TAMB",
+        "WOOD",
+        "STICK"
+      ]
+    }
+  ],
+  "source_interface": "signed PCM16 + common sample_tick + volume + enable"
+}

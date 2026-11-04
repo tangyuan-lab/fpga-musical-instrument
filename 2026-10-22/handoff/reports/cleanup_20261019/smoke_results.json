@@ -1,0 +1,66 @@
+{
+  "suite": "smoke",
+  "passed": true,
+  "results": [
+    {
+      "name": "key16",
+      "passed": true,
+      "params": [],
+      "log_sha256": "c174ad20faed93e9b0d76f8f1fb1db1b76947cbd60e23d596ab917d5c5f74235"
+    },
+    {
+      "name": "integer_rules",
+      "passed": true,
+      "params": [],
+      "log_sha256": "dad8d8f1974711a1d5cd832152c99095a501aee6a25132fe27f15bbfd2cd7225"
+    },
+    {
+      "name": "i2s",
+      "passed": true,
+      "params": [],
+      "log_sha256": "6ca803709ecfb9b22fe1102f0d71a8c7df13a9f2457d1cf6e8acca9ceb4e5079"
+    },
+    {
+      "name": "fir_mac",
+      "passed": true,
+      "params": [],
+      "log_sha256": "7010d42f17de289499fe81868f60b896d07da9fbe5fcbe9181d2f74be2bc8564"
+    },
+    {
+      "name": "resources_c2_m0",
+      "passed": true,
+      "params": [
+        "RESPONSE_CYCLES=2",
+        "PIANO_SECOND_LANE=0"
+      ],
+      "log_sha256": "77f5360c62247d0b695d45d21605f4a03798b2581c35c72d40fe2809d9a995bb"
+    },
+    {
+      "name": "resources_c2_m1",
+      "passed": true,
+      "params": [
+        "RESPONSE_CYCLES=2",
+        "PIANO_SECOND_LANE=1"
+      ],
+      "log_sha256": "87cae5052c81dcca57dfd8eca4385956624382288d07091b59f87c967a5106fc"
+    },
+    {
+      "name": "resources_c3_m0",
+      "passed": true,
+      "params": [
+        "RESPONSE_CYCLES=3",
+        "PIANO_SECOND_LANE=0"
+      ],
+      "log_sha256": "62b64ab5fe0b483a5b345857113dde59ddef585e31e9526eda695d8bef2d1c72"
+    },
+    {
+      "name": "resources_c3_m1",
+      "passed": true,
+      "params": [
+        "RESPONSE_CYCLES=3",
+        "PIANO_SECOND_LANE=1"
+      ],
+      "log_sha256": "af287e74939414bd1388cabc96c684078464a41d6424f53fce205b104ce55319"
+    }
+  ]
+}

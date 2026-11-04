@@ -1,0 +1,286 @@
+// Tang Mega 138K Dock：V22核心板50MHz晶振；外设Bank2/3/4/5为3.3V。
+// S1/Y12=同步释放复位，S2/AB13=模式，S4/AA13=音色；均需内部上拉。
+// C18/C19为460800串口屏；PT8211仅为板载试听构建。
+IO_LOC "sys_clk" V22;
+IO_PORT "sys_clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "sys_rst_n" Y12;
+IO_PORT "sys_rst_n" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "uart_tx_o" U15;
+IO_PORT "uart_tx_o" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=4 BANK_VCCIO=3.3;
+IO_LOC "uart_rx_i" V14;
+IO_PORT "uart_rx_i" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "screen_tx_o" C18;
+IO_PORT "screen_tx_o" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=4 BANK_VCCIO=3.3;
+IO_LOC "screen_rx_i" C19;
+IO_PORT "screen_rx_i" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "mode_key_n" AB13;
+IO_PORT "mode_key_n" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "timbre_key_n" AA13;
+IO_PORT "timbre_key_n" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "hp_bck" Y17;
+IO_LOC "hp_ws" AB17;
+IO_LOC "hp_din" AA16;
+IO_LOC "pa_en" AB16;
+IO_PORT "hp_bck" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "hp_ws" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "hp_din" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "pa_en" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "mcp0_sclk" AA19;
+IO_LOC "mcp0_miso" AA20;
+IO_LOC "mcp0_mosi" AB21;
+IO_LOC "mcp0_cs_n" Y21;
+IO_LOC "mcp1_cs_n" Y22;
+IO_PORT "mcp0_sclk" IO_TYPE=LVCMOS33 PULL_MODE=DOWN DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "mcp0_miso" IO_TYPE=LVCMOS33 PULL_MODE=DOWN DRIVE=OFF BANK_VCCIO=3.3;
+IO_PORT "mcp0_mosi" IO_TYPE=LVCMOS33 PULL_MODE=DOWN DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "mcp0_cs_n" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "mcp1_cs_n" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=4 BANK_VCCIO=3.3;
+IO_LOC "hpd_en" K13;
+IO_PORT "hpd_en" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=12 BANK_VCCIO=3.3;
+IO_LOC "led_n[0]" P19;
+IO_PORT "led_n[0]" IO_TYPE=LVCMOS33 DRIVE=4 BANK_VCCIO=3.3;
+IO_LOC "led_n[1]" R19;
+IO_PORT "led_n[1]" IO_TYPE=LVCMOS33 DRIVE=4 BANK_VCCIO=3.3;
+IO_LOC "led_n[2]" T21;
+IO_LOC "led_n[3]" U21;
+IO_LOC "led_n[4]" P16;
+IO_LOC "led_n[5]" R17;
+IO_LOC "led_n[6]" R18;
+IO_LOC "led_n[7]" T18;
+IO_PORT "led_n[2]" IO_TYPE=LVCMOS33 DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "led_n[3]" IO_TYPE=LVCMOS33 DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "led_n[4]" IO_TYPE=LVCMOS33 DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "led_n[5]" IO_TYPE=LVCMOS33 DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "led_n[6]" IO_TYPE=LVCMOS33 DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "led_n[7]" IO_TYPE=LVCMOS33 DRIVE=4 BANK_VCCIO=3.3;
+IO_LOC "mcp1_sclk" AB20;
+IO_LOC "mcp1_miso" AA21;
+IO_LOC "mcp1_mosi" AB22;
+IO_PORT "mcp1_sclk" IO_TYPE=LVCMOS33 PULL_MODE=DOWN DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "mcp1_miso" IO_TYPE=LVCMOS33 PULL_MODE=DOWN DRIVE=OFF BANK_VCCIO=3.3;
+IO_PORT "mcp1_mosi" IO_TYPE=LVCMOS33 PULL_MODE=DOWN DRIVE=4 BANK_VCCIO=3.3;
+
+IO_LOC  "ddr_bank[2]"   M6;
+IO_PORT "ddr_bank[2]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_bank[1]"   P2;
+IO_PORT "ddr_bank[1]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_bank[0]"   P5;
+IO_PORT "ddr_bank[0]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[14]"  D1;
+IO_PORT "ddr_addr[14]"  IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[13]"  K1;
+IO_PORT "ddr_addr[13]"  IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[12]"  K4;
+IO_PORT "ddr_addr[12]"  IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[11]"  H3;
+IO_PORT "ddr_addr[11]"  IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[10]"  L1;
+IO_PORT "ddr_addr[10]"  IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[9]"   H5;
+IO_PORT "ddr_addr[9]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[8]"   J5;
+IO_PORT "ddr_addr[8]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[7]"   J1;
+IO_PORT "ddr_addr[7]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[6]"   G3;
+IO_PORT "ddr_addr[6]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[5]"   H2;
+IO_PORT "ddr_addr[5]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[4]"   J2;
+IO_PORT "ddr_addr[4]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[3]"   J4;
+IO_PORT "ddr_addr[3]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[2]"   G2;
+IO_PORT "ddr_addr[2]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[1]"   K2;
+IO_PORT "ddr_addr[1]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_addr[0]"   M1;
+IO_PORT "ddr_addr[0]"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_odt"       M2;
+IO_PORT "ddr_odt"       IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_cke"       K6;
+IO_PORT "ddr_cke"       IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_we"        M5;
+IO_PORT "ddr_we"        IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_cas"       L4;
+IO_PORT "ddr_cas"       IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_ras"       L5;
+IO_PORT "ddr_ras"       IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_cs"        P4;
+IO_PORT "ddr_cs"        IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_reset_n"   L6;
+IO_PORT "ddr_reset_n"   IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_ck"        L3,K3;
+IO_PORT "ddr_ck"        IO_TYPE=SSTL15D PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dm[3]"     W1;
+IO_PORT "ddr_dm[3]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dm[2]"     T6;
+IO_PORT "ddr_dm[2]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dm[1]"     V7;
+IO_PORT "ddr_dm[1]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dm[0]"     AA4;
+IO_PORT "ddr_dm[0]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[31]"    Y2;
+IO_PORT "ddr_dq[31]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[30]"    U1;
+IO_PORT "ddr_dq[30]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[29]"    V2;
+IO_PORT "ddr_dq[29]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[28]"    U2;
+IO_PORT "ddr_dq[28]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[27]"    U3;
+IO_PORT "ddr_dq[27]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[26]"    T1;
+IO_PORT "ddr_dq[26]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[25]"    Y1;
+IO_PORT "ddr_dq[25]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[24]"    W2;
+IO_PORT "ddr_dq[24]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[23]"    T5;
+IO_PORT "ddr_dq[23]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[22]"    V5;
+IO_PORT "ddr_dq[22]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[21]"    T4;
+IO_PORT "ddr_dq[21]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[20]"    Y6;
+IO_PORT "ddr_dq[20]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[19]"    R4;
+IO_PORT "ddr_dq[19]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[18]"    U6;
+IO_PORT "ddr_dq[18]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[17]"    R6;
+IO_PORT "ddr_dq[17]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[16]"    U5;
+IO_PORT "ddr_dq[16]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[15]"    Y9;
+IO_PORT "ddr_dq[15]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[14]"    AB6;
+IO_PORT "ddr_dq[14]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[13]"    W9;
+IO_PORT "ddr_dq[13]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[12]"    AB8;
+IO_PORT "ddr_dq[12]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[11]"    Y7;
+IO_PORT "ddr_dq[11]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[10]"    AB7;
+IO_PORT "ddr_dq[10]"    IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[9]"     Y8;
+IO_PORT "ddr_dq[9]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[8]"     AA8;
+IO_PORT "ddr_dq[8]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[7]"     AB1;
+IO_PORT "ddr_dq[7]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[6]"     AB5;
+IO_PORT "ddr_dq[6]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[5]"     AB2;
+IO_PORT "ddr_dq[5]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[4]"     AA1;
+IO_PORT "ddr_dq[4]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[3]"     V4;
+IO_PORT "ddr_dq[3]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[2]"     AA5;
+IO_PORT "ddr_dq[2]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[1]"     AB3;
+IO_PORT "ddr_dq[1]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dq[0]"     Y4;
+IO_PORT "ddr_dq[0]"     IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dqs[3]"    R3,R2;
+IO_PORT "ddr_dqs[3]"    IO_TYPE=SSTL15D PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dqs[2]"    W6,W5;
+IO_PORT "ddr_dqs[2]"    IO_TYPE=SSTL15D PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dqs[1]"    V9,V8;
+IO_PORT "ddr_dqs[1]"    IO_TYPE=SSTL15D PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+IO_LOC  "ddr_dqs[0]"    Y3,AA3;
+IO_PORT "ddr_dqs[0]"    IO_TYPE=SSTL15D PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+INS_LOC "ddr/Gowin_PLL_inst/u_pll/PLL_inst" PLL_L[0];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_dll" DDRDLLM_BL;
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/fclkdiv" LEFTSIDE[4];
+
+// r2：真正时钟保留专用CLK路由；四lane有效位仅驱动本lane，禁止再占全局时钟线。
+CLOCK_LOC "system_clk" BUFG = CLK;
+CLOCK_LOC "engine/render/modal/g_lane[0].math/valid[0]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[0].math/valid[1]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[0].math/valid[2]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[0].math/valid[3]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[0].math/valid[4]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/pre_valid[0]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[1].math/valid[0]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[1].math/valid[1]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[1].math/valid[2]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[1].math/valid[3]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[1].math/valid[4]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/pre_valid_0[1]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[2].math/valid[0]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[2].math/valid[1]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[2].math/valid[2]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[2].math/valid[3]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[2].math/valid[4]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/pre_valid_1[2]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[3].math/valid[0]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[3].math/valid[1]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[3].math/valid[2]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[3].math/valid[3]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/g_lane[3].math/valid[4]" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/pre_valid_2[3]" LOCAL_CLOCK;
+
+// r3：PCM宽输出总使能为数据控制，保留本地网络，避免自动占用LW。
+CLOCK_LOC "engine/render/pcm_output_enable" LOCAL_CLOCK;
+
+// r4：模态任务有效为数据使能，不占用全局长线；实际匹配由网表核查。
+CLOCK_LOC "engine/render/modal/task_valid_Z" LOCAL_CLOCK;
+
+CLOCK_LOC "resources/query_snapshot_enable" LOCAL_CLOCK;
+CLOCK_LOC "resources/reply_cache_enable" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/generation_output_enable" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/accept" LOCAL_CLOCK;
+CLOCK_LOC "engine/render/modal/return_accepted" LOCAL_CLOCK;
+
+// SUG1018 §2.3：仅移动WLOADN末级50MHz寄存器，增加真实短路径延迟，不切hold。
+// 第八轮Q到左侧DQS长达5.669ns、D最短仅1.408ns；向R100C0接收区移动，兼顾出端setup和入端hold。
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/wloadn_3_s0" R[90:110]C[12:24];
+// 板载参考仍是实际50MHz时钟；要求专用全局分支，禁止改成数据本地路由。
+CLOCK_LOC "sys_clk_d" BUFG = CLK;
+// 网表核对：该LUT输出仅驱动548 RESET + 32 SET，保持复位语义，普通本地数据控制。
+CLOCK_LOC "resources/memory/n86_11" LOCAL_CLOCK;
+
+// 第九轮实际hold -1.984ns：自动放置把100MHz源拖到R74C12，至R90C12只有0.477ns线延迟。
+// 保持WLOADN靠近DQS；单独拉开只有两个负载的源，避免二者一起移动后短路径仍在。
+// 不改变时钟、逻辑和hold要求；新实现必须同时检查该源的所有setup/hold。
+// 第十轮该源实际R24C80，2.205ns route仍少0.250ns hold；只继续拉开源到目的距离。
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/ddr_init_internal_r_s0" R[20:24]C[132:140];
+
+// 第十四轮唯一真实Setup -0.027ns：hold_i在R81C6、反相LUT在R81C3，目标DQS在R100C0。
+// 只将该寄存器/反相LUT放到对应DQS近邻，缩短2.736ns数据路径；时钟/Setup/Hold要求不变。
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/hold_gen[1].hold_i_s0" R[96:104]C[2:8];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_1_s" R[96:104]C[2:8];
+
+// r5: actual DQS HOLD setup violations; keep all senders near each fixed DQS.
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_0_s0" R[70:76]C[2:8];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/hold_gen[0].hold_i_s0" R[70:76]C[2:8];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_0_s" R[70:76]C[2:8];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_1_s0" R[96:104]C[2:8];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_2_s0" R[88:94]C[2:8];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/hold_gen[2].hold_i_s0" R[88:94]C[2:8];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_2_s" R[88:94]C[2:8];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_3_s0" R[61:67]C[2:8];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/hold_gen[3].hold_i_s0" R[63:65]C[2:4];
+INS_LOC "ddr/u_ddr3/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_3_s" R[63:65]C[2:4];
+CLOCK_LOC "engine/render/modal/damping_pipe_capture" LOCAL_CLOCK;
+CLOCK_LOC "resources/status_snapshot_enable" LOCAL_CLOCK;
+CLOCK_LOC "display/telemetry_capture_enable" LOCAL_CLOCK;
+// Data write enable for the packed timbre table; not a generated clock.
+CLOCK_LOC "player/write_timbres" LOCAL_CLOCK;
+// The reduction valid is a data enable, not a clock.
+CLOCK_LOC "engine/render/modal/reduction_valid" LOCAL_CLOCK;
+// Keep the two diagnostic release stages together; let the shared global reset source place freely.
+// Only the exact synchronizer CLEAR ingress is excepted; all functional reset loads remain timed.
+INS_LOC "hardware_monitor/mem_reset_release_0_s0" R[36:37]C[62:63];
+INS_LOC "hardware_monitor/mem_reset_release_1_s0" R[36:37]C[62:63];
+
+// HC-05独立UART；只供蓝牙集成候选合入，未用于当前原生r7回归工程。
+// D20输入接HC-05 TXD；C20输出接HC-05 RXD。信号电平为3.3V。
+// 31005底板：J13-36 / J13-35；不得与SDRAM扩展板同时使用该排针。
+IO_LOC "bt_rx_i" D20;
+IO_PORT "bt_rx_i" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "bt_tx_o" C20;
+IO_PORT "bt_tx_o" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=4 BANK_VCCIO=3.3;

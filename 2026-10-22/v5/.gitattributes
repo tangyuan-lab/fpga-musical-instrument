@@ -1,0 +1,19 @@
+* text=auto
+*.py text eol=lf
+*.sv text eol=lf
+*.v text eol=lf
+*.inc text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.tcl text eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.HMI binary
+*.zi binary
+*.png binary
+*.mid binary
+*.ftb binary
+*.fpgamusic binary
+
+# Dated source snapshot: preserve exact bytes used by SOURCE_MANIFEST.json.
+* -text

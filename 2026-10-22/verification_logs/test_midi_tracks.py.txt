@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\26369\Desktop\FPGA\sent\2026-10-22\v5\scripts\test_midi_tracks.py", line 87, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\26369\Desktop\FPGA\sent\2026-10-22\v5\scripts\test_midi_tracks.py", line 37, in main
+    if not iverilog or not vvp:raise RuntimeError('未找到iverilog/vvp，请检查工具安装')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: 未找到iverilog/vvp，请检查工具安装

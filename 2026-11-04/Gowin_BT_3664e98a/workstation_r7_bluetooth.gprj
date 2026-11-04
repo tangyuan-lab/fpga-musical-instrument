@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project>
+  <Template>FPGA</Template>
+  <Version>5</Version>
+  <Device name="GW5AST-138C" pn="GW5AST-LV138PG484AC1/I0">gw5ast138c-007</Device>
+  <FileList>
+    <File path="audio_chorus.sv" type="file.verilog" enable="1" />
+    <File path="audio_effects.sv" type="file.verilog" enable="1" />
+    <File path="audio_params.sv" type="file.verilog" enable="1" />
+    <File path="audio_startup.sv" type="file.verilog" enable="1" />
+    <File path="piano_velocity_gain.sv" type="file.verilog" enable="1" />
+    <File path="bend_factor_rom.sv" type="file.verilog" enable="1" />
+    <File path="button_filter.sv" type="file.verilog" enable="1" />
+    <File path="control_ram_sdp.sv" type="file.verilog" enable="1" />
+    <File path="control_ram_sp32.sv" type="file.verilog" enable="1" />
+    <File path="i2s48_stereo.sv" type="file.verilog" enable="1" />
+    <File path="mcp3208_dual_scan.sv" type="file.verilog" enable="1" />
+    <File path="midi_file_ram32_sdp.sv" type="file.verilog" enable="1" />
+    <File path="modal_piano32.sv" type="file.verilog" enable="1" />
+    <File path="modal_piano_coeff_rom.sv" type="file.verilog" enable="1" />
+    <File path="packed_table_sp32.sv" type="file.verilog" enable="1" />
+    <File path="pcm_master_gain.sv" type="file.verilog" enable="1" />
+    <File path="pcm_percent_gain.sv" type="file.verilog" enable="1" />
+    <File path="piano_note_rom.sv" type="file.verilog" enable="1" />
+    <File path="pressure_key_matrix_serial.sv" type="file.verilog" enable="1" />
+    <File path="pt8211_48_stereo.sv" type="file.verilog" enable="1" />
+    <File path="reset_sync.sv" type="file.verilog" enable="1" />
+    <File path="sample_ram.sv" type="file.verilog" enable="1" />
+    <File path="screen_touch_keys_rx.sv" type="file.verilog" enable="1" />
+    <File path="snapshot_cdc.sv" type="file.verilog" enable="1" />
+    <File path="source_mix_sync.sv" type="file.verilog" enable="1" />
+    <File path="track_gain_bank_packed.sv" type="file.verilog" enable="1" />
+    <File path="uart_frame_protocol.sv" type="file.verilog" enable="1" />
+    <File path="uart_frame_tx_v2.sv" type="file.verilog" enable="1" />
+    <File path="uart_rx.sv" type="file.verilog" enable="1" />
+    <File path="uart_tx.sv" type="file.verilog" enable="1" />
+    <File path="voice_context_bank.sv" type="file.verilog" enable="1" />
+    <File path="voice_postmix32.sv" type="file.verilog" enable="1" />
+    <File path="workstation_screen_tx.sv" type="file.verilog" enable="1" />
+    <File path="workstation_v2_emergency.sv" type="file.verilog" enable="1" />
+    <File path="workstation_v2_screen.sv" type="file.verilog" enable="1" />
+    <File path="audio_observer.sv" type="file.verilog" enable="1" />
+    <File path="diagnostic_dds32.sv" type="file.verilog" enable="1" />
+    <File path="fft512_observer.sv" type="file.verilog" enable="1" />
+    <File path="led8_guide.sv" type="file.verilog" enable="1" />
+    <File path="mega138_screen_tx.sv" type="file.verilog" enable="1" />
+    <File path="mega138_models8_top.sv" type="file.verilog" enable="1" />
+    <File path="instrument_models8_modes.sv" type="file.verilog" enable="1" />
+    <File path="workstation_models8_router.sv" type="file.verilog" enable="1" />
+    <File path="field_test_models8_control.sv" type="file.verilog" enable="1" />
+    <File path="mega138_models8_diagnostics.sv" type="file.verilog" enable="1" />
+    <File path="workstation_cut123_player.sv" type="file.verilog" enable="1" />
+    <File path="workstation_cut123_resources.sv" type="file.verilog" enable="1" />
+    <File path="workstation_cut123_commands.sv" type="file.verilog" enable="1" />
+    <File path="unified_models8_32.sv" type="file.verilog" enable="1" />
+    <File path="model_voice_control_models8_32.sv" type="file.verilog" enable="1" />
+    <File path="voice_postmix_models8_32.sv" type="file.verilog" enable="1" />
+    <File path="voice_transition32.sv" type="file.verilog" enable="1" />
+    <File path="shared_modal_math.sv" type="file.verilog" enable="1" />
+    <File path="shared_modal_scheduler32.sv" type="file.verilog" enable="1" />
+    <File path="shared_modal_scheduler32_compact.sv" type="file.verilog" enable="1" />
+    <File path="shared_modal_backend32.sv" type="file.verilog" enable="1" />
+    <File path="shared_models8_render32.sv" type="file.verilog" enable="1" />
+    <File path="midi_tracks_parser.sv" type="file.verilog" enable="1" />
+    <File path="rtl/workstation_async_fifo.sv" type="file.verilog" enable="1" />
+    <File path="rtl/workstation_ddr_bridge.sv" type="file.verilog" enable="1" />
+    <File path="rtl/workstation_ddr_phy.sv" type="file.verilog" enable="1" />
+    <File path="rtl/workstation_song_store.sv" type="file.verilog" enable="1" />
+    <File path="rtl/workstation_track_mix.sv" type="file.verilog" enable="1" />
+    <File path="ip/ddr3/ddr3_memory_interface.v" type="file.verilog" enable="1" />
+    <File path="ip/pll/gowin_pll.v" type="file.verilog" enable="1" />
+    <File path="ip/pll/gowin_pll_mod.v" type="file.verilog" enable="1" />
+    <File path="ip/pll/pll_init.v" type="file.verilog" enable="1" />
+    <File path="rtl/workstation_hw_status.sv" type="file.verilog" enable="1" />
+    <File path="rtl/workstation_chord.sv" type="file.verilog" enable="1" />
+    <File path="rtl/workstation_voice_count.sv" type="file.verilog" enable="1" />
+    <File path="pcm_source_sends.sv" type="file.verilog" enable="1" />
+    <File path="pcm_peak_limiter.sv" type="file.verilog" enable="1" />
+    <File path="pcm_gain_stats.sv" type="file.verilog" enable="1" />
+    <File path="screen_scope_capture.sv" type="file.verilog" enable="1" />
+    <File path="rtl/pressure_touch_curve.sv" type="file.verilog" enable="1" />
+    <File path="rtl/audio_runtime_metrics.sv" type="file.verilog" enable="1" />
+    <File path="rtl/live_note_pitch.sv" type="file.verilog" enable="1" />
+    <File path="rtl/pressure_lesson.sv" type="file.verilog" enable="1" />
+    <File path="rtl/screen_status_mux.sv" type="file.verilog" enable="1" />
+    <File path="constraints/workstation.cst" type="file.cst" enable="1" />
+    <File path="constraints/workstation.sdc" type="file.sdc" enable="1" />
+    <File path="rtl/r7_bt_control.sv" type="file.verilog" enable="1" />
+    <File path="rtl/r7_bt_frame_rx.sv" type="file.verilog" enable="1" />
+    <File path="rtl/r7_bt_host_bridge.sv" type="file.verilog" enable="1" />
+    <File path="rtl/r7_bt_uart_link.sv" type="file.verilog" enable="1" />
+    <File path="rtl/r7_bt_usb_guard.sv" type="file.verilog" enable="1" />
+  </FileList>
+</Project>

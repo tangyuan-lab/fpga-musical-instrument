@@ -1,0 +1,1229 @@
+{
+  "schema": 1,
+  "import_date": "2026-11-04",
+  "repository_base": {
+    "branch": "codex/2026-10-22-pr",
+    "commit": "b86393c9cc904e46913adb0a507fc8e4551eaaae"
+  },
+  "archive": {
+    "name": "Gowin_BT_3664e98a_source_tests.rar",
+    "bytes": 2346892,
+    "sha256": "1af8efccf1dddd8fb565eaa60287cec18815996bb2a90b885f3f1e06e492e423"
+  },
+  "source_files": 242,
+  "source_bytes": 4331346,
+  "build_id": "0x3664e98a",
+  "production_digest": "3664e98a222556adde38c5396ae7535aed2e7b7cfd8f5b2396b72fc723b44e48",
+  "files": [
+    {
+      "path": "Gowin_BT_3664e98a/audio_chorus.sv",
+      "bytes": 3354,
+      "sha256": "d54a8e6ff32808c0213516768d8496f90a99d6bf50829e978ebfa6f95cd754ef"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/audio_effects.sv",
+      "bytes": 4671,
+      "sha256": "b7aa5ced6c55d9d54f1186c47161b1269dba59d5784b32317f866b98b2903710"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/audio_observer.sv",
+      "bytes": 5691,
+      "sha256": "5226f2b2070c68216b8556069a554d1456c856138bb0adc3d40f6d85d3da9a0b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/audio_params.sv",
+      "bytes": 7859,
+      "sha256": "385cc3b183c14bf79db3ae5a8d7067184e462fb0e90dc25a84a26480d27dc9f8"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/audio_startup.sv",
+      "bytes": 1157,
+      "sha256": "1df9436a570cc28180500ad217c9ca8adac501bf7fc5f5e5ab4fe7bad4dc9b8f"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/bank_reciprocal_q28.mem",
+      "bytes": 320,
+      "sha256": "e8a57c9b649c149f50f215b2f1bf88b57a61deadd8591d8cfc41ad0e699b819e"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/bend_factor_rom.sv",
+      "bytes": 12023,
+      "sha256": "3cd804a193aaf01d65f53ad523f623ae28a2e7572a18d35b6a4833fb9724f370"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/bend_factors.mem",
+      "bytes": 10250,
+      "sha256": "c91e8e0277efde0f4adfaa5e5fd1d6b1cef37cccb4be84529a081053568fa874"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/build.tcl",
+      "bytes": 6637,
+      "sha256": "55a6a65c7bf2b1a7ad69109734600e06c453a49df3fcd0bf3c66bf777710634e"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/build_identity.json",
+      "bytes": 13825,
+      "sha256": "c30f3bc5aac0b06abe4f57857aacdccd0f14770321f750997c8f9d3cbf4df59d"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/button_filter.sv",
+      "bytes": 1437,
+      "sha256": "4f8cfda1fe4a121d1ff6a3dba6f394e1775c1772feea368b43de90d983e82854"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/constraints/workstation.cst",
+      "bytes": 16420,
+      "sha256": "bcbbd62799c4f7e3f84a27a70ed9ef626193a29d009af7a796069da4b415020b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/constraints/workstation.sdc",
+      "bytes": 9159,
+      "sha256": "71b1975b7abc23da1fa64726c279ff01fc043cf7f4e9117d49eddf263521e9a4"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/control_ram_sdp.sv",
+      "bytes": 1244,
+      "sha256": "4eb31bf6a7b84f2752cb3b0a9598af7ca3e0bb86785a1f274ce6b582a7271b49"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/control_ram_sp32.sv",
+      "bytes": 1768,
+      "sha256": "4e315c584d729b2556ea1d04390a430c3bf7d25298e45461afa5f585d56dc026"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/diagnostic_dds32.sv",
+      "bytes": 2610,
+      "sha256": "f3cd931c493ba028e83dc04904119402057ffe4c0e1acf4bf4867e06201e0922"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/diagnostic_sine.mem",
+      "bytes": 6144,
+      "sha256": "99a7d0a335cd1fe5a62ade4188773927f226e86149a7cc1d923230c53ffc40a4"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_cosine_quarter.mem",
+      "bytes": 6144,
+      "sha256": "223a89d451352208357e27d62e20e808f1d2bb807c72016a0831069c5ae5ff2c"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_exp.mem",
+      "bytes": 7168,
+      "sha256": "fbc6ccfef002059dc66479ac0a811f4fee7d8f2131184853230bdd825ba63531"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_fir.mem",
+      "bytes": 256,
+      "sha256": "935c4fcb84c62a12a666f3fb31b6068698b02d16a73822bbc69ef4cc3c6025d9"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_modal_lane0.mem",
+      "bytes": 4992,
+      "sha256": "ebe92cd45fd3d616923a97160a60bdcf30d52283b4a970844490e3aec96e0640"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_modal_lane1.mem",
+      "bytes": 4992,
+      "sha256": "e2cfb69885749c81d539b780d6a3ff950c9029980ae3a8077be1b588241ec479"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_modal_lane2.mem",
+      "bytes": 4992,
+      "sha256": "eb165ccc6470528d0203584f4ee7d046dc0ba99ac74e8a4403bdd816cefe3a80"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_modal_lane3.mem",
+      "bytes": 4992,
+      "sha256": "ed2900280d34463018d8f68f15061ad4d8cc970b8106c8b08fcbc24b11d1b5e8"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_noise_coefficients.mem",
+      "bytes": 7056,
+      "sha256": "e44c03c1f7e2a124afb09bc55b691d6b42ed4aa26f1918e022660cd57bef76b0"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_packet_lane0.mem",
+      "bytes": 7104,
+      "sha256": "31139e33d89cc2374b9bc1f3a9f62e6ebbc67d284243da3b977e42884ddf567e"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_packet_lane1.mem",
+      "bytes": 7104,
+      "sha256": "27c550810102905cc9524a7071e20ea369f6574a64336a851e48edfe64405293"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_packet_lane2.mem",
+      "bytes": 7104,
+      "sha256": "50679f7ee6ba861608fd624df80b986cae67c98c07aa149fb41cbdeeff9eb5e9"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_packet_lane3.mem",
+      "bytes": 7104,
+      "sha256": "240b0f14de0d0d7b4b0003ff79a17cf3a4b87e43d9bc2b7ad1160dc549c5a5f2"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_packet_lane4.mem",
+      "bytes": 7104,
+      "sha256": "3e89c7e323a46c58ad4f2fd6d06720d2ac7d099c0d60f32c5cd387b2a09e0da1"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_packet_lane5.mem",
+      "bytes": 7104,
+      "sha256": "944a6cdc87e4170aa213c4794105151357630103bbe5c749281230d7e44814f9"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_packet_lane6.mem",
+      "bytes": 7104,
+      "sha256": "a4426c8557d2183349c32afc35d8139a99ecf38636a707fe9e61033e0940259e"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_packet_lane7.mem",
+      "bytes": 7104,
+      "sha256": "0c90bada25898d746f28827f105eefb84b005e66b7a5ac669393a4c8f8ee8a48"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/excitation_sqrt.mem",
+      "bytes": 7168,
+      "sha256": "2a12542630f0bc12f4d276cbc762e403f3c8b82f8f225edac729a0bebbaab2b6"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/fft512_observer.sv",
+      "bytes": 3676,
+      "sha256": "74272344adce1d5bf5b2989db436c186c79e67247b029750f3b169ac066ff4fe"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/field_test_models8_control.sv",
+      "bytes": 4740,
+      "sha256": "d55f174b54b869fcc8929d73b7379125dd7ed7dbb29eee54b84d5d15fcac98a2"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/gb_body_lane0.mem",
+      "bytes": 768,
+      "sha256": "4ecebedb501b2df2aaef330ddf8579b4a20d9ca40126a4c2f57af6499008e255"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/gb_body_lane1.mem",
+      "bytes": 768,
+      "sha256": "19bad5f3756068c86fe8938e5223177037beecb5df2940bf849f683e45a46bb0"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/gb_body_lane2.mem",
+      "bytes": 768,
+      "sha256": "311aff99128b0f599725c1b61466594929838b169557f01e2d46cbe4efa64666"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/gb_body_lane3.mem",
+      "bytes": 768,
+      "sha256": "19384a596036492d7eac44e72852b6edfd2cecc3e1033e8e486c544efa342a78"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/gb_reciprocal_q28.mem",
+      "bytes": 320,
+      "sha256": "5ce3e2cad2e038ec3b07314af90f41867903be11f6d7f2488df10f8c38e573d2"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/i2s48_stereo.sv",
+      "bytes": 1580,
+      "sha256": "0d4a466843b667ab15f453ddacdd2c728e80a5536005f0dc9b599c0f571c5444"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/impl/workstation_r7_bluetooth_process_config.json",
+      "bytes": 3069,
+      "sha256": "07e09bdb1a4c3d29baa8cff6915676fe57f1897c7b6c2c6e355eded6d7199452"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/instrument_models8_modes.sv",
+      "bytes": 6810,
+      "sha256": "a9e5cf79d70f009256f30d193ba7d80236d68d7388b48e2569eb9dda8dfdcb2b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/ip/ddr3/ddr3_memory_interface.v",
+      "bytes": 2267304,
+      "sha256": "4a6e26d2ccb8d01221103df4cdf71f3517d2700614020e0c414aafec04a495bc"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/ip/ddr3/gwmc_param.v",
+      "bytes": 1079,
+      "sha256": "c0855ec5544ea9d1fe8502d78a7b956cf5e19ab1d9d635db9c5cd195f32b7b59"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/ip/pll/gowin_pll.v",
+      "bytes": 1052,
+      "sha256": "fe82f04118059091401422d619109f5bd8888428923e87ef491f15a8c9ec5de6"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/ip/pll/gowin_pll_mod.v",
+      "bytes": 6264,
+      "sha256": "9a0a538f8101e2b18b0cf36e2e85ee88d8b12ef3ce8d586fa5e1db9881f96bb6"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/ip/pll/pll_init.v",
+      "bytes": 6681,
+      "sha256": "98c3735c7432581b49f7a1a7496e766b5febb6a4455b61484e1c9a1ea072025d"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/led8_guide.sv",
+      "bytes": 1318,
+      "sha256": "d5562a321084fb6b07a72b4ee9bfd5f4a68e81483dfc26d55563794eed35deac"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/legacy_steps48.mem",
+      "bytes": 1280,
+      "sha256": "4ede7ed9f55c633aaafa1b9d4b95b2ac023acee8010d2dd4abf7862a16db7a88"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/mcp3208_dual_scan.sv",
+      "bytes": 8060,
+      "sha256": "09909015b6ec1302093f0a0b7fe05dc6029bbc7716a4e18753d0bd8052b74339"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/mega138_models8_diagnostics.sv",
+      "bytes": 9993,
+      "sha256": "f4da75cf9a94334f185fc446895b0e1b11ae601dabd6bb551707e998c13e3059"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/mega138_models8_top.sv",
+      "bytes": 71766,
+      "sha256": "b38a6571fd1f0a4ec697354010cd014104f7b7915603325503ea38b34bc286c8"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/mega138_screen_tx.sv",
+      "bytes": 15261,
+      "sha256": "ff4e832c7b003eebfe742cafd2f40d6467091bc43a086f19f73e666f2f88cd56"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/midi_file_ram32_sdp.sv",
+      "bytes": 2358,
+      "sha256": "9d3ca95b6262470e583d6153997f4bef54b226958073ef353f8245f2ff0bd3e9"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/midi_tracks_parser.sv",
+      "bytes": 11387,
+      "sha256": "a8c219db12728797c42a4ee560400d4e1be9874df6351da5f6d66f20f3527ff8"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/modal_piano32.sv",
+      "bytes": 12656,
+      "sha256": "4c25e175ea73de8ba6c89b6fe0bb6d97558d54aef78309d0db57982cfca7e097"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/modal_piano_coeff_rom.sv",
+      "bytes": 91940,
+      "sha256": "159b5f2507d9b425a812016cbd415961c9989faf6be0fa60d40a0d78d3b0392f"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/model_voice_control_models8_32.sv",
+      "bytes": 19955,
+      "sha256": "6d63e40d08540d534ce1fc1bcc179017b239b82f7d13554f1ea78441048be8d3"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/observer_twiddle.mem",
+      "bytes": 2560,
+      "sha256": "6a96b26d04b0bc63ab5663dd5af0de8d8972be643e97af81c1043c9419b21748"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/packed_table_sp32.sv",
+      "bytes": 2687,
+      "sha256": "0ac66e1b4f10fc1b68805334b21790155901eeeaf313fed50b3b57f3c3585546"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/pcm_gain_stats.sv",
+      "bytes": 1352,
+      "sha256": "96e99bc3355399ec62f4fb21505a2b0198a9a92045422c7c32ec1c91282a0585"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/pcm_master_gain.sv",
+      "bytes": 3151,
+      "sha256": "1c287b8c2f97f39d80d236ed3804fc1a30d83afa1896f760bc2b01906f2d496a"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/pcm_peak_limiter.sv",
+      "bytes": 3303,
+      "sha256": "4b4668c1ff71cbe140241590162de3ca2aced53da18922561050381932708244"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/pcm_percent_gain.sv",
+      "bytes": 979,
+      "sha256": "b65b7ddbfcdc1720fcaefe8ff6ec0d0ec09c43abe79790883298833a6a2ec6df"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/pcm_source_sends.sv",
+      "bytes": 2087,
+      "sha256": "b95164d990caa215778f4537056ed5201062f516a20fc91d9253812e70cd3f50"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/piano_coeff_lane0.mem",
+      "bytes": 17408,
+      "sha256": "2fdc21346c0d1945c1d6ecab475077a6ffae0b4a7177cec7b89d4f1480474540"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/piano_coeff_lane1.mem",
+      "bytes": 17408,
+      "sha256": "a851e30012c7479a2bdf2bbf1e4bf238da70bec21bdbcf5e6ecaa5ba4ac4dde1"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/piano_coeff_lane2.mem",
+      "bytes": 17408,
+      "sha256": "e8539148ac192099c0b53944cb867fb133045419fd6de2c8a93e8f9f750413a5"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/piano_coeff_lane3.mem",
+      "bytes": 17408,
+      "sha256": "a99e626e5187262ce0e2b8880eec0afc6ea3720fc8c7b2ac815f424d9996c5fe"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/piano_note_map.mem",
+      "bytes": 1536,
+      "sha256": "deaf225d2fca21f869a29163c09e3745386c623d84dd82685b87bfa26149ba6b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/piano_note_rom.sv",
+      "bytes": 6120,
+      "sha256": "550c810d332934c4ada0fad2e42854c694980784b82254bad3ebabb43a9cb0c8"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/piano_sine.mem",
+      "bytes": 6144,
+      "sha256": "99a7d0a335cd1fe5a62ade4188773927f226e86149a7cc1d923230c53ffc40a4"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/piano_velocity_gain.sv",
+      "bytes": 1059,
+      "sha256": "3e9b00d92b016058109906e3323e8968b024f92ae57bb02ca6d5ee2cab8a2c65"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/pitch_c4_q24.mem",
+      "bytes": 1280,
+      "sha256": "06d7f53bbf5f9c5fc09676eb62056eb31e955bcfd4667c785cd6c9fd42e84804"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/pnr.tcl",
+      "bytes": 1084,
+      "sha256": "f102d00e0a5ead234dc3fcdd61494cda6e5fdbd25299087b8497649a52baad2a"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/pressure_key_matrix_serial.sv",
+      "bytes": 10869,
+      "sha256": "2045ca1498f45fcdd47add06d53c6876a803a31a43cb9f79538deb16b374d7ea"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/pt8211_48_stereo.sv",
+      "bytes": 1301,
+      "sha256": "11898e1f2e099bef5f41860780c047176be2fa7a9037bf5e7fcbf5eb3d39944d"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/reset_sync.sv",
+      "bytes": 431,
+      "sha256": "a01b34b97a4db5f934890b1af5fbe0a1f046d1f6d18116d34f9cfd9b44cafc6e"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/audio_runtime_metrics.sv",
+      "bytes": 2798,
+      "sha256": "7c72755c77e09bdc2f12b3180c69b176c0ae5014fa5f71072496fa45a09b8271"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/damping_defaults.vh",
+      "bytes": 545,
+      "sha256": "10ec91f2e6a28f8a62848d7497b3b6d829bdb58807acd0b7eebbbaf15bcc97af"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/live_note_pitch.sv",
+      "bytes": 4749,
+      "sha256": "ac5a48226f3d715daa8a1d8bb976c46dd0e13ca9611db0ab008206e8f6c6660c"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/piano_velocity_defaults.vh",
+      "bytes": 189,
+      "sha256": "f83c76a1fb2e5cc403368695ad5a8f560b916fa2271a84bfed951206bf953e40"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/pressure_lesson.sv",
+      "bytes": 9150,
+      "sha256": "4177ad198105bb12afbbb0385baec15defaf589ac1a865436cadc2d19bc4dd17"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/pressure_touch_curve.sv",
+      "bytes": 1170,
+      "sha256": "6c920d949be8cfa6c638a5e61f6d700230417ea377b386cb9e4c52c223691e0e"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/r7_bt_control.sv",
+      "bytes": 11368,
+      "sha256": "f7acc30f432a96d2dfce3d53c2d12a37b1272f8da42fad0f1609b50c388c76ad"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/r7_bt_frame_rx.sv",
+      "bytes": 4089,
+      "sha256": "54b68fb1734c4626e074d2cef72f8a360c713107a4aee9473c1be622ef272f15"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/r7_bt_host_bridge.sv",
+      "bytes": 2450,
+      "sha256": "d871ad28ff39be947ac4363b4bfe795cbdaefcfecf26c1da38e8fa34efaef933"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/r7_bt_uart_link.sv",
+      "bytes": 2758,
+      "sha256": "c330a8af004526e3e9cc85faaabee77a3c0a8e5df7c283f9aa0346a454843445"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/r7_bt_usb_guard.sv",
+      "bytes": 1639,
+      "sha256": "13a2e9c46708bdddc30cb5c9e367560c4320f0bef7891fe36566266392f483a5"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/screen_status_mux.sv",
+      "bytes": 5211,
+      "sha256": "714c107aad37ab844085ce8e9f0ca70c9472702c887ab121ce0117cc12e2e4ac"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/workstation_async_fifo.sv",
+      "bytes": 1645,
+      "sha256": "b8934593446710cf6502af5f229827c003b1c25e91ed16ea9b638c01a8466780"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/workstation_build_identity.vh",
+      "bytes": 200,
+      "sha256": "3d6a6cb44307fb21b2dfe8812ca969aaf0291ae2428ebbe4335491ca8bd14d04"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/workstation_chord.sv",
+      "bytes": 4160,
+      "sha256": "0c69eb34a1a784019ac1d705c918cf3f1ab46d2f2deed34073da0010cce8add5"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/workstation_ddr_bridge.sv",
+      "bytes": 6054,
+      "sha256": "09855c01be6144ba0da3d19053b40f0759c2e468359000727f9b0eace99e818a"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/workstation_ddr_phy.sv",
+      "bytes": 4259,
+      "sha256": "7868860f41f2e8ff5a040f316851788dd42b848d900da7cb7cad487ee7a50788"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/workstation_hw_status.sv",
+      "bytes": 3318,
+      "sha256": "b34c2839108d3d6aee7d509bb602a8c39fec331fb8a22528dfd410dea45cac24"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/workstation_song_store.sv",
+      "bytes": 3864,
+      "sha256": "3b8da50c935de76362ec3f093b9312ad6000064e03f8bf25ba6e6791a29a8800"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/workstation_track_mix.sv",
+      "bytes": 2390,
+      "sha256": "1ecbda0aaa33327e52ce56cf0c8a2189e1b7f8711b8fe76c5dce82f139a6ab98"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/rtl/workstation_voice_count.sv",
+      "bytes": 925,
+      "sha256": "f9c852f87f6e8767ccc1f8c9eefa11a1d4513d8a874157d0d897efbe08b2e83d"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sample_ram.sv",
+      "bytes": 1216,
+      "sha256": "59ace2a59a88dbd8b9aaff6287346d50d31feb5fdceb82bfc5ef4219cbb17910"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/screen_scope_capture.sv",
+      "bytes": 2475,
+      "sha256": "3718ed7a6d52a9beb1287885ffc50a9ff1df7bd632572c5f86ae66f21afaaa87"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/screen_touch_keys_rx.sv",
+      "bytes": 9771,
+      "sha256": "298ae0f79325440ec820bb5b88b8d9a37fcbf660b5fa9d61d483b840f93dbbbe"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/shared_coeff_lane0.mem",
+      "bytes": 33792,
+      "sha256": "8f301e3e0dbf8baa84554f0deb8ecce2ebeeacb87e2c8e3da380d2a3cff219eb"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/shared_coeff_lane1.mem",
+      "bytes": 33792,
+      "sha256": "eaffdd59f945f1d0de1bf604481b8a737a9895ea6a506dd90abfc63a962fc612"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/shared_coeff_lane2.mem",
+      "bytes": 33792,
+      "sha256": "254ca80b03762e8ac7c269533aecf8eff1204cf05c9819008eaf5fd3de159aff"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/shared_coeff_lane3.mem",
+      "bytes": 33792,
+      "sha256": "5f0f19930da62d3e22380be9c0419f9260f8702d523465a58588427fe83d60bb"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/shared_modal_backend32.sv",
+      "bytes": 22997,
+      "sha256": "54d686799f5c107bb25737e53c04d6d0f94d11545f922fa3f52f411bb4d2f81a"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/shared_modal_math.sv",
+      "bytes": 17502,
+      "sha256": "fc95265b3575a2b276087caf815d1b53a6a1c75848b4c0c88fa750efbf51fb84"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/shared_modal_scheduler32.sv",
+      "bytes": 9581,
+      "sha256": "870e62c3620d0a0a9c04a840b4dd8a9609359c83146c418c89591d52bcc972ad"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/shared_modal_scheduler32_compact.sv",
+      "bytes": 13412,
+      "sha256": "f7962b35024df5af25bfb37c1a909ee00cfe86b89bbb025d5d17d7ba9f7e8047"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/shared_models8_render32.sv",
+      "bytes": 21713,
+      "sha256": "23eef53238652e1ef320271a1c68e43697c1d4a3d91c788d7fd5029edbd3a74a"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/audio_chorus_46274_reference.sv",
+      "bytes": 2726,
+      "sha256": "65bb67632adca4d4d135b0fc2589970dbdf491c7d1deebcc89b85baa132170b5"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/audio_effects_46274_reference.sv",
+      "bytes": 2500,
+      "sha256": "f43dc211c7e0c68e5110b412492cd53db5b47471ce25d029cb3318efb24a8fac"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/backend_reference.sv",
+      "bytes": 15394,
+      "sha256": "05b6810599f13e2319d7d3ab5df057421d3adf2427c92bb3b8334299dfc43c73"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/ddr_phy_model.sv",
+      "bytes": 3409,
+      "sha256": "7a77eda2b87edfa4bf0eb928c624b8725b019fba6e1871a749082c304177c9d4"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/gain_audit_sine.mem",
+      "bytes": 192,
+      "sha256": "3feb6e4d9b806fe3399ab0346d10de7d6e77964c24370e41d132a789bf26f7bd"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/math_reference.sv",
+      "bytes": 15565,
+      "sha256": "6ae902d862f1cc569af98fb411b0c52ff6f72e622cca86d15cbb46c025a03b5b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/mcp3208_dynamic_model.sv",
+      "bytes": 784,
+      "sha256": "8a93120e56c04bac30e113f5894bee1465a18492e327cd6d3b64f132e3e1e935"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/mcp3208_model.sv",
+      "bytes": 3744,
+      "sha256": "384554070b6b9eea1dace8080c7cced712638c8c24f89dc1544e1324f71f3675"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/parser_timing_bytes.mem",
+      "bytes": 1144,
+      "sha256": "6d6d9544293715c928bff32226ff0fae3e243df381e918ea2320dd810348bd66"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/parser_timing_cases.json",
+      "bytes": 831,
+      "sha256": "ab5c0c56e06f32fd438423f7d13d1c9ed51a480921551bf46078da9518f22a85"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/parser_timing_reference.sv",
+      "bytes": 11091,
+      "sha256": "60da1611e95746f1438b4f0403f66fa1d5acfc32f0f39c58089b47eccb58bbbf"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/pcm_master_gain_46274_reference.sv",
+      "bytes": 2116,
+      "sha256": "d7c9342c21f935161af1261b041c9044ec77879347a17181c390353fee48c371"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/render_reference.sv",
+      "bytes": 15593,
+      "sha256": "2c23039b9abcdd887a73958f638099da00e6ce484c28e05d3f589fef2f5674f8"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/result.svh",
+      "bytes": 578,
+      "sha256": "1077f772b19680b0b53e021e0cc0fb2deb3da6675dc41e5e708a253fb1c52e74"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/sample_ram_functional.sv",
+      "bytes": 830,
+      "sha256": "ea5f064850672db81f53bd379f82a5e5065e477cb6c96271c14cc398ba35dd39"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/scheduler_timing_reference.sv",
+      "bytes": 12097,
+      "sha256": "cc250669fc33de714452b59604f98faa3eacdaf6002e877d18bd296982ab3773"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/shared_modal_backend32_94f0_reference.sv",
+      "bytes": 21916,
+      "sha256": "08fc010fe0b218ddfe4f6bd2128efef72da7ec5ab22cd4bdb17e72da53f8f9ba"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/shared_models8_render32_94f0_reference.sv",
+      "bytes": 20651,
+      "sha256": "265c0a75173260c51fae2db42fd84a49c4d933113529a40df64ebc3434e6d988"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/song16.json",
+      "bytes": 1268,
+      "sha256": "393eb016d4f74e8ade4e9e84c87506c9a8a2398ccff47118dc77ab6796be31d6"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/song16.mem",
+      "bytes": 648,
+      "sha256": "9606d3da60ad4c8fee48a8dab48a77fa87c05a73c6d5118a6900df15875b2a36"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_adc_rate_contract.sv",
+      "bytes": 1534,
+      "sha256": "4081acefda7e507fedb04b4c0cb18f3b6eaf9c472bc3b73e4d61eab33ab68800"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_audio_runtime_metrics.sv",
+      "bytes": 1554,
+      "sha256": "1ae500a38d06f70a1817ae775d1a93ded33ca50e606668d7f42c72cee9ebbbce"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_backend_pipeline.sv",
+      "bytes": 4900,
+      "sha256": "e3d70967aec3192faa89af5ab04835fe01ecceda5ea44cd2eabccc20802c29e4"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_backend_reduction.sv",
+      "bytes": 5446,
+      "sha256": "eb47aabe98593eeae9f0ed5e305f391d3cd334e4ee60642b2de9c4f408981c5f"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_bend_pipeline.sv",
+      "bytes": 2118,
+      "sha256": "cf46c3efb6802ea163dd5accaf19da77347d4eecaacd5434cbdd9fe0defdf50f"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_chord.sv",
+      "bytes": 2972,
+      "sha256": "eb9f83d4ffdfa6a6358129eb96ba9afd81457f967d3a3d3ae6240b7ed5546ed5"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_chorus_depth.sv",
+      "bytes": 1357,
+      "sha256": "878d569791d18830dc7777af1a4bbfad6085060225a69ea61aad1405285a6539"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_damping32.sv",
+      "bytes": 8118,
+      "sha256": "7089d0613cc60c156bc28a883fa23401caeba8542a21678a692627987576d592"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_damping_audio.sv",
+      "bytes": 7094,
+      "sha256": "72380c4386c8e2d5371a2b3cb139cbacbf99c6b5d05b3db8b0e9d627fb78664e"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_damping_bypass.sv",
+      "bytes": 9299,
+      "sha256": "0ef2ee5075c0781d792c458d8c35b295fd3ca55ca7e0ea29a9c37538c6255f89"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_damping_math.sv",
+      "bytes": 3180,
+      "sha256": "4f9350299c3b449dccd766e392fc4c65be0bb54d0529b0cdd98a4561e1358023"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_damping_release.sv",
+      "bytes": 9873,
+      "sha256": "09a973d31b8cbd27eb1a2acfef2a78278362548419102251e4cf3e542e03c234"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_damping_uart.sv",
+      "bytes": 16185,
+      "sha256": "28e7fce6567ac93b628685e77fb0ea12febf1520a448440c5d605c4405671866"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_ddr_bridge_recovery.sv",
+      "bytes": 3833,
+      "sha256": "00389acff98485dc27f14a17a193518a1cac2be6ab44ea33a91363cbde69177a"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_ddr_control_clock.sv",
+      "bytes": 3660,
+      "sha256": "81e3496d87afa496433dfb31108241d4dd8e2188d05e38944c12b891458e4284"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_ddr_gate_pulse.sv",
+      "bytes": 4542,
+      "sha256": "562b1ee6d74c79f3a533819c4bb9bfd4a20823467b3ab843aa1d8b3f20200186"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_ddr_reset.sv",
+      "bytes": 3075,
+      "sha256": "60969e6a79d1cdae0ba97012d3fdc99bdf6042cc2886d9613f839ff029a722e5"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_ddr_response_hardening.sv",
+      "bytes": 5158,
+      "sha256": "85c02cb940f4a47188fa9dbbddd0732b134c6e552dd73f72b47bc64ea94cc00b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_ddr_song.sv",
+      "bytes": 6669,
+      "sha256": "5a610d8c07c9b67675a0b86e7aa84325784e180516d252a9427e48bd2e407585"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_ddr_startup_guard.sv",
+      "bytes": 4739,
+      "sha256": "6102f378f8299a84692d0d40ac9caac7d0d80680d4ce28c90afd74929fdf341e"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_fx_audio.sv",
+      "bytes": 3168,
+      "sha256": "bd0affa85d6fa78aeb038dc82e778be4d4745397676b45472eca209a4384f560"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_fx_parameters.sv",
+      "bytes": 3253,
+      "sha256": "55190502b6f95952db22bc13e72b81db463ffd3cde982fe81302d2c81bf6f9ef"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_fx_ram.sv",
+      "bytes": 1228,
+      "sha256": "8b89b73a4b6983c678e89d51498ddefc133a3555d9802f0763f08c28e181b94a"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_fx_response.sv",
+      "bytes": 2777,
+      "sha256": "245bd5f6317e26aa69f21394a9ecd8b980c2ce0b023e077b2035af464eceb318"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_gain_audit.sv",
+      "bytes": 4782,
+      "sha256": "0c0facde6f323710b311a9025b64f956e89102bb2fdda33ef47196a7db65763a"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_gain_control_uart.sv",
+      "bytes": 13734,
+      "sha256": "083f8671748d4dc17499c5e4bc9594640d78b485deabe02768d7fad020d31faf"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_gain_dac_timing.sv",
+      "bytes": 4319,
+      "sha256": "1e0b8f201db6c751545ac52f45d3f1fdfa6c7f9bc3b0c8ef1c59de4a52d7fe61"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_gain_fx_bypass.sv",
+      "bytes": 3164,
+      "sha256": "cec2419aa34976da15bae74b38fee9428ba961d8236634a4ecabbb1a9838c8a0"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_gain_limit_audio.sv",
+      "bytes": 1917,
+      "sha256": "7c8a1bc40bc2b450be54bffb505740e364c729762d4767c0e768219758329395"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_gain_read_hardening.sv",
+      "bytes": 3715,
+      "sha256": "22eb1f68894ac75fa497426c30ec47554ae64b3a20badddafa2047db4fb6c2e2"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_hw_monitor_reset.sv",
+      "bytes": 2375,
+      "sha256": "d9485870c423ed5f336584ff0820b3dc7e1ff254fa53b9132d7aff30b6f88b66"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_lesson_import.sv",
+      "bytes": 3339,
+      "sha256": "2920544a422136f1a763b0cd5ed509e930ad080269dafee996b89db2d5fc2439"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_lissajous_pairs.sv",
+      "bytes": 3679,
+      "sha256": "2cbe5495bd4cb074e544b2819b1d12274dc43ed48dbf40d659c3d014f3f1f60b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_live_note_pitch.sv",
+      "bytes": 3890,
+      "sha256": "f377a007bb63fb6333a0aac430c438b4880cad965e40dddb6fb03bf15b3e888e"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_mcp3208_dual_scan.sv",
+      "bytes": 8053,
+      "sha256": "7c3ad763e2d576ba0ddcda08d720f662dc2de9bdb11dce01338aee95ae4f5b75"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_modal_local.sv",
+      "bytes": 2584,
+      "sha256": "de47cd4d4b8db48e3a35c14be4c661c8a272e649a31019d9589d8d76e1275b74"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_nodrum_audio.sv",
+      "bytes": 7587,
+      "sha256": "74c06b3d61f6da2f6ff40bcb21122f78e8b753b4ae7078e051c4ebf1f7024d9f"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_observer.sv",
+      "bytes": 2524,
+      "sha256": "cc38fd5de4f9f9d44dbfa283b884712d497feadf3710c65d9a28f52f5128fa48"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_parser_timing.sv",
+      "bytes": 6425,
+      "sha256": "7df424d87433f15c7d4b3adebab1d675a16b451e4cde3fc9c55d48f14b821d83"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_peak_limiter.sv",
+      "bytes": 3158,
+      "sha256": "da6b0c3114873a031a6fdabc694db2f02029f2ce4dce6cdd7339acc3d1134566"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_player16.sv",
+      "bytes": 6068,
+      "sha256": "b2e3a0465807dc074a12976378e2f8bedb950b21190138e3a625f1c16a1295db"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_player_controls.sv",
+      "bytes": 10196,
+      "sha256": "fbff83fccc17eb8bd8dbf4cb7c5010b371942ccb7ad3eec34abc9968f183dbef"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_player_lesson.sv",
+      "bytes": 4132,
+      "sha256": "bb67df0c751a96f4dd9bf48273cbea48216bb813418e78586a02d39b7d8a8857"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_pressure16.sv",
+      "bytes": 2755,
+      "sha256": "68d7d7f9aa70b64d73963f68842a9a3ea356774a971ed1685f4324cd2489b345"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_pressure_lesson.sv",
+      "bytes": 5572,
+      "sha256": "d1629dcb668a1272bd88d22fcf1da7e62b175d9719cb8dac0c51b1cd9824fea5"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_pressure_touch_curve.sv",
+      "bytes": 1863,
+      "sha256": "79d4aef7da9182e860ec79026a202241fade177b8dc74121033febe4e497957c"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_pressure_touch_uart.sv",
+      "bytes": 12971,
+      "sha256": "bd128b63df77430478e2726d76871932e5abe246db359f78c44461ef1291adb8"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_r7_bluetooth_ownership.sv",
+      "bytes": 10979,
+      "sha256": "91e56070f955e727b1e0ce2687d2782497b65ce6f8b26fae678a5a02034f8ed1"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_r7_bluetooth_uart.sv",
+      "bytes": 12244,
+      "sha256": "c6ba4cef54d62005e72beae2f187895d97c51d0d5095cce058c8a55b41178809"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_r7_features_uart.sv",
+      "bytes": 20005,
+      "sha256": "08f7a8af2f9558eed5ea96f4b9b634e5aa95e76628b857a880beefc6065d241a"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_r7_revision_bass.sv",
+      "bytes": 15591,
+      "sha256": "463f6ad48f0c703d7d02012cb5aabd712ee5a63b6df017734ef4e6e7a94e6ea4"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_r7_revision_guitar.sv",
+      "bytes": 15597,
+      "sha256": "cfee01a2ede051b5f68afe6fd8b3a95b0ad47492be2b284f3b110b7be3725813"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_r7_revision_mixer.sv",
+      "bytes": 15594,
+      "sha256": "36fcde243adc291276af76544d8666c69925cadd01221b42918089408654d4c2"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_r7_revision_piano.sv",
+      "bytes": 15594,
+      "sha256": "0425464d2010349534f80187049b04e9a27ff0f5ab3c45da4725b2375caa42c6"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_r7_revision_uart.sv",
+      "bytes": 15420,
+      "sha256": "e8cded17401fe52f7d2ce0f64de39b803f85be929859d639640dba49c2380e47"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_render_hardening.sv",
+      "bytes": 5043,
+      "sha256": "389859281a305be49c8227187597059c1157e02f00b7403602f02dd44900d350"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_render_pipeline.sv",
+      "bytes": 4559,
+      "sha256": "6abbe4cb4a273f8a23b703c9120b34bd247e9d8d8a766f0af12dea755f572a5f"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_reverb_strong_response.sv",
+      "bytes": 2810,
+      "sha256": "f25e4a60c9deb0cac9a1d7376c1e657b10f30ef1831801a71414aef68e804882"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_scheduler_timing.sv",
+      "bytes": 9907,
+      "sha256": "25f9a40a263b510dab12bcfb31371eb76033f46cad6bdd7cc3d03487a7fd1137"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_screen_baud_rate.sv",
+      "bytes": 3824,
+      "sha256": "b2ebe115a97b7085686b96aaf30f81df8f9ed6dfcbdf3e263a2123b53fefabd5"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_screen_graph_lock.sv",
+      "bytes": 2294,
+      "sha256": "064239edcf64b68a320f6140e1a3611c1b8dbf491c10c48db99d58c1dc038023"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_screen_scope_capture.sv",
+      "bytes": 2146,
+      "sha256": "883ec4855802d3c198811813264256d5d7de50c6c74a014849ecae8d1a3f36a5"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_screen_sweep_tx.sv",
+      "bytes": 5413,
+      "sha256": "b8f17691dd080d6a6c0daab4a6915f754b5f555e7c8dc095a5d3139040035e8d"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_screen_sweep_wire.sv",
+      "bytes": 8100,
+      "sha256": "550216263038926abfe5a48292be4189dbef002e7a19c13c1d31d8facdc28ecc"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_snapshot_contract.sv",
+      "bytes": 1662,
+      "sha256": "e58daeba0d6f09e1a3ad07338b67ba9535682c0215ecb11bc2f3ad4072ab52a1"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_source_sends.sv",
+      "bytes": 3014,
+      "sha256": "2660ee182ff8c26d218dc2a5cdbd11f50267b71b4b5353192914f9f77ee9496b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_status_snapshot.sv",
+      "bytes": 5320,
+      "sha256": "75802500e669a550f23e9095dcb896308266c4bdfa736c7c70b2d95a05192700"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_track_mix.sv",
+      "bytes": 1810,
+      "sha256": "6d3adc45089ffdf1c3ab3d435923f0e098bbf9d11f53d78cdddb40fb0e76943c"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_transition_pipeline.sv",
+      "bytes": 2969,
+      "sha256": "509fa8fcf5fbe4479c6bac8351af087c482120e075905262d02ed8e38c58c3ac"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_velocity_tone32.sv",
+      "bytes": 11345,
+      "sha256": "de40920fa4987e26c77a463c6a1b902e0aca910b7e2df71ac36529b508b70e2e"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_velocity_tone_audio.sv",
+      "bytes": 8544,
+      "sha256": "f98659b468e2d1f7f9fedffca6b8ad362046819d5c2aa5ad5c99220b387347a7"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_velocity_tone_bypass.sv",
+      "bytes": 9371,
+      "sha256": "61baecc343e54a5f0994979cd807664948bd762f450da1059165982864034351"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_velocity_tone_math.sv",
+      "bytes": 4894,
+      "sha256": "77d18dd54bf24feae63c9bea154fc31a19de9abcb389abdd8620bde3386318df"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_velocity_tone_uart.sv",
+      "bytes": 17078,
+      "sha256": "4c791951513dc83de39ae7cff8beedd6ab8fef6264d29b7b1189d676117e692f"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_voice_count.sv",
+      "bytes": 825,
+      "sha256": "ea7edbf189f16a458526bf74aa0702bfc47abc8c108e7c32f48532033f309b67"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_workstation.sv",
+      "bytes": 15115,
+      "sha256": "44c1cfc441df5b269fbe683e65bb599e8265408e4e6bbf184ecf99f4fbc204ff"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_workstation_screen.sv",
+      "bytes": 14123,
+      "sha256": "066ee83800194a83be08db252c77ded8ea42cf2b12e76186b11287888242677f"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/tb_workstation_sweep.sv",
+      "bytes": 15016,
+      "sha256": "eafda821a26974d17cf388a166c0ae43c664227f4f0be942c051a052a5082737"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/track_gain_bank_94f0_reference.sv",
+      "bytes": 5758,
+      "sha256": "ea9900a1615f0c49905f8b9484c3729d48ac54335d3b6a7caa0b49cffd1d5166"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/transition_reference.sv",
+      "bytes": 6240,
+      "sha256": "5b0db5b5277ab4ee43f6b3c6bd0a665e9f8f3153797a37508fa755c8e1081a03"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/vendor_ddr_startup_slice.sv",
+      "bytes": 294836,
+      "sha256": "9bfa800fe53b0ec728d211964c7cb05d89348658d7223ae57efcd9408cf0a1f4"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sim/workstation_ddr_bridge_46274_reference.sv",
+      "bytes": 5575,
+      "sha256": "08b7f40c6b5139878e85b5e2d28bd9992532579009706f542968276953edaef4"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/snapshot_cdc.sv",
+      "bytes": 1403,
+      "sha256": "e1fc6810375932268e5b54ee8c75bb5d442e690a9166d73a4cf4d33bce583a5b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/source_mix_sync.sv",
+      "bytes": 1766,
+      "sha256": "279a768ded23b0178b1678a56c91b36be14b2b72ab62722bd90455aed5f6ca95"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/sources.json",
+      "bytes": 2439,
+      "sha256": "a7d7d70a41ec684dc7b65baa5f9cbddaed1005ebb49d996f716a2f3a0c10be91"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/tom_coeff_lane0.mem",
+      "bytes": 2112,
+      "sha256": "07d6a7b4fd6fb7451db839e883c553583241030cdbc67590d9355d1117b2a01b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/tom_coeff_lane1.mem",
+      "bytes": 2112,
+      "sha256": "2b770d6df259c7238dcb42652576aeddaf307fee0ca31056f94461ce019b4551"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/tom_coeff_lane2.mem",
+      "bytes": 2112,
+      "sha256": "af523b0b0aecb51098e30ac5439eaf9db66ede6273f69e71f4bf388716252124"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/tom_coeff_lane3.mem",
+      "bytes": 2112,
+      "sha256": "1c78abee1f63c4a0cce18f90973b81e674244291dd947b1549404954f552d195"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/tom_noise_shared.mem",
+      "bytes": 272,
+      "sha256": "254c04375843c60d34b6fe6f4fcc080649b0ea8ac6b3ea07060c6bcc4097f0a2"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/tom_sine_quarter.mem",
+      "bytes": 6144,
+      "sha256": "3642f630250703b79fe2477015418e7795892f83a6fd6ad30dc4c4f11373e443"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/track_gain_bank_packed.sv",
+      "bytes": 6154,
+      "sha256": "34ef583cc693ecac67acdb6d907a2dc7c0c3dd89a4c4a2f9ef05f4677092225b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/uart_frame_protocol.sv",
+      "bytes": 6686,
+      "sha256": "1c988a24e507fee900bac393968cc8a3f39e8fb87dd9f36b6cff04d3ae6105ad"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/uart_frame_tx_v2.sv",
+      "bytes": 3083,
+      "sha256": "f8b05213cfb67ded747a4da7adeffeeb572d1a67c5864db135cfa311050e35c9"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/uart_rx.sv",
+      "bytes": 3472,
+      "sha256": "f83a4328d94be7633a9bee744c0fc10b783d23cdda927bc80837a29ab16de430"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/uart_tx.sv",
+      "bytes": 1089,
+      "sha256": "c214c5b6812d708070c6ffd59fad6a992acf7b026bd0d1f46a76e04b6ed0786d"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/unified_models8_32.sv",
+      "bytes": 20303,
+      "sha256": "3fc4db0a7246c5d0e54b24526c70c82cd3f2a7ac4761477d87b4269d23944f2b"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/voice_context_bank.sv",
+      "bytes": 3755,
+      "sha256": "df6f81b2bd1b6788a8c463540a16171d1f3305b20cab1a3c4a4d21693d6fb60d"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/voice_postmix32.sv",
+      "bytes": 5129,
+      "sha256": "2a0d8eee1600cd2f63b2ccbc3493524c2f059ab8a76885e16cab40355d6aaa35"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/voice_postmix_models8_32.sv",
+      "bytes": 6507,
+      "sha256": "993fda4469a5ac63cffa847c1eb47d6db0cfa979a6b7595ab9367c7963935391"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/voice_transition32.sv",
+      "bytes": 6777,
+      "sha256": "3c6e610ac0f5fd3eeb4cd0a45fcb6472c669f11ab2454240d8be2a0048612b16"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/workstation_cut123_commands.sv",
+      "bytes": 8568,
+      "sha256": "0fa9b01bd6b5de704b29c835f8a3cda84a7d2a316b1ba9c664a1e179407e9cd1"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/workstation_cut123_player.sv",
+      "bytes": 27311,
+      "sha256": "fbba48d315436e816ed82d46898d4182800646057eb13ad355fe605c2e0185f8"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/workstation_cut123_resources.sv",
+      "bytes": 42455,
+      "sha256": "327deaf7a0bffd2126d2cd61d2c4f8232d5743029f9ddf37dab959f1929c5e06"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/workstation_models8_router.sv",
+      "bytes": 5652,
+      "sha256": "2865e1628971851d76c8703e517fa7173b8c18b56979da6375f94334bac1ff5c"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/workstation_r7_bluetooth.gprj",
+      "bytes": 6676,
+      "sha256": "64eba4651d513aef43d60fd4c7c8e7f573b3fb21ad2cac2d4d42bbe25b4e0565"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/workstation_screen_tx.sv",
+      "bytes": 6948,
+      "sha256": "96e906551345fdcdc0e068f3b3cf598e1183a86b358b59acaec25d39b8d3ab9f"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/workstation_v2_emergency.sv",
+      "bytes": 2926,
+      "sha256": "be59e8d35d9583748bd6d71495d37da48049cc61e143067820af25628289e2b6"
+    },
+    {
+      "path": "Gowin_BT_3664e98a/workstation_v2_screen.sv",
+      "bytes": 8034,
+      "sha256": "256f9d4039b772ae797fe080b145654fa191422e45f53548ad2b59197b286aa4"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Project>
+  <Template>FPGA</Template>
+  <Version>5</Version>
+  <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+  <FileList>
+    <File path="src/poly4_shared/piano_drums_poly4_shared_top.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/instrument_shared4_engine.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/instrument_shared4_slot.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_voice_ram.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_voice_mul.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_modal_kernel.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_piano_voice.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_piano_modes.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_tom_voice.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_C_voice.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_C_core.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_packet_math.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/drums_parameter_4.v" type="file.verilog" enable="1" />
+    <File path="src/adsr.v" type="file.verilog" enable="1" />
+    <File path="src/key_debounce.v" type="file.verilog" enable="1" />
+    <File path="src/pt8211_tx.v" type="file.verilog" enable="1" />
+    <File path="src/shared/shared_rom_4.v" type="file.verilog" enable="1" />
+    <File path="src/rimshot_audition/rimshot_audition_controller.v" type="file.verilog" enable="1" />
+    <File path="src/rimshot_audition/rimshot_parameter_port.v" type="file.verilog" enable="1" />
+    <File path="src/rimshot_audition/rimshot_parameter_storage.v" type="file.verilog" enable="1" />
+    <File path="integration/poly4_shared/timing.sdc" type="file.sdc" enable="1" />
+    <File path="integration/rimshot_audition/piano_drums_rimshot_single.cst" type="file.cst" enable="1" />
+    <File path="src/poly4_shared/shared_drum_modes.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_drum_stream.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_fir_mac.v" type="file.verilog" enable="1" />
+    <File path="src/poly4_shared/shared_tom_adapter.v" type="file.verilog" enable="1" />
+  </FileList>
+</Project>

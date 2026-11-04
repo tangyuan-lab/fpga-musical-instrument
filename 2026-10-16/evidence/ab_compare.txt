@@ -1,0 +1,4 @@
+# vlog -sv pt8211_tx.v key_debounce.v piano_voice.v sampled_piano_a4.v tang_mega_60k_top.v tb_sample_a4_ab.sv
+# Errors: 0, Warnings: 0
+# PASS: four alternating A4 presses; PT8211 stereo, release, reset and safe levels
+# Errors: 0, Warnings: 0
