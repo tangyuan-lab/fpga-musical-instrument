@@ -1,0 +1,2 @@
+# Preserve imported RTL, ROM, IP and constraints byte for byte.
+* -text
