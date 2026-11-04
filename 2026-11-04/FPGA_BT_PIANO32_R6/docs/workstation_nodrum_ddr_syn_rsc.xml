@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="mega138_models8_top" Register="2097" Alu="628" Lut="5410" Ssram="12" T_Register="53136(2097)" T_Alu="11314(628)" T_Lut="66772(5410)" T_MULTALU27X18="42(0)" T_MULT12X12="7(0)" T_MULT27X36="31(0)" T_Bsram="188(0)" T_Ssram="113(12)">
+ <SubModule name="reference_reset_sync" Register="2" Lut="1" T_Register="2(2)" T_Lut="1(1)"/>
+ <SubModule name="ddr" Register="24" Lut="26" T_Register="5522(24)" T_Alu="206(0)" T_Lut="3030(26)" T_Bsram="16(0)">
+  <SubModule name="Gowin_PLL_inst" T_Register="39(0)" T_Alu="16(0)" T_Lut="58(0)">
+   <SubModule name="u_pll"/>
+   <SubModule name="u_pll_init" Register="39" Alu="16" Lut="58" T_Register="39(39)" T_Alu="16(16)" T_Lut="58(58)"/>
+  </SubModule>
+  <SubModule name="u_ddr3" Register="5459" Alu="190" Lut="2946" Bsram="16" T_Register="5459(5459)" T_Alu="190(190)" T_Lut="2946(2946)" T_Bsram="16(16)"/>
+ </SubModule>
+ <SubModule name="storage_bridge" Register="294" Lut="324" T_Register="358(294)" T_Alu="6(0)" T_Lut="367(324)" T_Bsram="9(0)" T_Ssram="65(0)">
+  <SubModule name="requests" Register="32" Alu="3" Lut="22" Bsram="9" T_Register="32(32)" T_Alu="3(3)" T_Lut="22(22)" T_Bsram="9(9)"/>
+  <SubModule name="responses" Register="32" Alu="3" Lut="21" Ssram="65" T_Register="32(32)" T_Alu="3(3)" T_Lut="21(21)" T_Ssram="65(65)"/>
+ </SubModule>
+ <SubModule name="piano32_status" Register="79" Alu="40" Lut="65" T_Register="79(79)" T_Alu="40(40)" T_Lut="65(65)"/>
+ <SubModule name="test_center" Lut="1" T_Register="206(0)" T_Alu="95(0)" T_Lut="351(1)">
+  <SubModule name="legacy" Register="98" Alu="31" Lut="186" T_Register="98(98)" T_Alu="31(31)" T_Lut="186(186)"/>
+  <SubModule name="progressive" Register="108" Alu="64" Lut="164" T_Register="108(108)" T_Alu="64(64)" T_Lut="164(164)"/>
+ </SubModule>
+ <SubModule name="test_tones" Register="224" Alu="52" Lut="430" Bsram="3" Ssram="14" T_Register="224(224)" T_Alu="52(52)" T_Lut="430(430)" T_Bsram="3(3)" T_Ssram="14(14)"/>
+ <SubModule name="display_counter" Alu="25" Lut="49" T_Alu="25(25)" T_Lut="49(49)"/>
+ <SubModule name="hardware_monitor" Register="326" Alu="248" Lut="157" T_Register="530(326)" T_Alu="248(248)" T_Lut="160(157)">
+  <SubModule name="counters" Register="204" Lut="3" T_Register="204(204)" T_Lut="3(3)"/>
+ </SubModule>
+ <SubModule name="observer" Register="328" Alu="129" Lut="453" Bsram="5" T_Register="447(328)" T_Alu="278(129)" T_Lut="727(453)" T_MULTALU27X18="4(0)" T_Bsram="9(5)">
+  <SubModule name="fft" Register="119" Alu="149" Lut="274" MULTALU27X18="4" Bsram="4" T_Register="119(119)" T_Alu="149(149)" T_Lut="274(274)" T_MULTALU27X18="4(4)" T_Bsram="4(4)"/>
+ </SubModule>
+ <SubModule name="diagnostics" Register="905" Alu="56" Lut="1692" T_Register="905(905)" T_Alu="56(56)" T_Lut="1692(1692)"/>
+ <SubModule name="params" Register="476" Alu="48" Lut="443" MULTALU27X18="1" MULT12X12="1" T_Register="476(476)" T_Alu="48(48)" T_Lut="443(443)" T_MULTALU27X18="1(1)" T_MULT12X12="1(1)"/>
+ <SubModule name="pressure_touch" Alu="8" Lut="22" T_Alu="8(8)" T_Lut="22(22)"/>
+ <SubModule name="guide_leds" Register="66" Alu="62" Lut="75" T_Register="66(66)" T_Alu="62(62)" T_Lut="75(75)"/>
+ <SubModule name="reset_sync_inst" Register="2" T_Register="2(2)"/>
+ <SubModule name="mode_button" Register="23" Lut="39" T_Register="23(23)" T_Lut="39(39)"/>
+ <SubModule name="timbre_button" Register="23" Lut="39" T_Register="23(23)" T_Lut="39(39)"/>
+ <SubModule name="usb_rx" Register="40" Lut="58" T_Register="40(40)" T_Lut="58(58)"/>
+ <SubModule name="frames" Register="1206" Alu="16" Lut="299" T_Register="1206(1206)" T_Alu="16(16)" T_Lut="299(299)"/>
+ <SubModule name="responses" Register="818" Lut="1606" T_Register="849(818)" T_Lut="1700(1606)">
+  <SubModule name="tx_inst" Register="31" Lut="94" T_Register="31(31)" T_Lut="94(94)"/>
+ </SubModule>
+ <SubModule name="emergency" Register="23" Lut="56" T_Register="23(23)" T_Lut="56(56)"/>
+ <SubModule name="resources" Register="4219" Alu="414" Lut="6750" Bsram="2" T_Register="5779(4219)" T_Alu="446(414)" T_Lut="8115(6750)" T_MULT12X12="2(0)" T_Bsram="20(2)">
+  <SubModule name="memory" Register="580" Lut="594" T_Register="588(580)" T_Lut="747(594)" T_Bsram="16(0)">
+   <SubModule name="cache" Register="8" Lut="153" Bsram="16" T_Register="8(8)" T_Lut="153(153)" T_Bsram="16(16)"/>
+  </SubModule>
+  <SubModule name="published_table" Register="476" Alu="15" Lut="305" MULT12X12="1" Bsram="1" T_Register="476(476)" T_Alu="15(15)" T_Lut="305(305)" T_MULT12X12="1(1)" T_Bsram="1(1)"/>
+  <SubModule name="staged_table" Register="496" Alu="17" Lut="313" MULT12X12="1" Bsram="1" T_Register="496(496)" T_Alu="17(17)" T_Lut="313(313)" T_MULT12X12="1(1)" T_Bsram="1(1)"/>
+ </SubModule>
+ <SubModule name="touch" Register="504" Alu="8" Lut="985" T_Register="545(504)" T_Alu="8(8)" T_Lut="1045(985)">
+  <SubModule name="uart_receiver" Register="41" Lut="60" T_Register="41(41)" T_Lut="60(60)"/>
+ </SubModule>
+ <SubModule name="bt_usb_guard" Register="27" Lut="9" T_Register="27(27)" T_Lut="9(9)"/>
+ <SubModule name="bt_link" T_Register="2288(0)" T_Alu="100(0)" T_Lut="3398(0)">
+  <SubModule name="receiver" Register="41" Lut="60" T_Register="41(41)" T_Lut="60(60)"/>
+  <SubModule name="parser" Register="390" Alu="16" Lut="283" T_Register="390(390)" T_Alu="16(16)" T_Lut="283(283)"/>
+  <SubModule name="control" Register="1399" Alu="84" Lut="2527" T_Register="1399(1399)" T_Alu="84(84)" T_Lut="2527(2527)"/>
+  <SubModule name="sender" Register="427" Lut="436" T_Register="458(427)" T_Lut="528(436)">
+   <SubModule name="tx_inst" Register="31" Lut="92" T_Register="31(31)" T_Lut="92(92)"/>
+  </SubModule>
+ </SubModule>
+ <SubModule name="remote_bridge" Register="18" Lut="103" T_Register="18(18)" T_Lut="103(103)"/>
+ <SubModule name="commands" Register="519" Lut="788" Ssram="19" T_Register="519(519)" T_Lut="788(788)" T_Ssram="19(19)"/>
+ <SubModule name="modes" Register="1152" Alu="3" Lut="748" T_Register="1152(1152)" T_Alu="3(3)" T_Lut="748(748)"/>
+ <SubModule name="router" Register="101" Lut="315" T_Register="101(101)" T_Lut="315(315)"/>
+ <SubModule name="player" Register="1270" Alu="620" Lut="3431" MULTALU27X18="20" Bsram="2" T_Register="2054(1270)" T_Alu="791(620)" T_Lut="4539(3431)" T_MULTALU27X18="20(20)" T_Bsram="25(2)">
+  <SubModule name="parser" Register="322" Alu="155" Lut="774" Bsram="14" T_Register="322(322)" T_Alu="155(155)" T_Lut="774(774)" T_Bsram="14(14)"/>
+  <SubModule name="timbre_memory" Register="129" Alu="16" Lut="7" Bsram="4" T_Register="129(129)" T_Alu="16(16)" T_Lut="7(7)" T_Bsram="4(4)"/>
+  <SubModule name="volume_memory" Register="129" Lut="103" Bsram="4" T_Register="129(129)" T_Lut="103(103)" T_Bsram="4(4)"/>
+  <SubModule name="mask_memory" Register="33" Lut="7" Bsram="1" T_Register="33(33)" T_Lut="7(7)" T_Bsram="1(1)"/>
+  <SubModule name="live_memory" Register="171" Lut="217" T_Register="171(171)" T_Lut="217(217)"/>
+ </SubModule>
+ <SubModule name="source_mixer" Register="615" Alu="16" Lut="913" MULTALU27X18="1" T_Register="615(615)" T_Alu="16(16)" T_Lut="913(913)" T_MULTALU27X18="1(1)"/>
+ <SubModule name="engine" Register="3362" Alu="561" Lut="3443" MULTALU27X18="1" MULT12X12="1" MULT27X36="2" Bsram="2" T_Register="21961(3362)" T_Alu="6481(561)" T_Lut="26217(3443)" T_MULTALU27X18="6(1)" T_MULT12X12="1(1)" T_MULT27X36="31(2)" T_Bsram="61(2)" T_Ssram="3(0)">
+  <SubModule name="gains" Register="1017" Alu="43" Lut="1460" T_Register="1017(1017)" T_Alu="43(43)" T_Lut="1460(1460)"/>
+  <SubModule name="control" Register="3977" Alu="1400" Lut="2726" MULT27X36="6" Bsram="1" T_Register="4308(3977)" T_Alu="1420(1400)" T_Lut="2878(2726)" T_MULT27X36="6(6)" T_Bsram="3(1)">
+   <SubModule name="packed_owners.memory" Register="326" Alu="20" Lut="142" Bsram="1" T_Register="326(326)" T_Alu="20(20)" T_Lut="142(142)" T_Bsram="1(1)"/>
+   <SubModule name="packed_note_map.memory" Register="5" Lut="10" Bsram="1" T_Register="5(5)" T_Lut="10(10)" T_Bsram="1(1)"/>
+  </SubModule>
+  <SubModule name="factor_rom" Register="3" Lut="51" Bsram="2" T_Register="3(3)" T_Lut="51(51)" T_Bsram="2(2)"/>
+  <SubModule name="rendered_count" Alu="25" Lut="24" T_Alu="25(25)" T_Lut="24(24)"/>
+  <SubModule name="chord" Register="137" Alu="26" Lut="513" T_Register="137(137)" T_Alu="26(26)" T_Lut="513(513)"/>
+  <SubModule name="render" Register="3228" Alu="1071" Lut="4288" MULTALU27X18="1" MULT27X36="3" T_Register="12296(3228)" T_Alu="4296(1071)" T_Lut="15439(4288)" T_MULTALU27X18="1(1)" T_MULT27X36="23(3)" T_Bsram="52(0)" T_Ssram="3(0)">
+   <SubModule name="modal" Register="1983" Alu="821" Lut="3560" Bsram="32" T_Register="9068(1983)" T_Alu="3225(821)" T_Lut="11151(3560)" T_MULT27X36="20(0)" T_Bsram="52(32)" T_Ssram="3(0)">
+    <SubModule name="g_compact.scheduler" Register="2432" Alu="564" Lut="3122" Bsram="12" Ssram="3" T_Register="2432(2432)" T_Alu="564(564)" T_Lut="3122(3122)" T_Bsram="12(12)" T_Ssram="3(3)"/>
+    <SubModule name="g_lane[0].gain_map" Alu="21" Lut="95" T_Alu="21(21)" T_Lut="95(95)"/>
+    <SubModule name="g_lane[0].math" Register="1203" Alu="439" Lut="1085" MULT27X36="5" Bsram="2" T_Register="1203(1203)" T_Alu="439(439)" T_Lut="1085(1085)" T_MULT27X36="5(5)" T_Bsram="2(2)"/>
+    <SubModule name="g_lane[1].gain_map" Alu="21" Lut="66" T_Alu="21(21)" T_Lut="66(66)"/>
+    <SubModule name="g_lane[1].math" Register="1150" Alu="439" Lut="1024" MULT27X36="5" Bsram="2" T_Register="1150(1150)" T_Alu="439(439)" T_Lut="1024(1024)" T_MULT27X36="5(5)" T_Bsram="2(2)"/>
+    <SubModule name="g_lane[2].gain_map" Alu="21" Lut="66" T_Alu="21(21)" T_Lut="66(66)"/>
+    <SubModule name="g_lane[2].math" Register="1150" Alu="439" Lut="1024" MULT27X36="5" Bsram="2" T_Register="1150(1150)" T_Alu="439(439)" T_Lut="1024(1024)" T_MULT27X36="5(5)" T_Bsram="2(2)"/>
+    <SubModule name="g_lane[3].gain_map" Alu="21" Lut="71" T_Alu="21(21)" T_Lut="71(71)"/>
+    <SubModule name="g_lane[3].math" Register="1150" Alu="439" Lut="1038" MULT27X36="5" Bsram="2" T_Register="1150(1150)" T_Alu="439(439)" T_Lut="1038(1038)" T_MULT27X36="5(5)" T_Bsram="2(2)"/>
+   </SubModule>
+  </SubModule>
+  <SubModule name="transition" Register="611" Alu="41" Lut="1439" MULTALU27X18="1" Bsram="2" T_Register="611(611)" T_Alu="41(41)" T_Lut="1439(1439)" T_MULTALU27X18="1(1)" T_Bsram="2(2)"/>
+  <SubModule name="mixer" Register="227" Alu="69" Lut="970" MULTALU27X18="3" T_Register="227(227)" T_Alu="69(69)" T_Lut="970(970)" T_MULTALU27X18="3(3)"/>
+ </SubModule>
+ <SubModule name="source_sends" Register="138" Alu="124" Lut="117" MULTALU27X18="1" T_Register="138(138)" T_Alu="124(124)" T_Lut="117(117)" T_MULTALU27X18="1(1)"/>
+ <SubModule name="effects" Register="362" Alu="230" Lut="269" MULTALU27X18="6" T_Register="418(362)" T_Alu="230(230)" T_Lut="669(269)" T_MULTALU27X18="6(6)" T_Bsram="38(0)">
+  <SubModule name="delay_memory" Register="21" Lut="341" Bsram="32" T_Register="21(21)" T_Lut="341(341)" T_Bsram="32(32)"/>
+  <SubModule name="ram_a" Register="17" Lut="19" Bsram="2" T_Register="17(17)" T_Lut="19(19)" T_Bsram="2(2)"/>
+  <SubModule name="ram_b" Register="18" Lut="40" Bsram="4" T_Register="18(18)" T_Lut="40(40)" T_Bsram="4(4)"/>
+ </SubModule>
+ <SubModule name="chorus" Register="186" Alu="104" Lut="272" MULTALU27X18="1" MULT12X12="2" Bsram="2" T_Register="186(186)" T_Alu="104(104)" T_Lut="272(272)" T_MULTALU27X18="1(1)" T_MULT12X12="2(2)" T_Bsram="2(2)"/>
+ <SubModule name="master_output" Register="47" Alu="36" Lut="43" MULTALU27X18="1" T_Register="237(47)" T_Alu="105(36)" T_Lut="362(43)" T_MULTALU27X18="2(1)">
+  <SubModule name="protected_output.limiter" Register="190" Alu="69" Lut="319" MULTALU27X18="1" T_Register="190(190)" T_Alu="69(69)" T_Lut="319(319)" T_MULTALU27X18="1(1)"/>
+ </SubModule>
+ <SubModule name="gain_monitor" Register="198" Alu="191" Lut="64" T_Register="198(198)" T_Alu="191(191)" T_Lut="64(64)"/>
+ <SubModule name="startup" Register="24" Lut="47" T_Register="24(24)" T_Lut="47(47)"/>
+ <SubModule name="g_onboard.output_tx" Register="59" Alu="4" Lut="61" T_Register="59(59)" T_Alu="4(4)" T_Lut="61(61)"/>
+ <SubModule name="scope_capture" Register="55" Alu="19" Lut="83" Bsram="1" T_Register="55(55)" T_Alu="19(19)" T_Lut="83(83)" T_Bsram="1(1)"/>
+ <SubModule name="display" Register="926" Alu="61" Lut="1581" MULT12X12="1" T_Register="956(926)" T_Alu="61(61)" T_Lut="1630(1581)" T_MULT12X12="1(1)">
+  <SubModule name="uart" Register="30" Lut="49" T_Register="30(30)" T_Lut="49(49)"/>
+ </SubModule>
+ <SubModule name="adc_spi" Register="238" Lut="88" T_Register="238(238)" T_Lut="88(88)"/>
+ <SubModule name="key_matrix" Register="1221" Alu="78" Lut="1089" T_Register="1221(1221)" T_Alu="78(78)" T_Lut="1089(1089)"/>
+ <SubModule name="pitch_control" Register="171" Alu="167" Lut="143" T_Register="171(171)" T_Alu="167(167)" T_Lut="143(143)"/>
+ <SubModule name="runtime_metrics" Register="751" Alu="345" Lut="384" T_Register="751(751)" T_Alu="345(345)" T_Lut="384(384)"/>
+ <SubModule name="lesson" Register="347" Alu="273" Lut="560" Bsram="4" T_Register="347(347)" T_Alu="273(273)" T_Lut="560(560)" T_Bsram="4(4)"/>
+</Module>
