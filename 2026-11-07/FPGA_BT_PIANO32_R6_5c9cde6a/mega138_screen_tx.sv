@@ -1,0 +1,72 @@
+`default_nettype none
+// 显示协议与UART物理接口的接线封装。
+module mega138_screen_tx #(
+    parameter integer CLKS_PER_BIT=434,UPDATE_CYCLES=5_000_000,STARTUP_CYCLES=50_000_000,
+    STREAM_SUPPORT=0,TELEMETRY_SUPPORT=0,PIANO32_SUPPORT=0,STREAM_UPDATE_CYCLES=12_500_000,ACK_TIMEOUT_CYCLES=25_000_000
+)(
+    input wire clk,rst_n,
+    input wire [3:0] view,input wire [2:0] mode,test_kind,
+    input wire [31:0] build_id,voice_mask,timeout_count,revision,
+    input wire [5:0] voices,peak_voices,
+    input wire [15:0] keys,flags,
+    input wire [191:0] pressure,
+    input wire [479:0] telemetry,input wire [7:0] graph_config,
+    input wire [7:0] result,
+    input wire [223:0] song_status,input wire song_ready,ddr_ready,
+    input wire [111:0] command_feedback,
+    input wire [63:0] peaks,
+    input wire graph_ready,lock_granted,
+    input wire [15:0] graph_data,
+    input wire [1:0] graph_kind,
+    input wire freeze_graph,right_channel,
+    input wire scope_command_valid,input wire [7:0] scope_command_op,scope_command_value,
+    input wire [6:0] scope_available,input wire [23:0] scope_pair,input wire scope_overflow,
+    output wire scope_pop,scope_clear,output wire scope_capture_enable,
+    output wire graph_lock,output wire [5:0] graph_address,
+    output wire tx
+);
+    wire byte_start,byte_busy;wire [7:0] byte_data;
+    screen_display_service #(.CLKS_PER_BIT(CLKS_PER_BIT),.UPDATE_CYCLES(UPDATE_CYCLES),.STARTUP_CYCLES(STARTUP_CYCLES),.STREAM_SUPPORT(STREAM_SUPPORT),.TELEMETRY_SUPPORT(TELEMETRY_SUPPORT),.PIANO32_SUPPORT(PIANO32_SUPPORT),.STREAM_UPDATE_CYCLES(STREAM_UPDATE_CYCLES),.ACK_TIMEOUT_CYCLES(ACK_TIMEOUT_CYCLES)) service(
+        .clk(clk),
+        .rst_n(rst_n),
+        .view(view),
+        .mode(mode),
+        .test_kind(test_kind),
+        .build_id(build_id),
+        .voice_mask(voice_mask),
+        .timeout_count(timeout_count),
+        .revision(revision),
+        .voices(voices),
+        .peak_voices(peak_voices),
+        .keys(keys),
+        .flags(flags),
+        .pressure(pressure),
+        .telemetry(telemetry),
+        .graph_config(graph_config),
+        .result(result),
+        .song_status(song_status),
+        .song_ready(song_ready),
+        .ddr_ready(ddr_ready),
+        .command_feedback(command_feedback),
+        .peaks(peaks),
+        .graph_ready(graph_ready),
+        .lock_granted(lock_granted),
+        .graph_data(graph_data),
+        .graph_kind(graph_kind),
+        .freeze_graph(freeze_graph),
+        .right_channel(right_channel),
+        .scope_command_valid(scope_command_valid),
+        .scope_command_op(scope_command_op),
+        .scope_command_value(scope_command_value),
+        .scope_available(scope_available),
+        .scope_pair(scope_pair),
+        .scope_overflow(scope_overflow),
+        .scope_pop(scope_pop),
+        .scope_clear(scope_clear),
+        .scope_capture_enable(scope_capture_enable),
+        .graph_lock(graph_lock),
+        .graph_address(graph_address),
+        .byte_start(byte_start),.byte_data(byte_data),.byte_busy(byte_busy));
+    uart_tx #(.CLKS_PER_BIT(CLKS_PER_BIT)) uart(.clk(clk),.rst_n(rst_n),.start(byte_start),.data(byte_data),.busy(byte_busy),.tx(tx),.done());
+endmodule
+`default_nettype wire

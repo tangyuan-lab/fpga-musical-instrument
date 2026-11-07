@@ -1,0 +1,11 @@
+!impl/
+impl/*
+!impl/workstation_r6_piano32_bt_process_config.json
+runs/*
+!runs/.gitkeep
+__pycache__/
+*.pyc
+*.gprj.user
+*.wlf
+transcript
+modelsim.ini

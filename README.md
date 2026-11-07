@@ -1,8 +1,8 @@
 # 芯弦：FPGA 多音色交互演奏与教学系统
 
-芯弦采用 FPGA 实现压力输入、音符控制、多音色实时合成、效果处理和串行音频输出。钢琴、吉他与 Bass 共享 32 个声部槽，USB 和串口触摸屏提供演奏控制与状态交互，HC-05 蓝牙提供参数控制与状态回读。
+芯弦 R6 集成 16 键压力演奏、钢琴／吉他／Bass 共享 32 声部合成、曲谱播放与跟弹教学、效果处理，以及 USB、串口屏和蓝牙交互。
 
-R6（`0x0b02fc49`）扩展了钢琴 32 音递进调度、设备完成反馈和屏幕会话接口，并对蓝牙比较逻辑、声部事务采样及模态后端预取进行结构优化。
+本版 **R6 `0x5c9cde6a`** 完成屏幕协议与业务分层、ADC 采样事务拆分及控制路径优化。**本版已完成上板功能测试，运行正常。** 源工程完成综合、四阶段布局布线及 FS 位流生成。
 
 ## 项目功能
 
@@ -54,60 +54,61 @@ DDR3 曲谱 → 播放调度 ──┘                │
 
 蓝牙会话与请求比较采用显式分组归约树。声部控制器在空闲状态预采样事务数据，并在事务处理期间保持。模态后端在既有预取时点采样按键保持状态，将声部选择与后续衰减计算分离，保持控制语义和数据对齐关系清晰。
 
-## 相比上一版新增了什么
+## 本版变化与设计优点
 
-对照版本：上一版 `0x3664e98a`；本版 R6 `0x0b02fc49`。
+对照版本：R6 `0x0b02fc49` → R6 `0x5c9cde6a`。
 
-| 方向 | 上一版 | R6 的新增或调整 | 设计优点 |
-| --- | --- | --- | --- |
-| 钢琴 32 音控制 | 测试中心在起音请求被接收后推进音符索引 | 增加独立递进调度器，依据引擎成功完成推进计数，并组织间隔、保持与结束 | 更清楚地观察音符逐次加入过程，计数与实际命令完成对应 |
-| 屏幕会话 | 使用原有测试命令和通用状态字段 | 增加带请求号的启动、保活、停止及会话来源匹配 | 对重复请求、重连和多来源操作建立明确的归属规则 |
-| 状态显示 | 原有观察页及遥测发送 | 增加 P00～P15 接口，包含完整构建身份、能力、完成数和原子快照提交 | 显示依据设备回传的完整状态更新，便于核对正在运行的会话 |
-| 蓝牙比较逻辑 | 宽位等值表达式 | 64 位会话比较及 256 位请求比较采用分组归约树 | 比较层级和综合网表映射更易检查，同时保留同拍协议处理方式 |
-| 声部与后端数据路径 | 事务接收时取数，计算阶段选择按键保持状态 | 空闲时预采样事务数据，在预取阶段寄存按键保持状态 | 分离数据准备、控制使能及后续计算的组合逻辑 |
-| 工程资料 | 源码、约束与 78 个测试台 | 增加 4 个生产模块、3 个测试台；补充屏幕协议、统一 Gowin 工程及独立的源码校验与仿真入口 | 从同一目录打开工程、校验源码并按测试台复现实验 |
-
-本版集成多音色合成、压力演奏、曲谱播放、DDR3 存储和效果处理。
-
-## 已证实的仿真与综合成果
-
-以下仿真与综合结果对应 R6 原始构建 `0x0b02fc49`，逐项记录见[仿真与综合记录](2026-11-04/FPGA_BT_PIANO32_R6/docs/verification-r6.md)。
-
-| 项目 | 结果 | 覆盖内容 |
+| 方向 | 本版实现 | 设计优点 |
 | --- | --- | --- |
-| 功能回归 | 32 项通过 | 蓝牙 UART 与仲裁、钢琴完成反馈、屏幕通信、声部调度、效果、压力、播放器及钢琴／吉他／Bass 音源等 |
-| 故障注入与恢复 | 19 组；44 次执行结果符合预期 | 19 次故障检出、19 次恢复、6 次正常对照 |
-| Gowin 综合 | 通过，退出码 0 | 生成 `workstation_nodrum_ddr.vg` 综合网表与综合资源报告 |
-| 综合结构检查 | 检查 3 组 64 位比较树及 1 组 256 位比较树的映射与连接 | 对照分组比较逻辑及预取寄存结构 |
-| 源码完整性 | 140 项生产输入通过校验 | 138 项与原构建逐字节一致，2 项仅修订注释。两组哈希分别记录 |
+| 屏幕协议与业务分层 | 拆分帧解析、触键业务、事件分发、命令适配、显示服务、页面字段和指令编码 | 各模块分别管理协议、业务状态与显示握手，职责清晰 |
+| 二进制串口发送 | 独立帧发送模块，分离协议字节生成与 UART 握手 | 字节推进与实际发送完成对应 |
+| 压力采样事务 | MCP3208 SPI 事务独立封装 | 采样调度与物理事务分别管理，便于核对采样时序 |
+| 控制路径优化 | 调整计数器宽度、比较结构、预采样及固定声部字槽写入 | 缩短控制组合路径，明确取消、提交与数据归属 |
+| 工程组织 | 生产 HDL 从 88 个增至 97 个，保留多音色共享引擎 | 以独立模块承接协议、显示、采样和发送职责 |
+| 实现成果 | 交付同版本工程、FS、原生综合与布局布线记录、时序报告和引脚表 | 源码、实现产物和验证资料按构建标识关联 |
 
-## 工程入口与使用说明
+## 验证与实现成果
+
+以下结果对应 R6 `0x5c9cde6a`。详细记录见[验证索引](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/docs/verification.md)和[上板功能测试](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/docs/board_test.md)。
+
+| 项目 | 结果 |
+| --- | --- |
+| 上板功能测试 | 本版已完成上板功能测试，运行正常 |
+| 功能仿真 | 12 项通过，覆盖声部计数、触键、屏幕语义、蓝牙等价、边界时限、渲染等价和顶层交互 |
+| 检查有效性 | 4 项定向反例命中指定断言，覆盖急停、屏幕取消、代次身份和混音输出 |
+| Gowin 综合 | 完成，进程退出码 0 |
+| 布局布线与 FS | 四阶段 routing 和位流生成完成，进程退出码 0 |
+| Setup | 报告路径无负 slack，最差 **+0.029 ns** |
+| Hold | 报告路径无负 slack，最差 **+0.133 ns** |
+| Recovery | 报告路径无负 slack，最差 **+4.036 ns** |
+| Removal | 报告路径无负 slack，最差 **+0.256 ns** |
+| 版本一致性 | 149 项生产输入校验通过，源工程与交付 FS 按记录关联 |
+| 工程迁移检查 | 两次原生 CLI 打开与导出保存通过，核对 75 项选项和 97 项生产 HDL |
+
+## 下载与工程使用
+
+**[下载本版 Release](https://github.com/tangyuan-lab/fpga-musical-instrument/releases/tag/r6-5c9cde6a)** · [源码 ZIP](https://github.com/tangyuan-lab/fpga-musical-instrument/releases/download/r6-5c9cde6a/R6_5c9cde6a_source.zip) · [FS 位流](https://github.com/tangyuan-lab/fpga-musical-instrument/releases/download/r6-5c9cde6a/R6_5c9cde6a_UserCode000063F0.fs) · [验证资料](https://github.com/tangyuan-lab/fpga-musical-instrument/releases/download/r6-5c9cde6a/R6_5c9cde6a_verification.zip) · [附件校验值](https://github.com/tangyuan-lab/fpga-musical-instrument/releases/download/r6-5c9cde6a/SHA256SUMS.txt)
 
 | 项目 | 配置／入口 |
 | --- | --- |
-| 源码目录 | `2026-11-04/FPGA_BT_PIANO32_R6/` |
-| Gowin 工程 | [workstation_r6_piano32_bt.gprj](2026-11-04/FPGA_BT_PIANO32_R6/workstation_r6_piano32_bt.gprj) |
-| 顶层模块 | `mega138_models8_top` |
+| Gowin 工程 | [workstation_r6_piano32_bt.gprj](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/workstation_r6_piano32_bt.gprj) |
 | 目标器件 | `GW5AST-LV138PG484AC1/I0`，C 版 |
-| 工具与语言 | Gowin FPGA Designer V1.9.12.03，SystemVerilog 2017 |
-| 音频配置 | 50 MHz，48 kHz，32 声部，16 位双通道 |
-| USB／串口屏 | 钢琴递进控制，115200 baud，8N1 |
-| HC-05 控制通道 | 参数控制与状态回读，约 9600 baud，8N1 |
-| 工程清单 | [sources.json](2026-11-04/FPGA_BT_PIANO32_R6/sources.json)，88 个生产 RTL 文件 |
-| 构建脚本 | [build.tcl](2026-11-04/FPGA_BT_PIANO32_R6/build.tcl)、[pnr.tcl](2026-11-04/FPGA_BT_PIANO32_R6/pnr.tcl) |
-| 引脚与时序约束 | [workstation.cst](2026-11-04/FPGA_BT_PIANO32_R6/constraints/workstation.cst)、[workstation.sdc](2026-11-04/FPGA_BT_PIANO32_R6/constraints/workstation.sdc) |
-| 源码身份 | [build_identity.json](2026-11-04/FPGA_BT_PIANO32_R6/build_identity.json)、[构建身份头文件](2026-11-04/FPGA_BT_PIANO32_R6/rtl/workstation_build_identity.vh)、[发布清单](2026-11-04/FPGA_BT_PIANO32_R6/SOURCE_MANIFEST.json) |
-| 发布工具 | [源码校验](2026-11-04/FPGA_BT_PIANO32_R6/scripts/check_project.py)、[仿真入口](2026-11-04/FPGA_BT_PIANO32_R6/scripts/run_tests.py) |
+| 工具与顶层 | Gowin FPGA Designer V1.9.12.03；`mega138_models8_top` |
+| 音频配置 | 50 MHz 控制时钟，48 kHz 采样配置，32 声部，16 位双通道 |
+| 生产文件 | [sources.json](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/sources.json)，97 个生产 HDL |
+| 约束与引脚 | [CST](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/constraints/workstation.cst)、[SDC](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/constraints/workstation.sdc)、[引脚表](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/docs/pinout.csv) |
+| 构建身份 | RTL BUILD `0x5c9cde6a`；FS UserCode `0x000063F0` |
+| 构建工具 | [build.tcl](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/build.tcl)、[pnr.tcl](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/pnr.tcl) |
+| 校验与仿真 | [源码校验](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/scripts/check_project.py)、[测试入口](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/scripts/run_tests.py) |
+| 使用说明 | [编译、仿真与 SRAM Program](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/docs/usage.md) |
+| 工程追溯 | [构建身份](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/build_identity.json)、[来源清单](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/PACKAGING_ORIGIN.json)、[发布清单](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/SOURCE_MANIFEST.json) |
 
-完整解压源码目录，在 Gowin FPGA Designer 中打开 `.gprj`，使用工程自带的器件配置、文件清单和约束。常规 IDE 构建直接读取包内源文件。脚本构建按综合、布局布线顺序调用 `build.tcl` 与 `pnr.tcl`，布局布线入口读取综合生成的网表。
+完整解压源码包，在 Gowin FPGA Designer 中打开工程文件。使用工程内配置、源文件与约束构建，或从 Release 下载对应 FS，通过 Gowin Programmer 的 SRAM Program 入口加载。
 
-`rtl/` 保存控制与服务模块，`ip/` 保存 PLL 和 DDR3 接口依赖，`constraints/` 保存约束，`.mem` 文件提供初始化数据，`sim/` 收录 81 个测试台及参考模型。工程选项保存在 [Gowin 工程配置](2026-11-04/FPGA_BT_PIANO32_R6/impl/workstation_r6_piano32_bt_process_config.json)，本地工具输出按次保存在 `runs/`。
+## 配套资料
 
-源码校验使用 Python 3.10+ 标准库。仿真入口通过 `--test` 选择测试台，默认使用 Gowin 厂商原语模型。命令、模型选项与结果格式见编译说明。
-
-## 配套文档
-
-- [新增模块与结构修订](2026-11-04/FPGA_BT_PIANO32_R6/新增模块与结构修订.md)
-- [现场编译与仿真说明](2026-11-04/FPGA_BT_PIANO32_R6/现场编译说明.md)
-- [钢琴递进屏幕协议](2026-11-04/FPGA_BT_PIANO32_R6/PIANO32_SCREEN_PROTOCOL_V1.md)
-- [发布来源及文件迁移记录](2026-11-04/FPGA_BT_PIANO32_R6/PACKAGING_ORIGIN.json)
+- [系统架构](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/docs/architecture.md)
+- [验证与实现记录](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/docs/verification.md)
+- [上板功能测试](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/docs/board_test.md)
+- [钢琴递进屏幕协议](2026-11-07/FPGA_BT_PIANO32_R6_5c9cde6a/PIANO32_SCREEN_PROTOCOL_V1.md)
+- [上一版 R6 0x0b02fc49](https://github.com/tangyuan-lab/fpga-musical-instrument/tree/f19f394c6c1c1204e6af43227d5878a972893449/2026-11-04/FPGA_BT_PIANO32_R6)
