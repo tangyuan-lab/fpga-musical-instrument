@@ -1,0 +1,72 @@
+{
+  "tests": {
+    "tb_closure_count": [
+      "sim/references/reference_closure_voice_count.sv",
+      "sim/tb_closure_count.sv"
+    ],
+    "tb_closure_touch": [
+      "sim/references/reference_closure_touch_service.sv",
+      "sim/tb_closure_touch.sv"
+    ],
+    "tb_batch_screen_semantics": [
+      "sim/references/reference_batch_screen_status.sv",
+      "sim/tb_batch_screen_semantics.sv"
+    ],
+    "tb_batch_bt_equivalence": [
+      "sim/references/reference_batch_bt_control.sv",
+      "sim/tb_batch_bt_equivalence.sv"
+    ],
+    "tb_batch_deadlines": [
+      "sim/references/reference_batch_bt_control.sv",
+      "sim/tb_batch_deadlines.sv"
+    ],
+    "tb_batch_render_equivalence": [
+      "sim/references/reference_batch_render32.sv",
+      "sim/tb_batch_render_equivalence.sv"
+    ],
+    "tb_r7_bluetooth_uart": [
+      "sim/tb_r7_bluetooth_uart.sv"
+    ],
+    "tb_r7_bluetooth_ownership": [
+      "sim/tb_r7_bluetooth_ownership.sv"
+    ],
+    "tb_bt_piano32_feedback": [
+      "sim/tb_bt_piano32_feedback.sv"
+    ],
+    "tb_bt_piano32_top": [
+      "sim/tb_bt_piano32_top.sv"
+    ],
+    "tb_bt_piano32_screen": [
+      "sim/tb_bt_piano32_screen.sv"
+    ],
+    "tb_r7_features_uart": [
+      "sim/tb_r7_features_uart.sv"
+    ]
+  },
+  "negative_controls": {
+    "urgent_emergency": {
+      "test": "tb_batch_bt_equivalence",
+      "source": "sim/negative_controls/urgent_emergency.sv",
+      "replaces": "rtl/r7_bt_control.sv",
+      "target": "BT_SEQUENCE_PUBLIC_MISMATCH"
+    },
+    "screen_semantic": {
+      "test": "tb_batch_screen_semantics",
+      "source": "sim/negative_controls/screen_semantic.sv",
+      "replaces": "rtl/r7_piano32_screen_status.sv",
+      "target": "BATCH_SCREEN_CANCEL_MISMATCH"
+    },
+    "generation_identity": {
+      "test": "tb_batch_render_equivalence",
+      "source": "sim/negative_controls/generation_identity.sv",
+      "replaces": "shared_models8_render32.sv",
+      "target": "distributed raw identity differs from indexed reference"
+    },
+    "pcm": {
+      "test": "tb_batch_render_equivalence",
+      "source": "sim/negative_controls/pcm.sv",
+      "replaces": "shared_models8_render32.sv",
+      "target": "render PCM/finished/generation mismatch"
+    }
+  }
+}
